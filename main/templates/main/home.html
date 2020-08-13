@@ -4,9 +4,436 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!-- Additional CSS -->
+    <link rel="stylesheet" href="{% static 'main/landing.css' %}" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="{% static 'main/infinite-slider.css' %}" />
+    <title>Microsoft Student Chapter</title>
   </head>
   <body>
-    <h1>Home Page!</h1>
+    <!-- Navbar -->
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-mainbg fixed-top">
+        <a class="navbar-brand navbar-logo" href="#"
+          ><img
+            src="{% static 'main/pics/msc_logo.png' %}"
+            alt="Logo"
+            id="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa fa-bars text-white"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <div class="hori-selector">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0);">Events</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="javascript:void(0);">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0);">Alumni</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0);">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0);">Why Sponsor Us?</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <!-- VIDEO -->
+    <section>
+      <div class="background-wrap">
+        <video
+          id="video-bg-elem"
+          preload="auto"
+          autoplay="true"
+          loop="loop"
+          muted="muted"
+        >
+          <source src="{% static 'main/final.mp4' %}" type="video/mp4" />
+          Video not supported
+        </video>
+      </div>
+      <div class="content">
+        <h1>
+          <div class="block">
+            <div data-aos="fade-right" data-aos-duration="1400">
+              <span id="msft">Microsoft </span><br /><span id="std_ch"
+                >Student Chapter</span
+              >
+            </div>
+          </div>
+        </h1>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section>
+      <div id="about">
+        <div class="row" style="padding: 10vh 0vh 0vh 0vh;">
+          <div class="col-md-5 order-2 order-md-1">
+            <div class="row" id="about-head-content">
+              <span
+                class="iconify"
+                data-icon="clarity:dot-circle-line"
+                data-inline="false"
+                style="margin-top: 0.7rem;"
+              ></span>
+              <div data-aos="flip-right" data-aos-duration="800">
+                ABOUT US
+              </div>
+            </div>
+            <div class="row" id="about-content">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </div>
+          </div>
+          <div class="col-md-5 order-1 order-md-2">
+            <div>
+              <img
+                id="about_img"
+                class="img-fluid"
+                src="{% static 'main/pics/landing1.png' %}"
+                alt="About pic"
+              />
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div id="col-md-3" style="padding-left: 1rem;">
+            <div id="know-about1">
+              <span id="know-about">KNOW MORE</span>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <div data-aos="fade-up" data-aos-duration="1200">
+              <span id="about-head">ABOUT US</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Event Section -->
+    <section>
+      <div id="events">
+        <div class="row" style="padding: 10vh 0vh 0vh 0vh;">
+          <div class="col-md-1 order-2 order-md-1"></div>
+          <div class="col-md-5 order-1 order-md-2 box-img">
+            <!-- img if any in about section || ROTATING BOX/CUBE -->
+            <div class="roatating-box">
+              <div class="single-rb">
+                <div class="front-side">
+                  <img
+                    src="{% static 'main/pics/about11.png' %}"
+                    alt="about1"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="back-side">
+                  <img
+                    src="{% static 'main/pics/about21.png' %}"
+                    alt="about2"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="left-side">
+                  <img
+                    src="{% static 'main/pics/about31.png' %}"
+                    alt="about3"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="right-side">
+                  <img
+                    src="{% static 'main/pics/about41.png' %}"
+                    alt="about4"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="top-side">
+                  <img
+                    src="{% static 'main/pics/about21.png' %}"
+                    alt="about4"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="bottom-side">
+                  <img
+                    src="{% static 'main/pics/about31.png' %}"
+                    alt="about4"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 order-4 order-md-3">
+            <div
+              class="row"
+              class="event-head-content abc"
+              style="
+                font-size: 3rem;
+                font-family: 'Poppins', sans-serif;
+                margin-bottom: 1rem;
+              "
+            >
+              <span
+                class="iconify event-head-content"
+                data-icon="clarity:dot-circle-line"
+                data-inline="false"
+                style="margin-top: 0.7rem;"
+              ></span>
+              <div data-aos="flip-right" data-aos-duration="800">
+                EVENTS
+              </div>
+            </div>
+            <div class="row" id="event-content">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </div>
+          </div>
+          <div class="col-md-1 order-3 order-md-4"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1 order-1 order-md-1"></div>
+          <div class="col-md-6 order-4 order-md-2">
+            <div data-aos="fade-up" data-aos-duration="1200">
+              <span id="event-head">EVENTS</span>
+            </div>
+          </div>
+
+          <div class="col-md-3 order-2 order-md-3" id="event-more">
+            <div id="event-about1">
+              <span id="event-about">KNOW MORE</span>
+            </div>
+          </div>
+          <div class="col-md-2 order-3 order-md-4"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery Section -->
+    <section>
+      <div id="gallery"></div>
+    </section>
+    <!-- OUR PAST SPONSOR Section -->
+    <section>
+      <div id="sponsor">
+        <div class="container abc">
+          <div class="logos slider">
+            <div class="item">
+              <img
+                src="{% static 'main/pics/Sponsors/balsamiq.png' %}"
+                alt="Balsamiq"
+              />
+            </div>
+            <div class="item">
+              <img
+                src="{% static 'main/pics/Sponsors/cb.png' %}"
+                alt="Coding Blocks"
+              />
+            </div>
+            <div class="item">
+              <img
+                src="{% static 'main/pics/Sponsors/creativeTim.png' %}"
+                alt="Creative Tim"
+              />
+            </div>
+            <div class="item">
+              <img
+                src="{% static 'main/pics/Sponsors/digitalOcean.png' %}"
+                alt="Digital Ocean"
+              />
+            </div>
+            <div class="item">
+              <img
+                src="{% static 'main/pics/Sponsors/fab.png' %}"
+                alt="Fab Hotel"
+              />
+            </div>
+            <!-- <div class="item"><img src="./assets/pics/Sponsors/balsamiq.png alt=""></div> -->
+            <div class="item">
+              <img
+                src="{% static 'main/pics/Sponsors/gg.png' %}"
+                alt="Guerilla Gaming"
+              />
+            </div>
+            <div class="item">
+              <img
+                src="{% static 'main/pics/Sponsors/github.png' %}"
+                alt="Github"
+              />
+            </div>
+            <div class="item">
+              <img
+                src="{% static 'main/pics/Sponsors/learnCodeOnline.png' %}"
+                alt="Learn Code Online"
+              />
+            </div>
+            <div class="item">
+              <img
+                src="{% static 'main/pics/Sponsors/paytm.png' %}"
+                alt="Paytm"
+              />
+            </div>
+            <div class="item">
+              <img
+                src="{% static 'main/pics/Sponsors/vanfly.png' %}"
+                alt="Vanfly"
+              />
+            </div>
+            <div class="item">
+              <img
+                src="{% static 'main/pics/Sponsors/wolfram.png' %}"
+                alt="Wolfram Language"
+              />
+            </div>
+            <div class="item">
+              <img
+                src="{% static 'main/pics/Sponsors/gfg.png' %}"
+                alt="Geeks for Geeks"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Us section -->
+    <section>
+      <div id="contact">
+        <span id="ContactUs">CONTACT US</span>
+        <div style="height: 2rem;"></div>
+        <div class="row">
+          <div class="col-sm-1 col-md-2"></div>
+          <div class="col-sm-4 col-md-3">
+            <!-- Location -->
+            <div class="text-center">
+              <img
+                src="{% static 'main/pics/ContactUs/location.png' %}"
+                alt="Locate Us"
+              /><br />
+              <button class="button_contact">Thapar, Punjab - 147004</button>
+            </div>
+          </div>
+          <div class="col-sm-2"></div>
+          <div class="col-sm-4 col-md-3">
+            <div class="text-center">
+              <img
+                src="{% static 'main/pics/ContactUs/phone.png' %}"
+                alt="Contact Us"
+                style="padding-bottom: 0.75rem;"
+              /><br />
+              <button class="button_contact">Aryan : +91 99976 30003</button>
+            </div>
+          </div>
+          <div class="col-sm-1 col-md-2"></div>
+        </div>
+        <div style="height: 1vh;"></div>
+        <div class="text-center">
+          <a href=" https://www.facebook.com/msctiet/"
+            ><img
+              src="{% static 'main/pics/ContactUs/fb.png' %}"
+              alt="Facebook"
+              class="contact_link"
+          /></a>
+          <a href="https://github.com/MicrosoftStudentChapter"
+            ><img
+              src="{% static 'main/pics/ContactUs/github-04.png' %}"
+              alt="Twitter"
+              class="contact_link"
+          /></a>
+          <a href="https://instagram.com/msc_tiet?igshid=bbv9mjjkx4h"
+            ><img
+              src="{% static 'main/pics/ContactUs/insta.png' %}"
+              alt="Instagram"
+              class="contact_link"
+          /></a>
+        </div>
+        <div style="height: 2vh;"></div>
+      </div>
+      <div id="love">
+        <div class="text-center" id="text_love">
+          Made with <i class="fa fa-heart" id="text-red"></i> by Team MSC
+        </div>
+      </div>
+    </section>
+    <!-- Adding JS and jQuery File -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Slick Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <!-- Adding external JS -->
+    <script src="{% static 'main/landing.js' %}"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
