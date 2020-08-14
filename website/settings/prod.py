@@ -9,7 +9,10 @@ SECRET_KEY = os.environ.get(
 
 DEBUG = os.environ.get("DJANGO_DEBUG", "") != "False"
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "mscwebsite-test.herokuapp.com",
+    "msctiet.co.in",
+]  # test deployment url and website URL
 
 
 # Postgres Database configuration
