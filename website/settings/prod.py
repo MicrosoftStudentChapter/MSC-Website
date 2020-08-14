@@ -1,5 +1,6 @@
 from website.settings.base import *  # noqa
 import os
+import dj_database_url
 
 
 SECRET_KEY = os.environ.get(
@@ -9,3 +10,9 @@ SECRET_KEY = os.environ.get(
 DEBUG = os.environ.get("DJANGO_DEBUG", "") != "False"
 
 ALLOWED_HOSTS = []
+
+
+# Postgres Database configuration
+
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES["default"].update(db_from_env)  # noqa
