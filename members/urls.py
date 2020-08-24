@@ -1,5 +1,8 @@
 from django.urls import path
-from members.views import alumni, team
+from members.views import team
 
 
-urlpatterns = [path("alumni/", alumni, name="alumni"), path("team/", team, name="team")]
+urlpatterns = [
+    # path("alumni/", alumni, name="alumni"),
+    path("about/", team, name="about")
+]
