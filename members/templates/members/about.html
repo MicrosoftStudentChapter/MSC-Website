@@ -1,0 +1,874 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!-- Additional CSS -->
+    <link rel="stylesheet" href="{% static 'members/about.css' %}" />
+    <link rel="stylesheet" href="{% static 'members/cards.css' %}" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Google Font -->
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <title>Microsoft Student Chapter</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-mainbg fixed-top">
+        <a class="navbar-brand navbar-logo" href="#"
+          ><img src="{% static 'members/general/msc_logo.png' %}" alt="Logo" id="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa fa-bars text-white"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <div class="hori-selector">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'about' %}">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'events' %}">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <section>
+      <div id="about">
+        <div class="row" style="padding: 10vh 0vh 0vh 0vh;">
+          <div class="col-md-1"></div>
+          <div class="col-md-6">
+            <div id="about-head-content">
+              <center>
+              ABOUT US
+            </center>
+            </div>
+            <div>
+              <center>
+                <img
+                  id="about_img"
+                  class="img-fluid"
+                  src="{% static 'members/general/about-2.jpg' %}"
+                  alt="About pic"
+                />
+                </center>
+              </div>
+           
+          </div>
+          <div class="col-md-5 order-2 order-md-1" id="about-div">
+            <div class="row" id="about-content">
+              Microsoft Student Chapter is a technical association of like-minded,driven individuals possessing a proclivity to excel in technical aspects.
+We at Microsoft Student Chapter believe that youth encompassed with appropriate technology holds the potential to revolutionize the world we perceive today and we have done a fair share in that through multiple events organised over the years.
+Microsoft Student chapter was institutionalized by the virtue of providing students a systemic platform for cultivating technical skills and a spirit of teamwork.
+Our vision is to create a community of computer enthusiasts with a mindset of development.
+We uphold this by ensuring proper interaction among the society and by hierarchical mentoring,discussing and ideating constructive technical space.
+
+            </div>
+            
+            <div class="row">
+              <span id="about-head">MSC</span>
+            </div>
+          </div>
+          </div>
+      </div>
+    </section>
+    <section>
+        <div id="mentor">
+            <div class="row" style="padding: 10vh 0vh 0vh 0vh;">
+              <div class="col-md-1"></div>
+              <div class="col-md-6 order-2 order-md-1">
+                <div class="row" id="mentor-head">
+                  OUR MENTOR
+                </div>
+                <div class="row" id="mentor-content">
+                  Dr. Prashant Singh Rana (Assistant professor - CSE Department, Thapar Institute of engineering & technology) is a name exceedingly eminent amongst the peeps of TIET's proficiency hamlet.
+Microsoft Student Chapter feels immense felicity to have Dr. Rana as it's President. 
+Holding a PhD in CS from ABV-IIITM, (Gwalior), he is remarkably profound in Machine Learning, Deep Learning and other allied skills.
+Dr. P.S Rana has aided and mentored MSC to reach monumental heights.
+ 
+                </div>
+              </div>
+              <div class="col-md-5 order-2 order-md-1">
+                <div>
+                  <center>
+                  <img
+                    id="mentor_img"
+                    class="img-fluid"
+                    src="{% static 'members/general/RanaSir.jpg' %}"
+                    alt="Mentor pic"
+                  />
+                </center>
+                </div>
+                <div class="mentor_name">
+                  <center>
+                P.S. RANA
+                  </center>
+              </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section>
+      <div id="team">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10" id="team_head">
+            OUR TEAM
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+          <!--Carousel Wrapper-->
+<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel" data-interval="0">
+
+  <!--Controls-->
+  <div class="controls-top">
+    <div class="row mt-2">
+      <div class="col-md-3"></div>
+      <a class="col-md-2" href="#multi-item-example" data-target="#multi-item-example" data-slide-to="0" id="sec"><span id="sec_txt">Secretaries</span></a>
+      <a class="col-md-1" href="#multi-item-example" data-target="#multi-item-example" data-slide-to="1" id="head"><span id="head_txt">Heads</span></a>
+      <a class="col-md-1" href="#multi-item-example" data-target="#multi-item-example" data-slide-to="2" id="core"><span id="core_txt">Core</span></a>
+      <a class="col-md-2" href="#multi-item-example" data-target="#multi-item-example" data-slide-to="3" id="mem"><span id="mem_txt">Team Members</span></a>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+  <!--/.Controls-->
+
+  
+
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+
+    <!--First slide-->
+    <div class="carousel-item active">
+      <div class="row mt-5">
+        <div class="col-md-4"></div>
+        <div class="col-md-2 col-sm-6">
+          <div class="our_team">
+              <img src="{% static 'members/Secretaries/Aryan.jpg' %}" alt="">
+              <ul class="social">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/aryan-chaudhary-3053a9170"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="https://www.instagram.com/i.aryan__/"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="https://github.com/aryanaces"><i class="fa fa-github"></i></a></li>
+              </ul>
+              <div class="team-content">
+                  <h3 class="title">Aryan</h3>
+                  <span class="post">
+                      General Secretary
+                  </span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-2 col-sm-6">
+        <div class="our_team">
+            <img src="{% static 'members/Secretaries/Parth.jpg' %}" alt="">
+            <ul class="social">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/parth-arora-a45297194"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://instagram.com/parth5358?igshid=116bs28gckrkt"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://github.com/parthrr510"><i class="fa fa-github"></i></a></li>
+            </ul>
+            <div class="team-content">
+                <h3 class="title">Parth</h3>
+                <span class="post">
+                    Finance Secretary
+                </span>
+            </div>
+        </div>
+    </div>
+      <div class="col-md-4"></div>
+
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-3"></div>
+      <div class="col-md-2 col-sm-6">
+        <div class="our_team">
+            <img src="{% static 'members/Secretaries/Akriti.JPG' %}" alt="">
+            <ul class="social">
+                <li><a href="https://www.facebook.com/akriti.singhal.7"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/akriti-singhal-622b28190"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/aakriti_0100/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://github.com/Akriti0100"><i class="fa fa-github"></i></a></li>
+            </ul>
+            <div class="team-content">
+                <h3 class="title">Akriti</h3>
+                <span class="post">
+                    Joint Secretary
+                </span>
+            </div>
+        </div>
+    </div>
+      
+    <div class="col-md-2 col-sm-6">
+      <div class="our_team">
+          <img src="{% static 'members/Secretaries/Abhiroop.jpg' %}" alt="">
+          <ul class="social">
+              <li><a href="https://m.facebook.com/abhiroop.agarwal.3"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/abhiroop-agarwal-b2b170171"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://www.instagram.com/i.abhiroop/"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-github"></i></a></li>
+          </ul>
+          <div class="team-content">
+              <h3 class="title">Abhiroop</h3>
+              <span class="post">
+                Joint Secretary
+              </span>
+          </div>
+      </div>
+  </div>
+
+  <div class="col-md-2 col-sm-6">
+    <div class="our_team">
+        <img src="{% static 'members/Secretaries/Saumyaa.jpg' %}" alt="">
+        <ul class="social">
+            <li><a href="https://www.facebook.com/saumyaa.mathur"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/saumyaa-mathur-b1948219a/"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/saummzz/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://github.com/Saumyaa27"><i class="fa fa-github"></i></a></li>
+        </ul>
+        <div class="team-content">
+            <h3 class="title">Saumyaa</h3>
+            <span class="post">
+              Joint Secretary
+            </span>
+        </div>
+    </div>
+</div>
+       <div class="col-md-3"></div>
+
+    </div>
+    </div>
+    <!--/.First slide-->
+
+    <!--Second slide-->
+    <div class="carousel-item">
+      <div class="row content-section" id="head_div">
+        
+    <div class="row mt-5">
+      <!-- <div class="container"> -->
+        <div class="col-md-2"></div>
+
+        <div class="col-md-2 col-sm-6">
+          <div class="our_team">
+              <img src="{% static 'members/Heads/Yash.jpg' %}" alt="">
+              <ul class="social">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/yash-kumar-665208154/"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="https://www.instagram.com/yashtewatia_5355/"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="https://github.com/Tewatia5355"><i class="fa fa-github"></i></a></li>
+              </ul>
+              <div class="team-content">
+                  <h3 class="title">Yash</h3>
+                  <span class="post">
+                      Finance and Marketing
+                  </span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-2 col-sm-6">
+        <div class="our_team">
+            <img src="{% static 'members/Heads/Raman.jpeg' %}" alt="">
+            <ul class="social">
+                <li><a href="https://www.facebook.com/profile.php?id=100041225596857"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/ramandeep-singh-2b201b17b/"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/ramandeep7191/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://github.com/Ramandeep172"><i class="fa fa-github"></i></a></li>
+            </ul>
+            <div class="team-content">
+                <h3 class="title">Ramandeep</h3>
+                <span class="post">
+                    Event Management
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-2 col-sm-6">
+      <div class="our_team">
+          <img src="{% static 'members/Heads/Kaustubh.jpg' %}" alt="">
+          <ul class="social">
+              <li><a href="https://m.facebook.com/kaustubh.bhatt.96?ref=bookmarks"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/kaustubh-bhatt-91ba6b182"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://www.instagram.com/bhatt.kaustubh"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://github.com/KaustubhBhatt"><i class="fa fa-github"></i></a></li>
+          </ul>
+          <div class="team-content">
+              <h3 class="title">Kaustubh</h3>
+              <span class="post">
+                  Creativity and UX
+              </span>
+          </div>
+      </div>
+  </div>
+      
+  <div class="col-md-2 col-sm-6">
+    <div class="our_team">
+        <img src="{% static 'members/Heads/Mayank.jpg' %}" alt="">
+        <ul class="social">
+            <li><a href="https://www.facebook.com/nagpal.mayank05"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/mayank-nagpal-5332bb144"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/ugh.mayank/?igshid=ft4aqldj1bds"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://github.com/mayankn05"><i class="fa fa-github"></i></a></li>
+        </ul>
+        <div class="team-content">
+            <h3 class="title">Mayank</h3>
+            <span class="post">
+                Event Management
+            </span>
+        </div>
+    </div>
+</div>
+      <div class="col-md-2"></div>
+
+    <!-- </div> -->
+    </div>
+    
+
+    <div class="row mt-3">
+      <!-- <div class="container"> -->
+        <div class="col-md-2"></div>
+
+        <div class="col-md-2 col-sm-6">
+          <div class="our_team">
+              <img src="{% static 'members/Heads/Saksham.jpg' %}" alt="">
+              <ul class="social">
+                  <li><a href="https://www.facebook.com/saksham.chopra.942/"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/saksham-chopra-65007a193/"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="https://www.instagram.com/sakshamchopra0901/"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="https://github.com/SakshamChopra09"><i class="fa fa-github"></i></a></li>
+              </ul>
+              <div class="team-content">
+                  <h3 class="title">Saksham</h3>
+                  <span class="post">
+                    Publicity and Logistics
+                  </span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-2 col-sm-6">
+        <div class="our_team">
+            <img src="{% static 'members/Heads/Naman.jpg' %}" alt="">
+            <ul class="social">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/naman-jain-b6083b168/"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://github.com/namanjain323232"><i class="fa fa-github"></i></a></li>
+            </ul>
+            <div class="team-content">
+                <h3 class="title">Naman</h3>
+                <span class="post">
+                    Publicity and Logistics
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-2 col-sm-6">
+      <div class="our_team">
+          <img src="{% static 'members/Heads/Suryansh.jpeg' %}" alt="">
+          <ul class="social">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/suryansh-bhardwaj-562a32168/"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://www.instagram.com/suriii.ansh/"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://github.com/suryanshbhar"><i class="fa fa-github"></i></a></li>
+          </ul>
+          <div class="team-content">
+              <h3 class="title">Suryansh</h3>
+              <span class="post">
+                  Techincal HEAD
+              </span>
+          </div>
+      </div>
+  </div>
+      
+  <div class="col-md-2 col-sm-6">
+    <div class="our_team">
+        <img src="{% static 'members/Heads/Ankush.jpg' %}" alt="">
+        <ul class="social">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-github"></i></a></li>
+        </ul>
+        <div class="team-content">
+            <h3 class="title">Ankush</h3>
+            <span class="post">
+              Creativity and UX
+            </span>
+        </div>
+    </div>
+</div>
+      <div class="col-md-2"></div>
+    <!-- </div> -->
+      </div>
+    </div>
+  </div>
+    
+    <!--/.Second slide-->
+
+   <!-- Thirde Slide -->
+   <div class="carousel-item content-section" id="core_div">
+
+    <div class="row mt-5">
+      <!-- <div class="container"> -->
+        <div class="col-md-2"></div>
+
+        <div class="col-md-2 col-sm-6">
+          <div class="our_team">
+              <img src="{% static 'members/Core/Saurav.jpg' %}" alt="">
+              <ul class="social">
+                  <li><a href="https://www.facebook.com/saurav.srivastav.391"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/saurav-shrivastav-635996184"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="https://www.instagram.com/_saurav_shrivastav_/"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="https://github.com/Saurav-Shrivastav"><i class="fa fa-github"></i></a></li>
+              </ul>
+              <div class="team-content">
+                  <h3 class="title">Saurav</h3>
+                  <span class="post">
+                      CORE MEMBER
+                  </span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-2 col-sm-6">
+        <div class="our_team">
+            <img src="{% static 'members/Core/Priya.jpeg' %}" alt="">
+            <ul class="social">
+                <li><a href="https://facebook.com/NaN"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/priya-aggarwal-574a83194"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://instagram.com/_piyaaaa___?igshid=gv375exeec3g"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://github.com/Priya2123"><i class="fa fa-github"></i></a></li>
+            </ul>
+            <div class="team-content">
+                <h3 class="title">Priya</h3>
+                <span class="post">
+                    CORE MEMBER
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-2 col-sm-6">
+      <div class="our_team">
+          <img src="{% static 'members/Core/Harman.jpg' %}" alt="">
+          <ul class="social">
+              <li><a href="https://www.facebook.com/harmanjt14"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/harmanjit-singh-36a447198/"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://www.instagram.com/harmanjit_14/"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://github.com/Harmanjit14"><i class="fa fa-github"></i></a></li>
+          </ul>
+          <div class="team-content">
+              <h3 class="title">Harman</h3>
+              <span class="post">
+                  CORE MEMBER
+              </span>
+          </div>
+      </div>
+  </div>
+      
+  <div class="col-md-2 col-sm-6">
+    <div class="our_team">
+        <img src="{% static 'members/Core/Divyanshu.jpg' %}" alt="">
+        <ul class="social">
+            <li><a href="https://www.facebook.com/divyanshu.jindal.359"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/divyanshu-jindal-5b675b197"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/jindal_dv?r=nametag"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://github.com/Dv2204"><i class="fa fa-github"></i></a></li>
+        </ul>
+        <div class="team-content">
+            <h3 class="title">Divyanshu</h3>
+            <span class="post">
+                CORE MEMBER
+            </span>
+        </div>
+    </div>
+</div>
+      <div class="col-md-2"></div>
+
+    <!-- </div> -->
+      </div>
+
+      <div class="row mt-3">
+        <!-- <div class="container"> -->
+          <div class="col-md-2"></div>
+
+        <div class="col-md-2 col-sm-6">
+          <div class="our_team">
+              <img src="{% static 'members/Core/Shouraya.jpg' %}" alt="">
+              <ul class="social">
+                  <li><a href="https://www.facebook.com/shouraya.goyal.52"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/shouraya-goyal-aa471b1a2"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="https://www.instagram.com/shouraya.7/"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="https://github.com/Shouraya"><i class="fa fa-github"></i></a></li>
+              </ul>
+              <div class="team-content">
+                  <h3 class="title">Shouraya</h3>
+                  <span class="post">
+                      CORE MEMBER
+                  </span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-2 col-sm-6">
+        <div class="our_team">
+            <img src="{% static 'members/Core/Pranjal.jpg' %}" alt="">
+            <ul class="social">
+                <li><a href="https://m.facebook.com/pranjal.gupta.9041"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/pranjal-gupta-a323919b"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://instagram.com/_pranj.al"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://github.com/pranjalgupta29/"><i class="fa fa-github"></i></a></li>
+            </ul>
+            <div class="team-content">
+                <h3 class="title">Pranjal</h3>
+                <span class="post">
+                    CORE MEMBER
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-2 col-sm-6">
+      <div class="our_team">
+          <img src="{% static 'members/Core/Arpit.jpg' %}" alt="">
+          <ul class="social">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/arpit-arora-2b7847192/"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://www.instagram.com/arpit.arora18/"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://github.com/arpit1709"><i class="fa fa-github"></i></a></li>
+          </ul>
+          <div class="team-content">
+              <h3 class="title">Arpit</h3>
+              <span class="post">
+                  CORE MEMBER
+              </span>
+          </div>
+      </div>
+  </div>
+      
+  <div class="col-md-2 col-sm-6">
+    <div class="our_team">
+        <img src="{% static 'members/Core/Ishita.jpg' %}" alt="">
+        <ul class="social">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/ishita-vashistha-a58a82194"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://github.com/ishitavashistha"><i class="fa fa-github"></i></a></li>
+        </ul>
+        <div class="team-content">
+            <h3 class="title">Ishita</h3>
+            <span class="post">
+                CORE MEMBER
+            </span>
+        </div>
+    </div>
+</div>
+      <div class="col-md-2"></div>
+  
+      <!-- </div> -->
+        </div>
+
+        <div class="row mt-3">
+          <!-- <div class="container"> -->
+            <div class="col-md-2"></div>
+
+            <div class="col-md-2 col-sm-6">
+              <div class="our_team">
+                  <img src="{% static 'members/Core/Pramit.png' %}" alt="">
+                  <ul class="social">
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="https://www.linkedin.com/in/pramit-deep-kaur-gogna-0a737b1b1"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a href="https://www.instagram.com/pramit_gogna/"><i class="fa fa-instagram"></i></a></li>
+                      <li><a href="https://github.com/Pramit29?tab=repositories"><i class="fa fa-github"></i></a></li>
+                  </ul>
+                  <div class="team-content">
+                      <h3 class="title">Pramit</h3>
+                      <span class="post">
+                          CORE MEMBER
+                      </span>
+                  </div>
+              </div>
+          </div>
+
+        <div class="col-md-2 col-sm-6">
+          <div class="our_team">
+              <img src="{% static 'members/Core/Sushila.jpeg' %}" alt="">
+              <ul class="social">
+                  <li><a href="https://www.facebook.com/sushila.kaur.17"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/sushila-kaur-576515123/"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="https://instagram.com/the.dancingartist?igshid=1nxjb27f55vw8"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="https://github.com/sushilakaur"><i class="fa fa-github"></i></a></li>
+              </ul>
+              <div class="team-content">
+                  <h3 class="title">Sushila</h3>
+                  <span class="post">
+                      CORE MEMBER
+                  </span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-2 col-sm-6">
+        <div class="our_team">
+            <img src="{% static 'members/Core/Yashonidhi.jpeg' %}" alt="">
+            <ul class="social">
+                <li><a href="https://www.facebook.com/yashonidhi.srivastava"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="http://linkedin.com/in/yashonidhi-srivastava-a08004160"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/yashonidhi_srivastava/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+            </ul>
+            <div class="team-content">
+                <h3 class="title">Yashonidhi</h3>
+                <span class="post">
+                    CORE MEMBER
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-2 col-sm-6">
+      <div class="our_team">
+          <img src="{% static 'members/Core/Dhriti.png' %}" alt="">
+          <ul class="social">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://instagram.com/dhriti.chopra?igshid=1vfn7t2657fup"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-github"></i></a></li>
+          </ul>
+          <div class="team-content">
+              <h3 class="title">Dhriti</h3>
+              <span class="post">
+                  CORE MEMBER
+              </span>
+          </div>
+      </div>
+  </div>
+      
+  
+      <div class="col-md-2"></div>
+    
+        <!-- </div> -->
+          </div>
+  </div>
+  
+<!-- Fourth Slide -->
+<div class="carousel-item content-section" id="mem_div">
+
+  <div class="row mt-5">
+    <!-- <div class="container"> -->
+      <div class="col-md-2"></div>
+
+        <div class="col-md-2 col-sm-6">
+          <div class="our_team">
+              <img src="{% static 'members/Members/Kritik.jpg' %}" alt="">
+              <ul class="social">
+                  <li><a href="https://www.facebook.com/profile.php?id=100006675976865"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/kritik-ajmani-792538198/"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="https://www.instagram.com/kritikal.aj/?hl=en"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="https://github.com/Kritik186"><i class="fa fa-github"></i></a></li>
+              </ul>
+              <div class="team-content">
+                  <h3 class="title">Kritik</h3>
+                  <span class="post">
+                      EXECUTIVE MEMBER
+                  </span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-2 col-sm-6">
+        <div class="our_team">
+            <img src="{% static 'members/Members/Paras.jpg' %}" alt="">
+            <ul class="social">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/paras-dhanwal-2572bb1a5/"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://github.com/parasdhanwal"><i class="fa fa-github"></i></a></li>
+            </ul>
+            <div class="team-content">
+                <h3 class="title">Paras</h3>
+                <span class="post">
+                  EXECUTIVE MEMBER
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-2 col-sm-6">
+      <div class="our_team">
+          <img src="{% static 'members/Members/Prateek.jpg' %}" alt="">
+          <ul class="social">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/prateek-bansal-478017195/"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://www.instagram.com/prateekbansal_"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://www.github.com/itsprateekbansal"><i class="fa fa-github"></i></a></li>
+          </ul>
+          <div class="team-content">
+              <h3 class="title">Prateek</h3>
+              <span class="post">
+                EXECUTIVE MEMBER
+              </span>
+          </div>
+      </div>
+  </div>
+      
+  <div class="col-md-2 col-sm-6">
+    <div class="our_team">
+        <img src="{% static 'members/Members/Vipasha.jpg' %}" alt="">
+        <ul class="social">
+            <li><a href="https://www.facebook.com/vipasha.sharma.54922"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/vipashaaa"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/_vipasha"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://github.com/vipxshx"><i class="fa fa-github"></i></a></li>
+        </ul>
+        <div class="team-content">
+            <h3 class="title">Vipasha</h3>
+            <span class="post">
+              EXECUTIVE MEMBER
+            </span>
+        </div>
+    </div>
+  </div>
+      <div class="col-md-2"></div>
+
+  <!-- </div> -->
+    </div>
+
+    <div class="row mt-3">
+      <!-- <div class="container"> -->
+        <div class="col-md-2"></div>
+
+    <div class="col-md-2 col-sm-6">
+      <div class="our_team">
+          <img src="{% static 'members/Members/Armaan.jpg' %}" alt="">
+          <ul class="social">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/armaan-bhardwaj-08717018a"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://www.instagram.com/armaanbhardwaj23/"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-github"></i></a></li>
+          </ul>
+          <div class="team-content">
+              <h3 class="title">Armaan</h3>
+              <span class="post">
+                EXECUTIVE MEMBER
+              </span>
+          </div>
+      </div>
+  </div>
+      
+      <div class="col-md-2"></div>
+
+    <!-- </div> -->
+      </div>
+
+</div>
+</div>
+
+<!-- Left and right controls -->
+<a class="carousel-control-prev" href="#multi-item-example" data-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+</a>
+<a class="carousel-control-next" href="#multi-item-example" data-slide="next">
+  <span class="carousel-control-next-icon"></span>
+</a>
+
+  </div>
+  <!--/.Slides-->
+
+</div>
+<!--/.Carousel Wrapper--> 
+        </div>
+      
+
+    </section>
+    <section>
+      <div id="contact">
+        <span id="ContactUs">CONTACT US</span>
+        <div style="height: 2rem;"></div>
+        <div class="row">
+          <div class="col-sm-1 col-md-2"></div>
+          <div class="col-sm-4 col-md-3">
+            <!-- Location -->
+            <div class="text-center pic_contact">
+              <img src="{% static 'members/general/location.png' %}" alt="Locate Us"><br>
+              <button class="button_contact">Thapar, Punjab - 147004</button>
+            </div>
+          </div>
+          <div class="col-sm-2"></div>
+          <div class="col-sm-4 col-md-3">
+            <div class="text-center pic_contact">
+              <img src="{% static 'members/general/phone.png' %}" alt="Contact Us"><br>
+              <button class="button_contact">Aryan : +91 99976 30003 </button>
+            </div>
+          </div>
+          <div class="col-sm-1 col-md-2"></div>
+        </div>
+        <div style="height: 1vh;"></div>
+        <div class="text-center">
+          <a href=" https://www.facebook.com/msctiet/"><img src="{% static 'members/general/fb.png' %}" alt="Facebook" class="contact_link"></a> 
+          <a href="https://github.com/MicrosoftStudentChapter"><img src="{% static 'members/general/github-04.png' %}" alt="Twitter" class="contact_link"></a>
+          <a href="https://instagram.com/msc_tiet?igshid=bbv9mjjkx4h"><img src="{% static 'members/general/insta.png' %}" alt="Instagram" class="contact_link"></a>
+        </div>
+        <div style="height: 2vh;"></div>
+      </div>
+      <div id="love">
+        <div class="text-center" id="text_love">Made with <i class="fa fa-heart" id="text-red"></i> by Team MSC</div>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Adding external JS -->
+    <script src="{% static 'members/about.js' %}"></script>
+  </body>
+</html>
