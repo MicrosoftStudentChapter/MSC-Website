@@ -19,12 +19,9 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Poppins:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Poppins:wght@700&display=swap" rel="stylesheet">
     <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Slick CSS -->
     <link rel="stylesheet" href="{% static 'main/infinite-slider.css' %}" />
     <title>Microsoft Student Chapter</title>
@@ -34,10 +31,7 @@
     <section>
       <nav class="navbar navbar-expand-lg navbar-mainbg fixed-top">
         <a class="navbar-brand navbar-logo" href="#"
-          ><img
-            src="{% static 'main/pics/msc_logo.png' %}"
-            alt="Logo"
-            id="logo"
+          ><img src="{% static 'main/pics/msc_logo.png' %}" alt="Logo" id="logo"
         /></a>
         <button
           class="navbar-toggler"
@@ -57,20 +51,17 @@
               <div class="left"></div>
               <div class="right"></div>
             </div>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);">Events</a>
-            </li>
             <li class="nav-item active">
-              <a class="nav-link" href="javascript:void(0);">Gallery</a>
+              <a class="nav-link" href="{% url 'home' %}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);">Alumni</a>
+              <a class="nav-link" href="{% url 'about' %}">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);">About Us</a>
+              <a class="nav-link" href="{% url 'events' %}">Events</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);">Why Sponsor Us?</a>
+              <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
             </li>
           </ul>
         </div>
@@ -102,116 +93,69 @@
         </h1>
       </div>
     </section>
-    <!-- About Section -->
+  <!-- About Section -->
     <section>
-      <div id="about">
-        <div class="row" style="padding: 10vh 0vh 0vh 0vh;">
-          <div class="col-md-5 order-2 order-md-1">
-            <div class="row" id="about-head-content">
-              <span
-                class="iconify"
-                data-icon="clarity:dot-circle-line"
-                data-inline="false"
-                style="margin-top: 0.7rem;"
-              ></span>
-              <div data-aos="flip-right" data-aos-duration="800">
-                ABOUT US
-              </div>
+        <div id="about">
+            <div class="row div-sec">
+                <div class="col-md-5 order-2 order-md-1">
+                   <div class="row" id="about-head-content">
+                    <span class="iconify" data-icon="clarity:dot-circle-line" data-inline="false" style="margin-top: 0.7rem;"></span>  
+                    <div data-aos="flip-right" data-aos-duration="800">
+                      ABOUT US
+                    </div>
+                    </div>
+                    <div class="row" id="about-content">
+                      <p>Microsoft Student Chapter is a technical society which is dedicated to elevate the coding culture of
+                         Thapar Institute of Engineering and Technology by mentoring and motivating its students to refine their 
+                         critical thinking, logical reasoning and coding skills. One of the elite societies of TIET.</p>
+
+                      <p>MSC was formed with the objective of providing students a dynamic platform which feeds their curiousity
+                         and develops their technical skills. MSC aims to create a community of versatile enthusiasts with 
+                         progressive mindset, promoting development holistically which includes injecting soft skills as well. 
+                         MSC effectuates it by organizing numerous technology driven events including tech meetups and Hackathons 
+                         and promoting team building. In the long run, MSC plans to cultivate and nurture young minds of TIET to 
+                         a magnitude where they are proficient enough to compete amongst the nonpareil, thus upheaving the name 
+                         of TIET. </p>
+
+                    </div>
+                </div>
+                <div class="col-md-5 order-1 order-md-2">
+                    <div>
+                      <div data-aos="zoom-in" data-aos-duration="1500">
+                        <img id="about_img" class="img-fluid" src="{% static 'main/pics/landing1.png' %}" alt="About pic">
+                      </div> 
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
             </div>
-            <div class="row" id="about-content">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
-            </div>
-          </div>
-          <div class="col-md-5 order-1 order-md-2">
-            <div>
-              <img
-                id="about_img"
-                class="img-fluid"
-                src="{% static 'main/pics/landing1.png' %}"
-                alt="About pic"
-              />
-            </div>
-          </div>
-          <div class="col-md-1"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-2"></div>
-          <div id="col-md-3" style="padding-left: 1rem;">
-            <div id="know-about1">
-              <span id="know-about">KNOW MORE</span>
-            </div>
-          </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-5">
-            <div data-aos="fade-up" data-aos-duration="1200">
-              <span id="about-head">ABOUT US</span>
+            <div class="row" >
+                <div class="col-md-2"></div>
+                <div id="col-md-3 know-about2" style="padding-left: 1rem; padding-top: 1rem;">
+                  <div id="know-about1">
+                     <span id="know-about">KNOW MORE</span>
+                    </div>
+                </div>
+                <div class="col-md-1" id="responsive-space"></div>
+                <div class="col-md-5" style="float: right;">
+                  <div data-aos="fade-up" data-aos-duration="1200">
+                    <span id="about-head">ABOUT US</span>
+                  </div>
+                </div> 
             </div>
           </div>
-        </div>
-      </div>
     </section>
-    <!-- Event Section -->
+   <!-- Event Section -->
     <section>
       <div id="events">
-        <div class="row" style="padding: 10vh 0vh 0vh 0vh;">
+        <div class="row div-sec">
           <div class="col-md-1 order-2 order-md-1"></div>
           <div class="col-md-5 order-1 order-md-2 box-img">
-            <!-- img if any in about section || ROTATING BOX/CUBE -->
-            <div class="roatating-box">
-              <div class="single-rb">
-                <div class="front-side">
-                  <img
-                    src="{% static 'main/pics/about11.png' %}"
-                    alt="about1"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="back-side">
-                  <img
-                    src="{% static 'main/pics/about21.png' %}"
-                    alt="about2"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="left-side">
-                  <img
-                    src="{% static 'main/pics/about31.png' %}"
-                    alt="about3"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="right-side">
-                  <img
-                    src="{% static 'main/pics/about41.png' %}"
-                    alt="about4"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="top-side">
-                  <img
-                    src="{% static 'main/pics/about21.png' %}"
-                    alt="about4"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="bottom-side">
-                  <img
-                    src="{% static 'main/pics/about31.png' %}"
-                    alt="about4"
-                    class="img-fluid"
-                  />
-                </div>
+            <!-- IMAGE TO BE REPLACED!!! -->
+            <div>
+              <div data-aos="zoom-in" data-aos-duration="1500">
+                <img id="about_img" class="img-fluid" src="{% static 'main/pics/event.png' %}" alt="About pic">
               </div>
-            </div>
+          </div>
           </div>
           <div class="col-md-5 order-4 order-md-3">
             <div
@@ -230,128 +174,69 @@
                 style="margin-top: 0.7rem;"
               ></span>
               <div data-aos="flip-right" data-aos-duration="800">
-                EVENTS
+                 EVENTS
               </div>
             </div>
             <div class="row" id="event-content">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              Microsoft Student Chapter has been the constant flag bearer for providing the youth, a one 
+              of its kind platform to showcase the paramount of their technological skills with an effectual 
+              vision. The events ranging from Hacktoberfest to Makeathon, require the perfect amalgamation 
+              of technical brain racking and impeccable teamwork. Periodic workshops and webinars motivate 
+              students to level up their computational skills and showcase their confounding critical thinking 
+              skills to challenge their coding apprehension and polish their skills. As of the most esteemed 
+              technical societies of TIET, the events conducted by MSC witness massive participation. 
+              They foster an environment which promotes teamwork and enhances knowledge in numerous tracks 
+              including AI/Machine Learning, Robotics, Block Chain, Cryptography, Algorithms, GraphQL, App 
+              development, AR/VR and open hack. With it's events, MSC hopes to tap into the unrealised 
+              potential within students as well as provide them an opportunity to discover new fields and 
+              probe their mettle.
             </div>
           </div>
           <div class="col-md-1 order-3 order-md-4"></div>
         </div>
         <div class="row">
           <div class="col-md-1 order-1 order-md-1"></div>
-          <div class="col-md-6 order-4 order-md-2">
+          <div class="col-md-6 order-4 order-md-2"> 
             <div data-aos="fade-up" data-aos-duration="1200">
               <span id="event-head">EVENTS</span>
             </div>
           </div>
-
-          <div class="col-md-3 order-2 order-md-3" id="event-more">
-            <div id="event-about1">
-              <span id="event-about">KNOW MORE</span>
-            </div>
+         
+          <div class="col-md-3 order-2 order-md-3" id="event-more"> 
+            <div id="event-about2">
+              <div id="event-about1">
+                <span id="event-about">KNOW MORE</span>
+              </div>
+          </div>
           </div>
           <div class="col-md-2 order-3 order-md-4"></div>
         </div>
       </div>
     </section>
-    <!-- Gallery Section -->
-    <section>
-      <div id="gallery"></div>
-    </section>
-    <!-- OUR PAST SPONSOR Section -->
+     <!-- OUR PAST SPONSOR Section -->
     <section>
       <div id="sponsor">
+        <span id="Sponsors">OUR PAST SPONSORS</span>
         <div class="container abc">
           <div class="logos slider">
-            <div class="item">
-              <img
-                src="{% static 'main/pics/Sponsors/balsamiq.png' %}"
-                alt="Balsamiq"
-              />
-            </div>
-            <div class="item">
-              <img
-                src="{% static 'main/pics/Sponsors/cb.png' %}"
-                alt="Coding Blocks"
-              />
-            </div>
-            <div class="item">
-              <img
-                src="{% static 'main/pics/Sponsors/creativeTim.png' %}"
-                alt="Creative Tim"
-              />
-            </div>
-            <div class="item">
-              <img
-                src="{% static 'main/pics/Sponsors/digitalOcean.png' %}"
-                alt="Digital Ocean"
-              />
-            </div>
-            <div class="item">
-              <img
-                src="{% static 'main/pics/Sponsors/fab.png' %}"
-                alt="Fab Hotel"
-              />
-            </div>
-            <!-- <div class="item"><img src="./assets/pics/Sponsors/balsamiq.png alt=""></div> -->
-            <div class="item">
-              <img
-                src="{% static 'main/pics/Sponsors/gg.png' %}"
-                alt="Guerilla Gaming"
-              />
-            </div>
-            <div class="item">
-              <img
-                src="{% static 'main/pics/Sponsors/github.png' %}"
-                alt="Github"
-              />
-            </div>
-            <div class="item">
-              <img
-                src="{% static 'main/pics/Sponsors/learnCodeOnline.png' %}"
-                alt="Learn Code Online"
-              />
-            </div>
-            <div class="item">
-              <img
-                src="{% static 'main/pics/Sponsors/paytm.png' %}"
-                alt="Paytm"
-              />
-            </div>
-            <div class="item">
-              <img
-                src="{% static 'main/pics/Sponsors/vanfly.png' %}"
-                alt="Vanfly"
-              />
-            </div>
-            <div class="item">
-              <img
-                src="{% static 'main/pics/Sponsors/wolfram.png' %}"
-                alt="Wolfram Language"
-              />
-            </div>
-            <div class="item">
-              <img
-                src="{% static 'main/pics/Sponsors/gfg.png' %}"
-                alt="Geeks for Geeks"
-              />
-            </div>
+            <div class="item"><img src="{% static 'main/pics/Sponsors/balsamiq.png' %}" alt="Balsamiq"></div>
+            <div class="item"><img src="{% static 'main/pics/Sponsors/cb.png' %}" alt="Coding Blocks"></div>
+            <div class="item"><img src="{% static 'main/pics/Sponsors/creativeTim.png' %}" alt="Creative Tim"></div>
+            <div class="item"><img src="{% static 'main/pics/Sponsors/digitalOcean.png' %}" alt="Digital Ocean"></div>
+            <div class="item"><img src="{% static 'main/pics/Sponsors/fab.png' %}" alt="Fab Hotel"></div>
+            <!-- <div class="item"><img src="./assets/pics/Sponsors/balsamiq.png' alt=""></div> -->
+            <div class="item"><img src="{% static 'main/pics/Sponsors/gg.png' %}" alt="Guerilla Gaming"></div>
+            <div class="item"><img src="{% static 'main/pics/Sponsors/github.png' %}" alt="Github"></div>
+            <div class="item"><img src="{% static 'main/pics/Sponsors/learnCodeOnline.png' %}" alt="Learn Code Online"></div>
+            <div class="item"><img src="{% static 'main/pics/Sponsors/paytm.png' %}" alt="Paytm"></div>
+            <div class="item"><img src="{% static 'main/pics/Sponsors/vanfly.png' %}" alt="Vanfly"></div>
+            <div class="item"><img src="{% static 'main/pics/Sponsors/wolfram.png' %}" alt="Wolfram Language"></div>
+            <div class="item"><img src="{% static 'main/pics/Sponsors/gfg.png' %}" alt="Geeks for Geeks"></div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Contact Us section -->
+   <!-- Contact Us section -->
     <section>
       <div id="contact">
         <span id="ContactUs">CONTACT US</span>
@@ -360,54 +245,30 @@
           <div class="col-sm-1 col-md-2"></div>
           <div class="col-sm-4 col-md-3">
             <!-- Location -->
-            <div class="text-center">
-              <img
-                src="{% static 'main/pics/ContactUs/location.png' %}"
-                alt="Locate Us"
-              /><br />
+            <div class="text-center pic_contact">
+              <img src="{% static 'main/pics/ContactUs/location.png' %}" alt="Locate Us"><br>
               <button class="button_contact">Thapar, Punjab - 147004</button>
             </div>
           </div>
           <div class="col-sm-2"></div>
           <div class="col-sm-4 col-md-3">
-            <div class="text-center">
-              <img
-                src="{% static 'main/pics/ContactUs/phone.png' %}"
-                alt="Contact Us"
-                style="padding-bottom: 0.75rem;"
-              /><br />
-              <button class="button_contact">Aryan : +91 99976 30003</button>
+            <div class="text-center pic_contact">
+              <img src="{% static 'main/pics/ContactUs/phone.png' %}" alt="Contact Us"><br>
+              <button class="button_contact">Aryan : +91 99976 30003 </button>
             </div>
           </div>
           <div class="col-sm-1 col-md-2"></div>
         </div>
         <div style="height: 1vh;"></div>
         <div class="text-center">
-          <a href=" https://www.facebook.com/msctiet/"
-            ><img
-              src="{% static 'main/pics/ContactUs/fb.png' %}"
-              alt="Facebook"
-              class="contact_link"
-          /></a>
-          <a href="https://github.com/MicrosoftStudentChapter"
-            ><img
-              src="{% static 'main/pics/ContactUs/github-04.png' %}"
-              alt="Twitter"
-              class="contact_link"
-          /></a>
-          <a href="https://instagram.com/msc_tiet?igshid=bbv9mjjkx4h"
-            ><img
-              src="{% static 'main/pics/ContactUs/insta.png' %}"
-              alt="Instagram"
-              class="contact_link"
-          /></a>
+          <a href=" https://www.facebook.com/msctiet/"><img src="{% static 'main/pics/ContactUs/fb.png' %}" alt="Facebook" class="contact_link"></a> 
+          <a href="https://github.com/MicrosoftStudentChapter"><img src="{% static 'main/pics/ContactUs/github-04.png' %}" alt="Twitter" class="contact_link"></a>
+          <a href="https://instagram.com/msc_tiet?igshid=bbv9mjjkx4h"><img src="{% static 'main/pics/ContactUs/insta.png' %}" alt="Instagram" class="contact_link"></a>
         </div>
         <div style="height: 2vh;"></div>
       </div>
       <div id="love">
-        <div class="text-center" id="text_love">
-          Made with <i class="fa fa-heart" id="text-red"></i> by Team MSC
-        </div>
+        <div class="text-center" id="text_love">Made with <i class="fa fa-heart" id="text-red"></i> by Team MSC</div>
       </div>
     </section>
     <!-- Adding JS and jQuery File -->
