@@ -450,6 +450,15 @@ body {
   border-bottom: 1px solid white;
 }
 
+#SponsorUs {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.8rem;
+  font-weight: bolder;
+  color: black;
+  letter-spacing: 0.8rem;
+  border-bottom: 1px solid white;
+}
+
 .button_contact {
   background-color: #2b2728; /* Green */
   border: none;

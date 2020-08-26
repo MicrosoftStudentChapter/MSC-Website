@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#logo {
+  height: 2.8rem;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #2a2725;
+}
+
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*----------multi-level-accordian-menu------------*/
+.navbar-logo {
+  padding: 5px 15px;
+  color: #fff;
+}
+.navbar-mainbg {
+  background-color: black;
+  padding: 0px;
+}
+#navbarSupportedContent {
+  overflow: hidden;
+  position: relative;
+}
+#navbarSupportedContent ul {
+  padding: 0px;
+  margin: 0px;
+}
+#navbarSupportedContent ul li a i {
+  margin-right: 10px;
+}
+#navbarSupportedContent li {
+  list-style-type: none;
+  float: left;
+}
+#navbarSupportedContent ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 5 15pxpx;
+  display: block;
+  padding: 20px 20px;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: relative;
+}
+#navbarSupportedContent > ul > li.active > a {
+  color: black;
+  background-color: transparent;
+  transition: all 0.7s;
+}
+#navbarSupportedContent a:not(:only-child):after {
+  content: "\f105";
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 14px;
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+  transition: 0.5s;
+}
+#navbarSupportedContent .active > a:not(:only-child):after {
+  transform: rotate(90deg);
+}
+.hori-selector {
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background-color: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-top: 10px;
+}
+.hori-selector .right,
+.hori-selector .left {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  bottom: 10px;
+}
+.hori-selector .right {
+  right: -25px;
+}
+.hori-selector .left {
+  left: -25px;
+}
+.hori-selector .right:before,
+.hori-selector .left:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
+}
+.hori-selector .right:before {
+  bottom: 0;
+  right: -25px;
+}
+.hori-selector .left:before {
+  bottom: 0;
+  left: -25px;
+}
+
+@media (max-width: 991px) {
+  #navbarSupportedContent ul li a {
+    padding: 12px 30px;
+  }
+  .hori-selector {
+    margin-top: 0px;
+    margin-left: 10px;
+    border-radius: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  .hori-selector .left,
+  .hori-selector .right {
+    right: 10px;
+  }
+  .hori-selector .left {
+    top: -25px;
+    left: auto;
+  }
+  .hori-selector .right {
+    bottom: -25px;
+  }
+  .hori-selector .left:before {
+    left: -25px;
+    top: -25px;
+  }
+  .hori-selector .right:before {
+    bottom: -25px;
+    left: -25px;
+  }
+}
+
+.row .col-md-2 .box {
+  width: 100%;
+  height: 160px;
+  border: 4px solid #ffffff;
+  margin-top: 0.7rem;
+}
+.row .col-md-2 .box-3 {
+  width: 100%;
+  height: 140px;
+  border: 4px solid #ffffff;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+.row .col-md-2 .box-4 {
+  width: 100%;
+  height: 180px;
+  border: 4px solid #ffffff;  
+  margin-top: 0.7rem;
+}
+.row .col-md-2 .box-2 {
+  width: 100%;
+  height: 230px;
+  border: 4px solid #ffffff;
+}
+
+.row .col-md-2 .box-2_1 {
+  width: 100%;
+  height: 230px;
+  border: 4px solid #ffffff;
+  margin-top: 0.7rem;
+}
+
+.row .col-md-4 .row .col-md-6 .box {
+  width: 100%;
+  height: 180px;
+  border: 4px solid #ffffff;
+  margin-top: 0.7rem;
+}
+
+.row .col-md-4 .row .col-md-6 #pic_year{
+  margin-left: 0.8rem !important;
+}
+
+.row .col-md-2 {
+  margin-right: -0.8rem;
+}
+
+.row .col-md-4 .box-1 {
+  width: 102%;
+  height: 376px;
+  border: 2px solid #ffffff;
+}
+
+.row .col-md-4 .row .col-md-6 {
+  padding: 0;
+}
+
+#row_2k18{
+  padding-top: 8rem !important;
+}
+
+.row .col-md-2 .box-2_2 {
+  width: 100%;
+  height: 281px;
+  border: 4px solid #ffffff;
+  margin-top: 0.7rem;
+}
+
+.gal_2 .col-md-2 .box-4 {
+  width: 100%;
+  height: 140px;
+  border: 4px solid #ffffff;  
+  margin-top: 0.7rem;
+}
+
+.gal_2 .col-md-2 .box-2 {
+  width: 100%;
+  height: 270px;
+  border: 4px solid #ffffff;
+}
+
+.gal_2 .col-md-4 .box-1 {
+  width: 102%;
+  height: 376px;
+  border: 2px solid #ffffff;
+  margin-top: -0.3rem;
+  /* padding-bottom: 0.8rem; */
+}
+
+.gal_2 .col-md-4 .row .col-md-6 .box {
+  width: 100%;
+  height: 184.8px;
+  border: 4px solid #ffffff;
+  margin-top: 0.7rem;
+}
+
+/* Contact Section */
+#contact {
+  min-height: 40vh;
+  background: #020202;
+position: relative;
+text-align: center;
+padding-top: 2rem;
+}
+
+#ContactUs{
+font-family: 'Poppins', sans-serif;
+font-size: 2.8rem;
+font-weight: bolder;
+color: white;
+letter-spacing: 0.8rem;
+border-bottom: 1px solid white;
+margin-top: 1rem;
+}
+
+.button_contact {
+background-color: #2b2728; /* Green */
+border: none;
+color: white;
+padding: 1rem 1.5rem;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 1rem;
+margin: 0.25rem 0.125rem;
+cursor: pointer;
+border-radius: 12px;
+}
+
+.contact_link {
+width: 5rem;
+}
+/* Made with Love */
+#love {
+height: 3rem;
+background-color: #2b2728;
+}
+
+#text_love {
+font-family: 'Dancing Script', cursive;
+color: white;
+font-size: 2rem;
+}
+.contact_link:hover {
+	-ms-transform: scale(1.2); /* IE 9 */
+	-webkit-transform: scale(1.2); /* Safari 3-8 */
+	transform: scale(1.2);
+}
+#text-red {
+color: #c02739;
+}
+
+.pic_contact img{
+  height: 58px;
+  width: 30px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+
+  #row_2k18{
+    padding-top: 4rem !important;
+  }
+
+  img {
+    height: 25rem !important;
+  }
+
+  .navbar-brand  img{
+    height: 2.5rem !important;
+  }
+
+  #contact img {
+    height: auto !important;
+  }
+
+  .row .col-md-4 .row .col-md-6 #pic_year{
+    margin-left: 0rem !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+	#ContactUs {
+		font-size: 1.8rem;
+	}
+}
