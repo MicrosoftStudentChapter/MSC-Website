@@ -40,4 +40,4 @@ class TestView(TestCase):
         response = self.client.get(reverse("about"))
 
         self.assertEquals(response.status_code, 200)
-        self.assertTemplateUsed(response, "members/team.html")
+        self.assertTemplateUsed(response, "members/about.html")

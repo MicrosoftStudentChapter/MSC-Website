@@ -25,12 +25,15 @@
     <!-- Slick CSS -->
     <link rel="stylesheet" href="{% static 'main/infinite-slider.css' %}" />
     <title>Microsoft Student Chapter</title>
+    <style>
+      a { color: white; } /* CSS link color */
+    </style>
   </head>
   <body>
     <!-- Navbar -->
     <section>
       <nav class="navbar navbar-expand-lg navbar-mainbg fixed-top">
-        <a class="navbar-brand navbar-logo" href="#"
+        <a class="navbar-brand navbar-logo" href="{% url 'home' %}"
           ><img src="{% static 'main/pics/msc_logo.png' %}" alt="Logo" id="logo"
         /></a>
         <button
@@ -132,7 +135,7 @@
                 <div class="col-md-2"></div>
                 <div id="col-md-3 know-about2" style="padding-left: 1rem; padding-top: 1rem;">
                   <div id="know-about1">
-                     <span id="know-about">KNOW MORE</span>
+                     <span id="know-about"><a href="{% url 'about' %}">KNOW MORE</a></span>
                     </div>
                 </div>
                 <div class="col-md-1" id="responsive-space"></div>
@@ -205,7 +208,7 @@
           <div class="col-md-3 order-2 order-md-3" id="event-more"> 
             <div id="event-about2">
               <div id="event-about1">
-                <span id="event-about">KNOW MORE</span>
+                <span id="event-about"><a href="{% url 'events' %}">KNOW MORE</a></span>
               </div>
           </div>
           </div>

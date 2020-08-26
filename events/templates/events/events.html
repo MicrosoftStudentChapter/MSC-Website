@@ -5,8 +5,575 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Events</title>
+
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+    >
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"                                                            
+    >
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    >
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'events/css/Event.css' %}">
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+      ></script>
+
   </head>
   <body>
-    <h1>Events</h1>
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-mainbg fixed-top">
+        <a class="navbar-brand navbar-logo" href="{% url 'home' %}"><img src="{% static 'events/Events/msc_logo.png' %}" alt="Logo" id="logo"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa fa-bars text-white"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <div class="hori-selector">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}">About Us</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'events' %}">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Event Head Section -->
+    <section>
+        <div id="events" style="background-image: url({% static 'events/Events/events_bg.png' %});">
+            <div class="row">
+                <div class="col-md-7" id="heading">
+                    <span>EVENTS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+   <!-- Event Images Section -->
+    <section id="event_laptop">
+        <div class="row"  id="pics">
+          <div class="slide hi-slide">
+            <div class="hi-prev "></div>
+            <div class="hi-next "></div>
+            <ul style="margin-top: -7.2rem;  padding-top: 5rem;">
+              <li id="Techmeet18"><img src="{% static 'events/Events/TECHMEET18.png' %}" alt="Techmeet18" style="color: #fff;" /></li>
+              <li id="Hactober"><img src="{% static 'events/Events/HACKTOBER FEST_18.png' %}" alt="Hactober" style="color: #fff;"/></li>
+              <li id="Makeathon19"><img src="{% static 'events/Events/MAKEATHON1.0.png' %}" alt="Makeathon19" style="color: #fff;"/></li>
+              <li id="TechBlitz"><img src="{% static 'events/Events/TECHBLITS.png' %}" alt="TechBlitz" style="color: #fff;" /></li>
+              <li id="Techmeet19"><img src="{% static 'events/Events/TECHMEET19.png' %}" alt="Techmeet19" style="color: #fff;"/></li>
+              <li id="Abhyudaya"><img src="{% static 'events/Events/abhyudaya.png' %}" alt="Abhyudaya" style="color: #fff;"/></li>
+              <li id="Hactober19"><img src="{% static 'events/Events/HACKTOBER FEST-02.png' %}" alt="Hactober19" style="color: #fff;"/></li>
+              <li id="Makeathon20"><img src="{% static 'events/Events/MAKEATHON2.0.png' %}" alt="Makeathon20" style="color: #fff;"/></li>
+              <li id="Workshops"><img src="{% static 'events/Events/WORKSHOPS-01.png' %}" alt="Workshops" style="color: #fff;" /></li> 
+            </ul>
+          </div>
+        </div>
+    </section> 
+
+
+    <section id="event_mobile" style="display: none;">
+      <div class="row"  id="pics_mobile">
+        <div class="container">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" id="Techmeet18m" src="{% static 'events/Events/TECHMEET18.png' %}" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="Hactoberm" src="{% static 'events/Events/HACKTOBER FEST_18.png' %}" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="Makeathon19m" src="{% static 'events/Events/MAKEATHON1.0.png' %}" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="TechBlitzm" src="{% static 'events/Events/TECHBLITS.png' %}" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="Techmeet19m" src="{% static 'events/Events/TECHMEET19.png' %}" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="Abhyudayam" src="{% static 'events/Events/abhyudaya.png' %}" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="Workshopsm" src="{% static 'events/Events/WORKSHOPS-01.png' %}" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="Hactober19m" src="{% static 'events/Events/HACKTOBER FEST-02.png' %}" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="Makeathon20m" src="{% static 'events/Events/MAKEATHON2.0.png' %}" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    
+
+    <!-- event name -->
+    <section id="Techmeet18c" style="display: none;" >
+      <div id="event_name">
+        <div class="row">
+            <div class="col-md-1"></div>
+              <div class="col-md-7">
+                <div class="row" id="event_head">TECHMEET'18</div>
+                  <div id="content">It was an interactive, sort of a seminar to educate students for a sense of direction in order to pursue their passion in various technical fields and to gain insight for the same as well. Our various Tech heads, secretaries along with couple of core members addressed the freshers.</div>
+              </div>
+              <div class="col-md-1"></div>
+              <div class="col-md-3 mt-5">
+                <img src="{% static 'events/Events/TECHMEET18.png' %}" class="event_pic">
+              </div>
+                
+            </div>
+      </div>
+    </section>
+
+    <section id="Hactoberc" style="display: none;">
+      <div id="event_name">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-7">
+            <div class="row" id="event_head">HACKTOBER FEST'18</div>
+            <div id="content">Hacktoberfest was a month-long open source celebration & is one of the flagship events of MSC. It comprised of 5 core sub events which were: Aptech Rumble(15/10/18), Hitesh Choudhary seminar(16/10/18), JS + Open source + ML session(17/10/18), Web Security workshop(22/10/18) and Game of codes(25/10/18). All in all it was a great success.</div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-3 mt-5">
+            <img src="{% static 'events/Events/HACKTOBER FEST_18.png' %}" alt="" class="event_pic">
+          </div>
+              
+        </div>
+      </div>
+    </section>
+
+    <section id="Makeathon19c" style="display: none;">
+      <div id="event_name">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-7">
+            <div class="row" id="event_head">MAKEATHON 1.O</div>
+            <div id="content">Makeathon’19 had amazing tracks including AI/Machine Learning, Robotics, Block Chain, Cryptography, Algorithms, GraphQL, App development, AR/VR and open hack. This year, we hosted a total of 28 teams from well reputed colleges of North India. The event was judged by Dr. Prashant Singh Rana, Mr. Saksham Choudhary, Mr. Ankush Chawla, and Mr. Sarvpriye Soni. A tremendous response was received from students, both from Thaparians and Non-Thaparians. There was a diverse participation of total 28 teams, of which 3 were all-girls teams, 8 were first year teams, 12 teams were from outside Thapar and 4 teams used GraphQL in their proposed solutions. From outside Thapar, Makeathon’19 had participation from Lovely Professional University, Maharaja Agrasen University, GMSSS 33, Saupin’s School, CGC College of Engineering. Of the 28 teams, 21 teams came forward for pitching.</div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-3 mt-5">
+            <img src="{% static 'events/Events/MAKEATHON1.0.png' %}" alt="" class="event_pic">
+          </div>
+            
+        </div>
+      </div>
+    </section>
+
+    <section id="TechBlitzc" style="display: none;">
+      <div id="event_name">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-7">
+            <div class="row" id="event_head">TECHBLITZ</div>
+            <div id="content">The purpose of TechBlitz was to motivate students to level up their computational skills and the goal was pursued with the perfect amalgamation of workshops & coding events. TechBlitz commenced with game of codes on 16th April 2019. It was a logical reasoning contest that required sound knowledge of coding too. It was followed by a workshop of facial recognition that took place on 18th April 2019. And to maintain the enthusiasm towards coding amidst the students. The entire duration was accompanied with our 3 day long, online coding contest Arcanum: which was based on a murder mystery plot to increase the interest of the students.</div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-3 mt-5">
+            <img src="{% static 'events/Events/TECHBLITS.png' %}" alt="" class="event_pic">
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+
+    <section id="Techmeet19c" style="display: none;">
+      <div id="event_name">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-7">
+            <div class="row" id="event_head">TECHMEET'19</div>
+            <div id="content">The meet started with the introduction of ‘Microsoft Student Chapter’ and the Core Team. Various Team members gave short presentations on the various fields they are pursuing like Machine Learning, Web Development, Network Security, Competitive Programming, etcetera. A Q/A was also conducted where it was thrown open to the audience and all doubts were cleared. Ex-Members of the chapter (current 4th year students) also gave a talk on how to manage college studies along with co-curricular activities and shared their experiences as well. Process for the recruitments for the new term was shared as well. All in all, it was an interactive, educative Techmeet for all those looking for a sense of direction in order to pursue their passion in various technical fields and to gain insight for the same as well.</div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-3 mt-5">
+            <img src="{% static 'events/Events/TECHMEET19.png' %}" alt="" class="event_pic">
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+
+    <section id="Workshopsc" style="display: none;">
+      <div id="event_name">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-7">
+            <div class="row" id="event_head">WORKSHOPS</div>
+            <div id="content"><span class="event_sub_head">ML WORKSHOP</span><br>
+                An educational workshop was conducted to teach Python and ML, an uproar in the tech world. The objective of the workshop was to provide a chance to students to hasten their tech prowess to a colossal level. The workshop extended over two days and lasted from 10:00 am to 5:00 pm.  A certificate from Microsoft was awarded to all the participants after the successful completion of workshop.
+                <br><span class="event_sub_head">DSA/PLACEMENTS</span><br> An online workshop on the topic “Data Structures Algorithm and Placement Drive” was organised in collaboration with Coding Blocks. Data structures algorithm was taught through live question solving by Coding Blocks instructor, Software developer and former Acadview instructor, Pranav Khandelwal.
+                <br><span class="event_sub_head">REACT JS WORKSHOP</span><br> The aim of this online workshop was to spread awareness about the utility of React.js and teach its operation and advantages. The workshop was conducted by Mr. Tathagat Thapliyal, an alumnus of Thapar Institute of Engineering and Technology, extremely profound in coding, in association with Coding Blocks. Certificates were awarded to all participants. The event was extremely fruitful and witnessed participation from over 1800 attendees.</div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-3 mt-5">
+            <img src="{% static 'events/Events/WORKSHOPS-01.png' %}" alt="" class="event_pic">
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+
+    <section id="Hactober19c" style="display: none;">
+      <div id="event_name">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-7">
+              <div class="row" id="event_head">HACKTOBER FEST'19</div>
+              <div id="content"><span class="event_sub_head">ML WORKSHOP</span><br> The supernova event consisted of a presentation by Dr. P.S. Rana Sir. The presentation dealt with an introduction to Machine Learning-its definition and categories and an answer to the most asked question of “Where to Start?”. An interactive and fun learning session-students cleared all their queries and they were provided with project ideas.
+                <br><span class="event_sub_head">MEETUPS</span> <br> The participation and the interest of the students in the event was phenomenal. The auditorium was bursting at the seams with students lined up to attend the event. The event started with huge excitement and enthusiasm from the crowd and was very well received by both the guest and the audience. Aman Dhattarwal had the students hooked with his jokes and insights which clarified doubts and managed to convey a lot of relevant information in a very easy and approachable manner.
+              <br><span class="event_sub_head">SHERLOCKED</span><br> It was an extraordinary blend of logical and coding questions. It was an extremely engaging treasure hunt-based coding competition. The competition was conducted in TAN building and comprised of 3 challenging rounds. Each round consisted of questions levelling up a bit.
+              </div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-3 mt-5">
+            <img src="{% static 'events/Events/HACKTOBER FEST-02.png' %}" alt="" class="event_pic">
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="Makeathon20c" style="display: none;">
+      <div id="event_name">
+          <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-7">
+                  <div class="row" id="event_head">MAKEATHON 2.O</div>
+                  <div id="content">The most awaited hackathon of the year, Makeathon’20 was an event filled with innovation and exuberance. It witnessed mind-bending tracks including GraphQL, App development, AI/Machine Learning, Robotics, Block Chain, Cryptography, Algorithms, AR/VR and open hack. The event was judged by Dr. Harpreet Singh, Mr. Saksham Choudhary and Dr, P.S. Rana. A marvellous response was received from students, both from within the college as well as from other colleges. There was a diverse blend of participants. Prizes worth Rs 1Lac were awarded and internships offered, among numerous other perks and awards. The 24-hour long Makeathon witnessed exhilarating moments amidst rising stakes and left us all with enthralling memories.</div>
+              </div>
+              <div class="col-md-1"></div>
+              <div class="col-md-3 mt-5">
+                <img src="{% static 'events/Events/MAKEATHON2.0.png' %}" alt="" class="event_pic">
+              </div>
+              
+          </div>
+      </div>
+    </section>
+
+
+    <section id="Abhyudayac">
+      <div id="event_name">
+          <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-7">
+                  <div class="row" id="event_head">ABHYUDAYA</div>
+                  <div id="content">ABHYUDAYA was an online event aimed to cover multiple domains of skills such as coding, critical thinking, trading, gaming and much more under a single roof. Teams of 3 to 4 members were eligible for participation. A real world simulation was created for exquisite user experience. These teams were distributed into different continents of the world and questions were then provided to the teams in the form of crisis update of their respective continent to create a real life problem solving scenario and focus more on practical implementation of concepts.</div>
+              </div>
+              <div class="col-md-1"></div>
+              <div class="col-md-3 mt-5">
+                <img src="{% static 'events/Events/abhyudaya.png' %}" alt="" class="event_pic">
+              </div>
+              <!-- <div class="col-md-1"></div> -->
+          </div>
+      </div>
+    </section>
+        <!-- contact us -->
+        <section>
+          <div id="contact">
+            <span id="ContactUs">CONTACT US</span>
+            <div style="height: 2rem;"></div>
+            <div class="row">
+              <div class="col-sm-1 col-md-2"></div>
+              <div class="col-sm-4 col-md-3">
+                <!-- Location -->
+                <div class="text-center pic_contact">
+                  <img src="{% static 'events/Events/location.png' %}" alt="Locate Us"><br>
+                  <button class="button_contact">Thapar, Punjab - 147004</button>
+                </div>
+              </div>
+              <div class="col-sm-2"></div>
+              <div class="col-sm-4 col-md-3">
+                <div class="text-center pic_contact">
+                  <img src="{% static 'events/Events/phone.png' %}" alt="Contact Us"><br>
+                  <button class="button_contact">Aryan : +91 99976 30003 </button>
+                </div>
+              </div>
+              <div class="col-sm-1 col-md-2"></div>
+            </div>
+            <div style="height: 1vh;"></div>
+            <div class="text-center">
+              <a href=" https://www.facebook.com/msctiet/"><img src="{% static 'events/Events/fb.png' %}" alt="Facebook" class="contact_link"></a> 
+              <a href="https://github.com/MicrosoftStudentChapter"><img src="{% static 'events/Events/github-04.png' %}" alt="Twitter" class="contact_link"></a>
+              <a href="https://instagram.com/msc_tiet?igshid=bbv9mjjkx4h"><img src="{% static 'events/Events/insta.png' %}" alt="Instagram" class="contact_link"></a>
+            </div>
+            <div style="height: 2vh;"></div>
+          </div>
+          <div id="love">
+            <div class="text-center" id="text_love">Made with <i class="fa fa-heart" id="text-red"></i> by Team MSC</div>
+          </div>
+        </section>
+        <!-- Adding JS and jQuery File -->
+        
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+          integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+          integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+          crossorigin="anonymous"
+        ></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- <script type="text/javascript" src="./js/jquery.hislide.js" ></script> -->
+    <script type="text/javascript" src="{% static 'events/js/jquery.hislide.js' %}" ></script>
+    <!-- <script type="text/javascript" src="./assets/js/event_phone.js" ></script> -->
+    <script>
+      $('.slide').hiSlide();
+    </script>
+    <script>
+    document.querySelector("#Techmeet18").addEventListener("click",function(){
+    document.getElementById("Techmeet18c").style.display = "block";
+    document.getElementById("Hactoberc").style.display = "none";
+    document.getElementById("Makeathon19c").style.display = "none";
+    document.getElementById("TechBlitzc").style.display = "none";
+    document.getElementById("Techmeet19c").style.display = "none";
+    document.getElementById("Workshopsc").style.display = "none";
+    document.getElementById("Hactober19c").style.display = "none";
+    document.getElementById("Makeathon20c").style.display = "none";
+    document.getElementById("Abhyudayac").style.display = "none";
+    })
+    document.querySelector("#Hactober").addEventListener("click",function(){
+    document.getElementById("Techmeet18c").style.display = "none";
+    document.getElementById("Hactoberc").style.display = "block";
+    document.getElementById("Makeathon19c").style.display = "none";
+    document.getElementById("TechBlitzc").style.display = "none";
+    document.getElementById("Techmeet19c").style.display = "none";
+    document.getElementById("Workshopsc").style.display = "none";
+    document.getElementById("Hactober19c").style.display = "none";
+    document.getElementById("Makeathon20c").style.display = "none";
+    document.getElementById("Abhyudayac").style.display = "none";
+    })
+    document.querySelector("#Makeathon19").addEventListener("click",function(){
+    document.getElementById("Techmeet18c").style.display = "none";
+    document.getElementById("Hactoberc").style.display = "none";
+    document.getElementById("Makeathon19c").style.display = "block";
+    document.getElementById("TechBlitzc").style.display = "none";
+    document.getElementById("Techmeet19c").style.display = "none";
+    document.getElementById("Workshopsc").style.display = "none";
+    document.getElementById("Hactober19c").style.display = "none";
+    document.getElementById("Makeathon20c").style.display = "none";
+    document.getElementById("Abhyudayac").style.display = "none";
+    })
+    document.querySelector("#TechBlitz").addEventListener("click",function(){
+    document.getElementById("Techmeet18c").style.display = "none";
+    document.getElementById("Hactoberc").style.display = "none";
+    document.getElementById("Makeathon19c").style.display = "none";
+    document.getElementById("TechBlitzc").style.display = "block";
+    document.getElementById("Techmeet19c").style.display = "none";
+    document.getElementById("Workshopsc").style.display = "none";
+    document.getElementById("Hactober19c").style.display = "none";
+    document.getElementById("Makeathon20c").style.display = "none";
+    document.getElementById("Abhyudayac").style.display = "none";
+    })
+    document.querySelector("#Techmeet19").addEventListener("click",function(){
+    document.getElementById("Techmeet18c").style.display = "none";
+    document.getElementById("Hactoberc").style.display = "none";
+    document.getElementById("Makeathon19c").style.display = "none";
+    document.getElementById("TechBlitzc").style.display = "none";
+    document.getElementById("Techmeet19c").style.display = "block";
+    document.getElementById("Workshopsc").style.display = "none";
+    document.getElementById("Hactober19c").style.display = "none";
+    document.getElementById("Makeathon20c").style.display = "none";
+    document.getElementById("Abhyudayac").style.display = "none";
+    })
+    document.querySelector("#Workshops").addEventListener("click",function(){
+    document.getElementById("Techmeet18c").style.display = "none";
+    document.getElementById("Hactoberc").style.display = "none";
+    document.getElementById("Makeathon19c").style.display = "none";
+    document.getElementById("TechBlitzc").style.display = "none";
+    document.getElementById("Techmeet19c").style.display = "none";
+    document.getElementById("Workshopsc").style.display = "block";
+    document.getElementById("Hactober19c").style.display = "none";
+    document.getElementById("Makeathon20c").style.display = "none";
+    document.getElementById("Abhyudayac").style.display = "none";
+    })
+    document.querySelector("#Hactober19").addEventListener("click",function(){
+    document.getElementById("Techmeet18c").style.display = "none";
+    document.getElementById("Hactoberc").style.display = "none";
+    document.getElementById("Makeathon19c").style.display = "none";
+    document.getElementById("TechBlitzc").style.display = "none";
+    document.getElementById("Techmeet19c").style.display = "none";
+    document.getElementById("Workshopsc").style.display = "none";
+    document.getElementById("Hactober19c").style.display = "block";
+    document.getElementById("Makeathon20c").style.display = "none";
+    document.getElementById("Abhyudayac").style.display = "none";
+    })
+    document.querySelector("#Makeathon20").addEventListener("click",function(){
+    document.getElementById("Techmeet18c").style.display = "none";
+    document.getElementById("Hactoberc").style.display = "none";
+    document.getElementById("Makeathon19c").style.display = "none";
+    document.getElementById("TechBlitzc").style.display = "none";
+    document.getElementById("Techmeet19c").style.display = "none";
+    document.getElementById("Workshopsc").style.display = "none";
+    document.getElementById("Hactober19c").style.display = "none";
+    document.getElementById("Makeathon20c").style.display = "block";
+    document.getElementById("Abhyudayac").style.display = "none";
+    })
+    document.querySelector("#Abhyudaya").addEventListener("click",function(){
+    document.getElementById("Techmeet18c").style.display = "none";
+    document.getElementById("Hactoberc").style.display = "none";
+    document.getElementById("Makeathon19c").style.display = "none";
+    document.getElementById("TechBlitzc").style.display = "none";
+    document.getElementById("Techmeet19c").style.display = "none";
+    document.getElementById("Workshopsc").style.display = "none";
+    document.getElementById("Hactober19c").style.display = "none";
+    document.getElementById("Makeathon20c").style.display = "none";
+    document.getElementById("Abhyudayac").style.display = "block";
+    })
+    </script>
+
+    <script>
+      document.querySelector("#Techmeet18m").addEventListener("click",function(){
+    document.getElementById("Techmeet18c").style.display = "block";
+    document.getElementById("Hactoberc").style.display = "none";
+    document.getElementById("Makeathon19c").style.display = "none";
+    document.getElementById("TechBlitzc").style.display = "none";
+    document.getElementById("Techmeet19c").style.display = "none";
+    document.getElementById("Workshopsc").style.display = "none";
+    document.getElementById("Hactober19c").style.display = "none";
+    document.getElementById("Makeathon20c").style.display = "none";
+    document.getElementById("Abhyudayac").style.display = "none";
+    })
+    document.querySelector("#Hactoberm").addEventListener("click",function(){
+    document.getElementById("Techmeet18c").style.display = "none";
+    document.getElementById("Hactoberc").style.display = "block";
+    document.getElementById("Makeathon19c").style.display = "none";
+    document.getElementById("TechBlitzc").style.display = "none";
+    document.getElementById("Techmeet19c").style.display = "none";
+    document.getElementById("Workshopsc").style.display = "none";
+    document.getElementById("Hactober19c").style.display = "none";
+    document.getElementById("Makeathon20c").style.display = "none";
+    document.getElementById("Abhyudayac").style.display = "none";
+    })
+    document.querySelector("#Makeathon19m").addEventListener("click",function(){
+    document.getElementById("Techmeet18c").style.display = "none";
+    document.getElementById("Hactoberc").style.display = "none";
+    document.getElementById("Makeathon19c").style.display = "block";
+    document.getElementById("TechBlitzc").style.display = "none";
+    document.getElementById("Techmeet19c").style.display = "none";
+    document.getElementById("Workshopsc").style.display = "none";
+    document.getElementById("Hactober19c").style.display = "none";
+    document.getElementById("Makeathon20c").style.display = "none";
+    document.getElementById("Abhyudayac").style.display = "none";
+    })
+    document.querySelector("#TechBlitzm").addEventListener("click",function(){
+    document.getElementById("Techmeet18c").style.display = "none";
+    document.getElementById("Hactoberc").style.display = "none";
+    document.getElementById("Makeathon19c").style.display = "none";
+    document.getElementById("TechBlitzc").style.display = "block";
+    document.getElementById("Techmeet19c").style.display = "none";
+    document.getElementById("Workshopsc").style.display = "none";
+    document.getElementById("Hactober19c").style.display = "none";
+    document.getElementById("Makeathon20c").style.display = "none";
+    document.getElementById("Abhyudayac").style.display = "none";
+    })
+    document.querySelector("#Techmeet19m").addEventListener("click",function(){
+    document.getElementById("Techmeet18c").style.display = "none";
+    document.getElementById("Hactoberc").style.display = "none";
+    document.getElementById("Makeathon19c").style.display = "none";
+    document.getElementById("TechBlitzc").style.display = "none";
+    document.getElementById("Techmeet19c").style.display = "block";
+    document.getElementById("Workshopsc").style.display = "none";
+    document.getElementById("Hactober19c").style.display = "none";
+    document.getElementById("Makeathon20c").style.display = "none";
+    document.getElementById("Abhyudayac").style.display = "none";
+    })
+    document.querySelector("#Workshopsm").addEventListener("click",function(){
+    document.getElementById("Techmeet18c").style.display = "none";
+    document.getElementById("Hactoberc").style.display = "none";
+    document.getElementById("Makeathon19c").style.display = "none";
+    document.getElementById("TechBlitzc").style.display = "none";
+    document.getElementById("Techmeet19c").style.display = "none";
+    document.getElementById("Workshopsc").style.display = "block";
+    document.getElementById("Hactober19c").style.display = "none";
+    document.getElementById("Makeathon20c").style.display = "none";
+    document.getElementById("Abhyudayac").style.display = "none";
+    })
+    document.querySelector("#Hactober19m").addEventListener("click",function(){
+    document.getElementById("Techmeet18c").style.display = "none";
+    document.getElementById("Hactoberc").style.display = "none";
+    document.getElementById("Makeathon19c").style.display = "none";
+    document.getElementById("TechBlitzc").style.display = "none";
+    document.getElementById("Techmeet19c").style.display = "none";
+    document.getElementById("Workshopsc").style.display = "none";
+    document.getElementById("Hactober19c").style.display = "block";
+    document.getElementById("Makeathon20c").style.display = "none";
+    document.getElementById("Abhyudayac").style.display = "none";
+    })
+    document.querySelector("#Makeathon20m").addEventListener("click",function(){
+    document.getElementById("Techmeet18c").style.display = "none";
+    document.getElementById("Hactoberc").style.display = "none";
+    document.getElementById("Makeathon19c").style.display = "none";
+    document.getElementById("TechBlitzc").style.display = "none";
+    document.getElementById("Techmeet19c").style.display = "none";
+    document.getElementById("Workshopsc").style.display = "none";
+    document.getElementById("Hactober19c").style.display = "none";
+    document.getElementById("Makeathon20c").style.display = "block";
+    document.getElementById("Abhyudayac").style.display = "none";
+    })
+    document.querySelector("#Abhyudayam").addEventListener("click",function(){
+    document.getElementById("Techmeet18c").style.display = "none";
+    document.getElementById("Hactoberc").style.display = "none";
+    document.getElementById("Makeathon19c").style.display = "none";
+    document.getElementById("TechBlitzc").style.display = "none";
+    document.getElementById("Techmeet19c").style.display = "none";
+    document.getElementById("Workshopsc").style.display = "none";
+    document.getElementById("Hactober19c").style.display = "none";
+    document.getElementById("Makeathon20c").style.display = "none";
+    document.getElementById("Abhyudayac").style.display = "block";
+    })
+    </script>
+        
+        <script src="{% static 'events/js/Event.js' %}"></script>
   </body>
 </html>

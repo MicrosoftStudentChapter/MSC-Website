@@ -6,4 +6,4 @@ def alumni(request):
 
 
 def team(request):
-    return render(request, "members/team.html")
+    return render(request, "members/about.html")

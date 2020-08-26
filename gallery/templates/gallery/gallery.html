@@ -4,9 +4,254 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static 'gallery/gallery.css' %}" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Google Font   -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="{% static 'gallery/infinite-slider.css' %}" />
+
+    <title>Microsoft Student Chapter</title>
   </head>
   <body>
-    <h1>Gallery</h1>
+    <!-- Navbar Section Start -->
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-mainbg fixed-top">
+        <a class="navbar-brand navbar-logo" href="{% url 'home' %}"
+          ><img src="{% static 'gallery/pics/general/msc_logo.png' %}" alt="Logo" id="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa fa-bars text-white"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <div class="hori-selector">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'events' %}">Events</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <!-- Navbar Section End -->
+      <div class="row" id="row_2k18">
+        <div class="col-md-1"></div>
+        <div class="col-md-2 ">
+          <div data-aos="flip-right" >
+          <img src="{% static 'gallery/pics/2018/view1 left.png' %}" class="box-2_1" data-aos="zoom-in-right" data-aos-duration="1500"/> </div>
+          <img src="{% static 'gallery/pics/2018/Untitled-2.png' %}" class="box" data-aos="zoom-in-right" data-aos-duration="1500" />
+          <img src="{% static 'gallery/pics/2018/7.png' %}" class="box" data-aos="zoom-in-right" data-aos-duration="1500" />
+        
+        </div>
+
+        <div class="col-md-4" >
+
+          <div class="row">
+            <div class="col-md-6">
+              <!-- <center> -->
+              <img src="{% static 'gallery/pics/2018/Untitled-3.png' %}" class="box" data-aos="zoom-in-right" data-aos-duration="1500"/>
+            <!-- </center> -->
+            </div>
+            <div class="col-md-6">
+              <!-- <center> -->
+              <img src="{% static 'gallery/pics/2018/2k19-2k20.png' %}" class="box" id="pic_year" data-aos="zoom-in-right" data-aos-duration="1500"/>
+            <!-- </center> -->
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <!-- <center> -->
+            <img src="{% static 'gallery/pics/2018/Untitled-1.png' %}" class="box-1" data-aos="zoom-in-right" data-aos-duration="1500"/>
+          <!-- </center> -->
+          </div>
+        </div>
+
+        <div class="col-md-2" data-aos="zoom-in-right" data-aos-duration="1500">
+          <img src="{% static 'gallery/pics/2018/5.png' %}" class="box-3" data-aos="zoom-in-right" data-aos-duration="1500"/>
+          <img src="{% static 'gallery/pics/2018/Untitled-4.png' %}" class="box-2" data-aos="zoom-in-right" data-aos-duration="1500"/>
+          <img src="{% static 'gallery/pics/2018/IMG_03962.jpg' %}" class="box-4" data-aos="zoom-in-right" data-aos-duration="1500"/>
+        </div>
+
+        <div class="col-md-2">
+          <img src="{% static 'gallery/pics/2018/IMG_0396.jpg' %}" class="box-4" data-aos="zoom-in-right" data-aos-duration="1500"/>
+          <img src="{% static 'gallery/pics/2018/6.png' %}" class="box-3" data-aos="zoom-in-right" data-aos-duration="1500"/>
+          <img src="{% static 'gallery/pics/2018/view 1 right bottom.jpg' %}" class="box-2" data-aos="zoom-in-right" data-aos-duration="1500"/>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
+      <div class="row gal_2" id="row_2k18">
+        <div class="col-md-1"></div>
+        <div class="col-md-4" >
+          <div class="row mt-3">
+            <!-- <center> -->
+            <img src="{% static 'gallery/pics/2019/6.jpg' %}" class="box-1" data-aos="zoom-out-up" data-aos-duration="1500"/>
+          <!-- </center> -->
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <!-- <center> -->
+              <img src="{% static 'gallery/pics/2019/9.jpg' %}" class="box" data-aos="zoom-out-up" data-aos-duration="1500"/>
+            <!-- </center> -->
+            </div>
+            <div class="col-md-6">
+              <!-- <center> -->
+              <img src="{% static 'gallery/pics/2019/3.jpg' %}" class="box" id="pic_year" data-aos="zoom-out-up" data-aos-duration="1500"/>
+            <!-- </center> -->
+            </div>
+          </div>
+
+          
+        </div>
+
+        <div class="col-md-2">
+          <img src="{% static 'gallery/pics/2019/1.jpg' %}" class="box-3" data-aos="zoom-out-up" data-aos-duration="1500"/>
+          <img src="{% static 'gallery/pics/2019/8.jpg' %}" class="box-2" data-aos="zoom-out-up" data-aos-duration="1500" />
+          <img src="{% static 'gallery/pics/2019/2.jpg' %}" class="box-4" data-aos="zoom-out-up" data-aos-duration="1500"/>
+        </div>
+
+        <div class="col-md-2">
+                  <img src="{% static 'gallery/pics/2019/7.jpg' %}" class="box-2_2" data-aos="zoom-out-up" data-aos-duration="1500"/>
+                  <img src="{% static 'gallery/pics/2019/10.jpg' %}" class="box-2_2" data-aos="zoom-out-up" data-aos-duration="1500"/>
+        </div>
+        <div class="col-md-2">
+          <img src="{% static 'gallery/pics/2019/view 2 top right.jpg' %}" class="box-4" data-aos="zoom-out-up" data-aos-duration="1500"/>
+          <img src="{% static 'gallery/pics/2019/5.jpg' %}" class="box-3" data-aos="zoom-out-up" data-aos-duration="1500"/>
+          <img src="{% static 'gallery/pics/2019/View2.jpg' %}" class="box-2" data-aos="zoom-out-up" data-aos-duration="1500" />
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
+      <div class="row" id="row_2k18">
+        <div class="col-md-1"></div>
+        <div class="col-md-2">
+                  <img src="{% static 'gallery/pics/2017/col1_1.jpg' %}" class="box-2_1" data-aos="zoom-in-left" data-aos-duration="1500"/>
+                  <img src="{% static 'gallery/pics/2017/col1_2.jpg' %}" class="box" data-aos="zoom-in-left" data-aos-duration="1500"/>
+                  <img src="{% static 'gallery/pics/2017/col1_3.jpg' %}" class="box" data-aos="zoom-in-left" data-aos-duration="1500"/>
+        </div>
+        <div class="col-md-2">
+                  <img src="{% static 'gallery/pics/2017/col2_1.jpg' %}" class="box-2_2" data-aos="zoom-in-left" data-aos-duration="1500"/>
+                  <img src="{% static 'gallery/pics/2017/col2_2.jpg' %}" class="box-2_2" data-aos="zoom-in-left" data-aos-duration="1500"/>
+        </div>
+        <div class="col-md-2">
+                  <img src="{% static 'gallery/pics/2017/col3_1.png' %}" class="box-2_1" data-aos="zoom-in-left" data-aos-duration="1500"/>
+                  <img src="{% static 'gallery/pics/2017/col3_2.jpg' %}" class="box" data-aos="zoom-in-left" data-aos-duration="1500"/>
+                  <img src="{% static 'gallery/pics/2017/col3_3.jpg' %}" class="box" data-aos="zoom-in-left" data-aos-duration="1500"/>
+        </div>
+        <div class="col-md-4" >
+                  <div class="row">
+                    <div class="col-md-6">
+                      <!-- <center> -->
+                      <img src="{% static 'gallery/pics/2017/col4_1.jpg' %}" class="box" data-aos="zoom-in-left" data-aos-duration="1500"/>
+                    <!-- </center> -->
+                    </div>
+                    <div class="col-md-6">
+                      <!-- <center> -->
+                      <img src="{% static 'gallery/pics/2017/col4_2.jpg' %}" class="box" id="pic_year" data-aos="zoom-in-left" data-aos-duration="1500"/>
+                    <!-- </center> -->
+                    </div>
+                  </div>
+        
+                  <div class="row mt-3">
+                    <!-- <center> -->
+                    <img src="{% static 'gallery/pics/2017/col4_main.jpg' %}" class="box-1" data-aos="zoom-in-left" data-aos-duration="1500"/>
+                  <!-- </center> -->
+                  </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <br><br><br>
+      <section>
+        <div id="contact">
+          <span id="ContactUs">CONTACT US</span>
+          <div style="height: 2rem;"></div>
+          <div class="row">
+            <div class="col-sm-1 col-md-2"></div>
+            <div class="col-sm-4 col-md-3">
+              <!-- Location -->
+              <div class="text-center pic_contact">
+                <img src="{% static 'gallery/pics/general/location.png' %}" alt="Locate Us"><br>
+                <button class="button_contact">Thapar, Punjab - 147004</button>
+              </div>
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4 col-md-3">
+              <div class="text-center pic_contact">
+                <img src="{% static 'gallery/pics/general/phone.png' %}" alt="Contact Us" ><br>
+                <button class="button_contact">Aryan : +91 99976 30003 </button>
+              </div>
+            </div>
+            <div class="col-sm-1 col-md-2"></div>
+          </div>
+          <div style="height: 1vh;"></div>
+          <div class="text-center">
+            <a href=" https://www.facebook.com/msctiet/"><img src="{% static 'gallery/pics/general/fb.png' %}" alt="Facebook" class="contact_link"></a> 
+            <a href="https://github.com/MicrosoftStudentChapter"><img src="{% static 'gallery/pics/general/github-04.png' %}" alt="Twitter" class="contact_link"></a>
+            <a href="https://instagram.com/msc_tiet?igshid=bbv9mjjkx4h"><img src="{% static 'gallery/pics/general/insta.png' %}" alt="Instagram" class="contact_link"></a>
+          </div>
+          <div style="height: 2vh;"></div>
+        </div>
+        <div id="love">
+          <div class="text-center" id="text_love">Made with <i class="fa fa-heart" id="text-red"></i> by Team MSC</div>
+        </div>
+      </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Adding external JS -->
+    <script src="{% static 'gallery/gallery.js' %}"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
