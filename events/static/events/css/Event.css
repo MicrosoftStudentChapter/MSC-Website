@@ -705,7 +705,16 @@ h1 { margin:150px auto 30px auto; text-align:center; color:#fff;}
 }
 
 @media only screen and (min-width: 1361px) and (max-width: 1440px) {
-	#event_head{
-		font-size: 4.5rem
-	}
+    #event_head{
+        font-size: 4.5rem
+    }
+    #event_name{
+        padding-bottom: 5rem;
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    #event_name{
+        padding-bottom: 6rem;
+    }
 }
