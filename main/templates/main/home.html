@@ -84,6 +84,13 @@
           Video not supported
         </video>
       </div>
+      <!-- <header class="v-header container">
+        <div class="fullscreen-video-wrap">
+          <video src="{% static 'main/final.mp4' %}" autoplay="true" loop="true"></video>
+        </div>
+        <div class="header-overlay"></div>
+      </header> -->
+
       <div class="content">
         <h1>
           <div class="block">
@@ -103,7 +110,7 @@
                 <div class="col-md-5 order-2 order-md-1">
                    <div class="row" id="about-head-content">
                     <span class="iconify" data-icon="clarity:dot-circle-line" data-inline="false" style="margin-top: 0.7rem;"></span>  
-                    <div data-aos="flip-right" data-aos-duration="800">
+                    <div data-aos="zoom-out" data-aos-duration="800">
                       ABOUT US
                     </div>
                     </div>
@@ -153,7 +160,6 @@
         <div class="row div-sec">
           <div class="col-md-1 order-2 order-md-1"></div>
           <div class="col-md-5 order-1 order-md-2 box-img">
-            <!-- IMAGE TO BE REPLACED!!! -->
             <div>
               <div data-aos="zoom-in" data-aos-duration="1500">
                 <img id="about_img" class="img-fluid" src="{% static 'main/pics/event.png' %}" alt="About pic">
@@ -176,7 +182,7 @@
                 data-inline="false"
                 style="margin-top: 0.7rem;"
               ></span>
-              <div data-aos="flip-right" data-aos-duration="800">
+              <div data-aos="zoom-out" data-aos-duration="800">
                  EVENTS
               </div>
             </div>
@@ -219,7 +225,9 @@
      <!-- OUR PAST SPONSOR Section -->
     <section>
       <div id="sponsor">
-        <span id="Sponsors">OUR PAST SPONSORS</span>
+        <div data-aos="zoom-out" data-aos-duration="1000">
+         <span id="Sponsors">OUR PAST SPONSORS</span>
+        </div>
         <div class="container abc">
           <div class="logos slider">
             <div class="item"><img src="{% static 'main/pics/Sponsors/balsamiq.png' %}" alt="Balsamiq"></div>
