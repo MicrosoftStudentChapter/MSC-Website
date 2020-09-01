@@ -365,6 +365,8 @@ body {
   position: relative;
   text-align: center;
   padding-top: 2rem;
+  /* width: 100vw; */
+  overflow-x: hidden;
 }
 
 #Sponsors {
