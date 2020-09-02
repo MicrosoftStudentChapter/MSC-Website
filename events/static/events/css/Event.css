@@ -762,3 +762,34 @@ h1 {
     padding-bottom: 6rem;
   }
 }
+
+/* SCROLL BAR */
+.content-section {
+  border: 1px solid rgb(47, 48, 53, 0.8);
+  overflow: auto;
+}
+/* SETTING SCROLL BAR */
+::-webkit-scrollbar {
+  width: 1rem;
+  background-color: black;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 5rem;
+  border-radius: 5rem;
+  background: white;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0, 0, 0, 1);
+}
