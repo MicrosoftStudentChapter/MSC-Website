@@ -660,16 +660,6 @@ html {
   padding-top: 2rem;
 }
 
-#contact:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-top: 4.95rem solid white;
-  border-left: 4.95rem solid black;
-  width: 0;
-}
-
 #ContactUs {
   font-family: "Poppins", sans-serif;
   font-size: 2.3rem;
@@ -728,8 +718,7 @@ html {
   #mentor:before,
   #mentor:after,
   #team:before,
-  #team:after,
-  #contact:before {
+  #team:after {
     border: 0;
   }
 }
