@@ -35,14 +35,14 @@
     <!-- Navbar -->
     <section>
       <nav class="top-navbar">
-        <a href="{% url 'home' %}" class="nav-brand"><img src="{% static 'main/pics/msc_logo.png' %}" alt="Logo" id="logo"
+        <a href="{% url 'home' %}" class="nav-brand non_active"><img src="{% static 'main/pics/msc_logo.png' %}" alt="Logo" id="logo"
           /></a>
         <button onclick="openMenu();" aria-label="open Menu"><i class="fa fa-bars text-white" aria-hidden="true"></i></button>
         <div class="nav-items">
-            <a href="{% url 'home' %}"><span>Home</span></a>
-            <a href="{% url 'about' %}"><span>About us</span></a>
-            <a href="{% url 'events' %}"><span>Events</span></a>
-            <a href="{% url 'gallery' %}"><span>Gallery</span></a>
+            <a href="{% url 'home' %}" id="is_active">Home</a>
+            <a href="{% url 'about' %}" class="non_active"><span>About us</span></a>
+            <a href="{% url 'events' %}" class="non_active"><span>Events</span></a>
+            <a href="{% url 'gallery' %}" class="non_active"><span>Gallery</span></a>
         </div>
       </nav>
     </section>

@@ -69,7 +69,7 @@ a:active {
 
 .top-navbar a span {
   position: relative;
-  padding-bottom: 0.4rem;
+  padding-bottom: 0.33rem;
   font-size: 1rem;
 }
 
@@ -101,7 +101,7 @@ a:active {
   
 }
 
-.top-navbar a:hover {
+.top-navbar .non_active:hover {
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1);
@@ -175,6 +175,14 @@ a:active {
 .top-navbar .open-menu a:hover {
   background-color: #ffffff10;
 }
+
+#is_active {
+  margin-top: 0.5rem;
+  padding-bottom: 0.17rem;
+  font-size: 1.1rem;
+  border-bottom: 2px solid white;
+}
+/* Navbar END */
 
 #about {
   min-height: 30vh;
