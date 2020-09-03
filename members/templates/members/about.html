@@ -33,44 +33,15 @@
     <section class="content-section">
     <!-- Navbar -->
     <section>
-      <nav class="navbar navbar-expand-lg navbar-mainbg fixed-top">
-        <a class="navbar-brand navbar-logo" href="{% url 'home' %}"
-          ><img
-            src="{% static 'members/general/msc_logo.png' %}"
-            alt="Logo"
-            id="logo"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fa fa-bars text-white"></i>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <div class="hori-selector">
-              <div class="left"></div>
-              <div class="right"></div>
-            </div>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'home' %}">Home</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="{% url 'about' %}">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'events' %}">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
-            </li>
-          </ul>
+      <nav class="top-navbar">
+        <a href="{% url 'home' %}" class="nav-brand"><img src="{% static 'main/pics/msc_logo.png' %}" alt="Logo" id="logo"
+          /></a>
+        <button onclick="openMenu();" aria-label="open Menu"><i class="fa fa-bars text-white" aria-hidden="true"></i></button>
+        <div class="nav-items">
+            <a href="{% url 'home' %}"><span>Home</span></a>
+            <a href="{% url 'about' %}"><span>About us</span></a>
+            <a href="{% url 'events' %}"><span>Events</span></a>
+            <a href="{% url 'gallery' %}"><span>Gallery</span></a>
         </div>
       </nav>
     </section>
