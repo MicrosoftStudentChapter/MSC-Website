@@ -78,6 +78,7 @@
               <li id="Hactober19"><img src="{% static 'events/Events/HACKTOBER FEST-02.png' %}" alt="Hactober19" style="color: #fff;"/></li>
               <li id="Makeathon20"><img src="{% static 'events/Events/MAKEATHON2.0.png' %}" alt="Makeathon20" style="color: #fff;"/></li>
               <li id="Workshops"><img src="{% static 'events/Events/WORKSHOPS-01.png' %}" alt="Workshops" style="color: #fff;" /></li> 
+              <li id="wing"><img src="{% static 'events/Events/thaparwings.png' %}" alt="Wing" style="color: #fff;" /></li> 
             </ul>
           </div>
         </div>
@@ -115,6 +116,9 @@
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" id="Makeathon20m" src="{% static 'events/Events/MAKEATHON2.0.png' %}" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="wingm" src="{% static 'events/Events/thaparwings.png' %}" alt="Wing slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -295,6 +299,39 @@
           </div>
       </div>
     </section>
+
+    <!-- New Card || Wingss -->
+    <section id="wingc" style="display: none;">
+      <div id="event_name">
+          <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-7">
+                  <div class="row" id="event_head">THAPARWINGS</div>
+                  <div id="content">Hackathons are a medium to pour out your innovative thoughts aiming to 
+                    fabricate a technological masterpiece that holds the potential to make a significant 
+                    difference in a certain prevailing industry or the entire society in general. 
+                     <br> 
+                     Microsoft Student Chapter, in collaboration with IntelleWings, is elated to present a 
+                     solution to your quarantine blues, a Hackathon that's bound to electrify you to the 
+                     core & leave you entranced in the end. This exquisite Hackathon has been named: 
+                     "The War of Data Champions". The task at hand seems simple but requires grit and 
+                     determination. Prepare a program which can scrape through government websites pages of 
+                     different countries, and can make a database of all personal profiles of politically 
+                     influential people. If you have what it takes then do consider becoming a part of this 
+                     wave of innovation.
+                    <br><br>
+                    <a href="https://bit.ly/34DJXB6" class="btn mb-5" style="background-color: #a5cc17; color: black;">View Details</a>  
+                  </div>
+              </div>
+              <div class="col-md-1"></div>
+              <div class="col-md-3 mt-5">
+                <img src="{% static 'events/Events/thaparwings.png' %}" alt="" class="event_pic">
+              </div>
+              <!-- <div class="col-md-1"></div> -->
+          </div>
+      </div>
+    </section>
+    <!-- CARD END -->
         <!-- contact us -->
         <section>
           <div id="contact">
@@ -362,6 +399,7 @@
     document.getElementById("Hactober19c").style.display = "none";
     document.getElementById("Makeathon20c").style.display = "none";
     document.getElementById("Abhyudayac").style.display = "none";
+    document.getElementById("wingc").style.display = "none";
     })
     document.querySelector("#Hactober").addEventListener("click",function(){
     document.getElementById("Techmeet18c").style.display = "none";
@@ -373,6 +411,7 @@
     document.getElementById("Hactober19c").style.display = "none";
     document.getElementById("Makeathon20c").style.display = "none";
     document.getElementById("Abhyudayac").style.display = "none";
+    document.getElementById("wingc").style.display = "none";
     })
     document.querySelector("#Makeathon19").addEventListener("click",function(){
     document.getElementById("Techmeet18c").style.display = "none";
@@ -384,6 +423,7 @@
     document.getElementById("Hactober19c").style.display = "none";
     document.getElementById("Makeathon20c").style.display = "none";
     document.getElementById("Abhyudayac").style.display = "none";
+    document.getElementById("wingc").style.display = "none";
     })
     document.querySelector("#TechBlitz").addEventListener("click",function(){
     document.getElementById("Techmeet18c").style.display = "none";
@@ -395,6 +435,7 @@
     document.getElementById("Hactober19c").style.display = "none";
     document.getElementById("Makeathon20c").style.display = "none";
     document.getElementById("Abhyudayac").style.display = "none";
+    document.getElementById("wingc").style.display = "none";
     })
     document.querySelector("#Techmeet19").addEventListener("click",function(){
     document.getElementById("Techmeet18c").style.display = "none";
@@ -406,6 +447,7 @@
     document.getElementById("Hactober19c").style.display = "none";
     document.getElementById("Makeathon20c").style.display = "none";
     document.getElementById("Abhyudayac").style.display = "none";
+    document.getElementById("wingc").style.display = "none";
     })
     document.querySelector("#Workshops").addEventListener("click",function(){
     document.getElementById("Techmeet18c").style.display = "none";
@@ -417,6 +459,7 @@
     document.getElementById("Hactober19c").style.display = "none";
     document.getElementById("Makeathon20c").style.display = "none";
     document.getElementById("Abhyudayac").style.display = "none";
+    document.getElementById("wingc").style.display = "none";
     })
     document.querySelector("#Hactober19").addEventListener("click",function(){
     document.getElementById("Techmeet18c").style.display = "none";
@@ -428,6 +471,7 @@
     document.getElementById("Hactober19c").style.display = "block";
     document.getElementById("Makeathon20c").style.display = "none";
     document.getElementById("Abhyudayac").style.display = "none";
+    document.getElementById("wingc").style.display = "none";
     })
     document.querySelector("#Makeathon20").addEventListener("click",function(){
     document.getElementById("Techmeet18c").style.display = "none";
@@ -439,6 +483,7 @@
     document.getElementById("Hactober19c").style.display = "none";
     document.getElementById("Makeathon20c").style.display = "block";
     document.getElementById("Abhyudayac").style.display = "none";
+    document.getElementById("wingc").style.display = "none";
     })
     document.querySelector("#Abhyudaya").addEventListener("click",function(){
     document.getElementById("Techmeet18c").style.display = "none";
@@ -450,6 +495,19 @@
     document.getElementById("Hactober19c").style.display = "none";
     document.getElementById("Makeathon20c").style.display = "none";
     document.getElementById("Abhyudayac").style.display = "block";
+    document.getElementById("wingc").style.display = "none";
+    })
+    document.querySelector("#wing").addEventListener("click",function(){
+    document.getElementById("Techmeet18c").style.display = "none";
+    document.getElementById("Hactoberc").style.display = "none";
+    document.getElementById("Makeathon19c").style.display = "none";
+    document.getElementById("TechBlitzc").style.display = "none";
+    document.getElementById("Techmeet19c").style.display = "none";
+    document.getElementById("Workshopsc").style.display = "none";
+    document.getElementById("Hactober19c").style.display = "none";
+    document.getElementById("Makeathon20c").style.display = "none";
+    document.getElementById("Abhyudayac").style.display = "none";
+    document.getElementById("wingc").style.display = "block";
     })
     </script>
 
@@ -464,6 +522,7 @@
     document.getElementById("Hactober19c").style.display = "none";
     document.getElementById("Makeathon20c").style.display = "none";
     document.getElementById("Abhyudayac").style.display = "none";
+    document.getElementById("wingc").style.display = "none";
     })
     document.querySelector("#Hactoberm").addEventListener("click",function(){
     document.getElementById("Techmeet18c").style.display = "none";
@@ -475,6 +534,7 @@
     document.getElementById("Hactober19c").style.display = "none";
     document.getElementById("Makeathon20c").style.display = "none";
     document.getElementById("Abhyudayac").style.display = "none";
+    document.getElementById("wingc").style.display = "none";
     })
     document.querySelector("#Makeathon19m").addEventListener("click",function(){
     document.getElementById("Techmeet18c").style.display = "none";
@@ -486,6 +546,7 @@
     document.getElementById("Hactober19c").style.display = "none";
     document.getElementById("Makeathon20c").style.display = "none";
     document.getElementById("Abhyudayac").style.display = "none";
+    document.getElementById("wingc").style.display = "none";
     })
     document.querySelector("#TechBlitzm").addEventListener("click",function(){
     document.getElementById("Techmeet18c").style.display = "none";
@@ -497,6 +558,7 @@
     document.getElementById("Hactober19c").style.display = "none";
     document.getElementById("Makeathon20c").style.display = "none";
     document.getElementById("Abhyudayac").style.display = "none";
+    document.getElementById("wingc").style.display = "none";
     })
     document.querySelector("#Techmeet19m").addEventListener("click",function(){
     document.getElementById("Techmeet18c").style.display = "none";
@@ -508,6 +570,7 @@
     document.getElementById("Hactober19c").style.display = "none";
     document.getElementById("Makeathon20c").style.display = "none";
     document.getElementById("Abhyudayac").style.display = "none";
+    document.getElementById("wingc").style.display = "none";
     })
     document.querySelector("#Workshopsm").addEventListener("click",function(){
     document.getElementById("Techmeet18c").style.display = "none";
@@ -519,6 +582,7 @@
     document.getElementById("Hactober19c").style.display = "none";
     document.getElementById("Makeathon20c").style.display = "none";
     document.getElementById("Abhyudayac").style.display = "none";
+    document.getElementById("wingc").style.display = "none";
     })
     document.querySelector("#Hactober19m").addEventListener("click",function(){
     document.getElementById("Techmeet18c").style.display = "none";
@@ -530,6 +594,7 @@
     document.getElementById("Hactober19c").style.display = "block";
     document.getElementById("Makeathon20c").style.display = "none";
     document.getElementById("Abhyudayac").style.display = "none";
+    document.getElementById("wingc").style.display = "none";
     })
     document.querySelector("#Makeathon20m").addEventListener("click",function(){
     document.getElementById("Techmeet18c").style.display = "none";
@@ -541,6 +606,7 @@
     document.getElementById("Hactober19c").style.display = "none";
     document.getElementById("Makeathon20c").style.display = "block";
     document.getElementById("Abhyudayac").style.display = "none";
+    document.getElementById("wingc").style.display = "none";
     })
     document.querySelector("#Abhyudayam").addEventListener("click",function(){
     document.getElementById("Techmeet18c").style.display = "none";
@@ -552,6 +618,19 @@
     document.getElementById("Hactober19c").style.display = "none";
     document.getElementById("Makeathon20c").style.display = "none";
     document.getElementById("Abhyudayac").style.display = "block";
+    document.getElementById("wingc").style.display = "none";
+    })
+    document.querySelector("#wingm").addEventListener("click",function(){
+    document.getElementById("Techmeet18c").style.display = "none";
+    document.getElementById("Hactoberc").style.display = "none";
+    document.getElementById("Makeathon19c").style.display = "none";
+    document.getElementById("TechBlitzc").style.display = "none";
+    document.getElementById("Techmeet19c").style.display = "none";
+    document.getElementById("Workshopsc").style.display = "none";
+    document.getElementById("Hactober19c").style.display = "none";
+    document.getElementById("Makeathon20c").style.display = "none";
+    document.getElementById("Abhyudayac").style.display = "none";
+    document.getElementById("wingc").style.display = "block";
     })
     </script>
         
