@@ -205,9 +205,9 @@ a {
   text-transform: uppercase;
   text-align: center;
 }
-.block {
+/* .block {
   margin-left: 3rem;
-}
+} */
 #msft {
   font-size: 5.5rem;
   font-weight: bold;
