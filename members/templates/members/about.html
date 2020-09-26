@@ -20,17 +20,16 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <!-- Google Font -->
-    <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Poppins:wght@700&display=swap"
       rel="stylesheet"
     />
 
-    <title>Microsoft Student Chapter</title>
-    <link rel = "icon" href =  "{% static 'members/general/MSC.png' %}" type = "image/x-icon">
+    <title>Microsoft Learn Student Chapter</title>
+    <link rel = "icon" href =  "{% static 'members/general/msc_shield.png' %}" type = "image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
       new Crate({
-        server: '720322067261554728', // MSC Open Source Community
+        server: '720322067261554728', // MLSC Open Source Community
         channel: '756424683301371905' // #about
       })
     </script>
@@ -40,8 +39,12 @@
     <!-- Navbar -->
     <section>
       <nav class="top-navbar">
-        <a href="{% url 'home' %}" class="nav-brand non_active"><img src="{% static 'main/pics/msc_logo.png' %}" alt="Logo" id="logo"
-          /></a>
+        <a href="{% url 'home' %}" class="nav-brand non_active">
+          <!-- <img src="{% static 'main/pics/msc_logo.png' %}" alt="Logo" id="logo"/> -->
+          <span id="nav-text">
+            <span id="ML">Microsoft Learn</span> <span id="SC">Student Chapter</span>
+          </span>
+        </a>
         <button onclick="openMenu();" aria-label="open Menu"><i class="fa fa-bars text-white" aria-hidden="true"></i></button>
         <div class="nav-items">
             <a href="{% url 'home' %}" class="non_active"><span>Home</span></a>
@@ -72,13 +75,13 @@
           </div>
           <div class="col-md-5 order-2 order-md-1" id="about-div">
             <div class="row" id="about-content">
-              Microsoft Student Chapter is a technical association of
+              Microsoft Learn Student Chapter is a technical association of
               like-minded,driven individuals possessing a proclivity to excel in
-              technical aspects. We at Microsoft Student Chapter believe that
+              technical aspects. We at Microsoft Learn Student Chapter believe that
               youth encompassed with appropriate technology holds the potential
               to revolutionize the world we perceive today and we have done a
               fair share in that through multiple events organised over the
-              years. Microsoft Student chapter was institutionalized by the
+              years. Microsoft Learn Student Chapter was institutionalized by the
               virtue of providing students a systemic platform for cultivating
               technical skills and a spirit of teamwork. Our vision is to create
               a community of computer enthusiasts with a mindset of development.
@@ -88,7 +91,7 @@
             </div>
 
             <div class="row">
-              <span id="about-head">MSC</span>
+              <span id="about-head">MLSC</span>
             </div>
           </div>
         </div>
@@ -104,11 +107,11 @@
               Dr. Prashant Singh Rana (Assistant professor - CSE Department,
               Thapar Institute of engineering & technology) is a name
               exceedingly eminent amongst the peeps of TIET's proficiency
-              hamlet. Microsoft Student Chapter feels immense felicity to have
+              hamlet. Microsoft Learn Student Chapter feels immense felicity to have
               Dr. Rana as it's President. Holding a PhD in CS from ABV-IIITM,
               (Gwalior), he is remarkably profound in Machine Learning, Deep
               Learning and other allied skills. Dr. P.S Rana has aided and
-              mentored MSC to reach monumental heights.
+              mentored MLSC to reach monumental heights.
             </div>
           </div>
           <div class="col-md-5 order-2 order-md-1">
@@ -1389,7 +1392,7 @@
       </div>
       <div id="love">
         <div class="text-center" id="text_love">
-          Made with <i class="fa fa-heart" id="text-red"></i>by Team MSC
+          Made with <i class="fa fa-heart" id="text-red"></i>by Team MLSC
         </div>
       </div>
     </section>

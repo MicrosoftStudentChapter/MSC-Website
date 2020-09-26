@@ -4,8 +4,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Microsoft Student Chapter</title>
-    <link rel = "icon" href =  "{% static 'events/Events/MSC.png' %}" type = "image/x-icon">
+    <title>Microsoft Learn Student Chapter</title>
+    <link rel = "icon" href =  "{% static 'events/Events/msc_shield.png' %}" type = "image/x-icon">
 
     <link
     rel="stylesheet"
@@ -35,7 +35,7 @@
       ></script>
       <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
         new Crate({
-          server: '720322067261554728', // MSC Open Source Community
+          server: '720322067261554728', // MLSC Open Source Community
           channel: '756424683301371905' // #about
         })
       </script>
@@ -45,8 +45,12 @@
     <section>
       
       <nav class="top-navbar">
-        <a href="{% url 'home' %}" class="nav-brand non_active"><img src="{% static 'events/Events/msc_logo.png' %}" alt="Logo" id="logo"
-          /></a>
+        <a href="{% url 'home' %}" class="nav-brand non_active">
+          <!-- <img src="{% static 'events/Events/msc_logo.png' %}" alt="Logo" id="logo"/> -->
+          <span id="nav-text">
+            <span id="ML">Microsoft Learn</span> <span id="SC">Student Chapter</span>
+          </span>
+        </a>
         <button onclick="openMenu();" aria-label="open Menu"><i class="fa fa-bars text-white" aria-hidden="true"></i></button>
         <div class="nav-items">
             <a href="{% url 'home' %}" class="non_active"><span>Home</span></a>
@@ -369,7 +373,7 @@
             <div style="height: 2vh;"></div>
           </div>
           <div id="love">
-            <div class="text-center" id="text_love">Made with <i class="fa fa-heart" id="text-red"></i> by Team MSC</div>
+            <div class="text-center" id="text_love">Made with <i class="fa fa-heart" id="text-red"></i> by Team MLSC</div>
           </div>
         </section>
       </section>
