@@ -194,15 +194,16 @@ a {
 }
 .content {
   height: 82vh;
-  padding-left: 4rem;
+  /* padding-left: 4rem; */
   padding-top: 7rem;
 }
 
 .content h1 {
-  border-left: 0.6rem solid black;
+  /* border-left: 0.6rem solid black;
   padding-left: 0.75rem;
-  border-radius: 5px;
+  border-radius: 5px; */
   text-transform: uppercase;
+  text-align: center;
 }
 .block {
   margin-left: 3rem;
@@ -530,7 +531,7 @@ i {
 /* Additional Media query for responsiveness */
 @media only screen and (min-width: 605px) and (max-width: 700px) {
   .content {
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
   }
   #msft {
     font-size: 5rem;
@@ -542,7 +543,7 @@ i {
 
 @media only screen and (min-width: 500px) and (max-width: 605px) {
   .content {
-    padding-left: 1.8rem;
+    /* padding-left: 1.8rem; */
   }
   #msft {
     font-size: 4.3rem;
@@ -551,25 +552,25 @@ i {
     font-size: 2.7rem;
   }
   .content h1 {
-    padding-left: 0.1rem;
+    /* padding-left: 0.1rem; */
   }
 }
 
 @media only screen and (min-width: 420px) and (max-width: 499px) {
   .content {
-    padding-left: 1.5rem;
+    /* padding-left: 1.5rem; */
   }
   #std_ch {
     font-size: 2.2rem;
   }
   .content h1 {
-    padding-left: 0;
+    /* padding-left: 0; */
   }
 }
 
 @media only screen and (min-width: 347px) and (max-width: 419px) {
   .content {
-    padding-left: 0.6rem;
+    /* padding-left: 0.6rem; */
   }
   #msft {
     font-size: 3rem;
@@ -578,13 +579,13 @@ i {
     font-size: 1.9rem;
   }
   .content h1 {
-    padding-left: 0;
+    /* padding-left: 0; */
   }
 }
 
 @media only screen and (min-width: 331px) and (max-width: 346px) {
   .content {
-    padding-left: 0.5rem;
+    /* padding-left: 0.5rem; */
   }
   #msft {
     font-size: 2.6rem;
@@ -593,7 +594,7 @@ i {
     font-size: 1.64rem;
   }
   .content h1 {
-    padding-left: 0;
+    /* padding-left: 0; */
   }
 }
 
