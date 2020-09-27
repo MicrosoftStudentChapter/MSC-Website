@@ -4,8 +4,19 @@
   padding: 0;
 }
 
-#logo {
+/* #logo {
   height: 2.8rem;
+} */
+#nav-text {
+  font-size: 1.2rem;
+  margin-left: 1rem !important;
+  font-weight: 100 !important;
+}
+#ML {
+  font-weight: bold ;
+}
+#SC {
+  font-weight: lighter;
 }
 
 body {

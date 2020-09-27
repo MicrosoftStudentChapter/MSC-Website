@@ -24,14 +24,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Slick CSS -->
     <link rel="stylesheet" href="{% static 'main/infinite-slider.css' %}" />
-    <title>Microsoft Student Chapter</title>
-    <link rel = "icon" href =  "{% static 'main/pics/MSC.png' %}" type = "image/x-icon">
+    <title>Microsoft Learn Student Chapter</title>
+    <link rel = "icon" href =  "{% static 'main/pics/msc_shield.png' %}" type = "image/x-icon">
     <style>
       a { color: white; } /* CSS link color */
     </style>
     <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
       new Crate({
-        server: '720322067261554728', // MSC Open Source Community
+        server: '720322067261554728', // MLSC Open Source Community
         channel: '756424683301371905' // #about
       })
     </script>
@@ -41,8 +41,12 @@
     <!-- Navbar -->
     <section>
       <nav class="top-navbar">
-        <a href="{% url 'home' %}" class="nav-brand non_active"><img src="{% static 'main/pics/msc_logo.png' %}" alt="Logo" id="logo"
-          /></a>
+        <a href="{% url 'home' %}" class="nav-brand non_active">
+          <!-- <img src="{% static 'main/pics/MLSC_shield.png' %}" alt="Logo" id="logo"/> -->
+          <span id="nav-text">
+            <span id="ML">Microsoft Learn</span> <span id="SC">Student Chapter</span>
+          </span>
+        </a>
         <button onclick="openMenu();" aria-label="open Menu"><i class="fa fa-bars text-white" aria-hidden="true"></i></button>
         <div class="nav-items">
             <a href="{% url 'home' %}" id="is_active">Home</a>
@@ -66,20 +70,14 @@
           Video not supported
         </video>
       </div>
-      <!-- <header class="v-header container">
-        <div class="fullscreen-video-wrap">
-          <video src="{% static 'main/final.mp4' %}" autoplay="true" loop="true"></video>
-        </div>
-        <div class="header-overlay"></div>
-      </header> -->
-
       <div class="content">
         <h1>
           <div class="block">
-            <div data-aos="fade-right" data-aos-duration="1400">
-              <span id="msft">Microsoft </span><br /><span id="std_ch"
-                >Student Chapter</span
-              >
+            <div data-aos="zoom-in" data-aos-duration="1400">
+              <!-- <span id="msft">WE ARE</span><br /><span id="std_ch"
+                >Family <i class="fa fa-heart" id="text-red"></i></span
+              > -->
+              <span id="std_ch">Let your tryst with technology find solace here</span>
             </div>
           </div>
         </h1>
@@ -93,28 +91,31 @@
                    <div class="row" id="about-head-content">
                     <span class="iconify" data-icon="clarity:dot-circle-line" data-inline="false" style="margin-top: 0.7rem;"></span>  
                     <!-- <div data-aos="zoom-out" data-aos-duration="800"> -->
-                      ABOUT US
+                      ABOUT US 
                     <!-- </div> -->
                     </div>
                     <div class="row" id="about-content">
-                      <p>Microsoft Student Chapter is a technical society which is dedicated to elevate the coding culture of
+                      <p>Microsoft Learn Student Chapter is a technical society which is dedicated to elevate the coding culture of
                          Thapar Institute of Engineering and Technology by mentoring and motivating its students to refine their 
                          critical thinking, logical reasoning and coding skills. One of the elite societies of TIET.</p>
-                      <p>We are now officially associated with Microsoft <span style="color: #0078d4;">Student Partners</span>.</p>
-                      <p>MSC was formed with the objective of providing students a dynamic platform which feeds their curiousity
-                         and develops their technical skills. MSC aims to create a community of versatile enthusiasts with 
+                      <p>We are now Microsoft Learn Student Ambassadors. <!--<span style="color: #0078d4;">Student Partners</span>.--></p>
+                      <p>MLSC was formed with the objective of providing students a dynamic platform which feeds their curiousity
+                         and develops their technical skills. MLSC aims to create a community of versatile enthusiasts with 
                          progressive mindset, promoting development holistically which includes injecting soft skills as well. 
-                         MSC effectuates it by organizing numerous technology driven events including tech meetups and Hackathons 
-                         and promoting team building. In the long run, MSC plans to cultivate and nurture young minds of TIET to 
+                         MLSC effectuates it by organizing numerous technology driven events including tech meetups and Hackathons 
+                         and promoting team building. In the long run, MLSC plans to cultivate and nurture young minds of TIET to 
                          a magnitude where they are proficient enough to compete amongst the nonpareil, thus upheaving the name 
                          of TIET. </p>
 
                     </div>
                 </div>
-                <div class="col-md-5 order-1 order-md-2">
+                <div class="col-md-1 order-md-2"></div>
+                <div class="col-md-5 order-1 order-md-3">
                     <div>
                       <div data-aos="zoom-in" data-aos-duration="1500">
-                        <img id="about_img" class="img-fluid" src="{% static 'main/pics/landing1.png' %}" alt="About pic">
+                        <div class="container">
+                          <img id="about_img" class="img-fluid" src="{% static 'main/pics/msc_shield.png' %}" alt="About pic">
+                        </div>
                       </div> 
                     </div>
                 </div>
@@ -169,16 +170,16 @@
               <!-- </div> -->
             </div>
             <div class="row" id="event-content">
-              Microsoft Student Chapter has been the constant flag bearer for providing the youth, a one 
+              Microsoft Learn Student Chapter has been the constant flag bearer for providing the youth, a one 
               of its kind platform to showcase the paramount of their technological skills with an effectual 
               vision. The events ranging from Hacktoberfest to Makeathon, require the perfect amalgamation 
               of technical brain racking and impeccable teamwork. Periodic workshops and webinars motivate 
               students to level up their computational skills and showcase their confounding critical thinking 
               skills to challenge their coding apprehension and polish their skills. As of the most esteemed 
-              technical societies of TIET, the events conducted by MSC witness massive participation. 
+              technical societies of TIET, the events conducted by MLSC witness massive participation. 
               They foster an environment which promotes teamwork and enhances knowledge in numerous tracks 
               including AI/Machine Learning, Robotics, Block Chain, Cryptography, Algorithms, GraphQL, App 
-              development, AR/VR and open hack. With it's events, MSC hopes to tap into the unrealised 
+              development, AR/VR and open hack. With it's events, MLSC hopes to tap into the unrealised 
               potential within students as well as provide them an opportunity to discover new fields and 
               probe their mettle.
             </div>
@@ -261,7 +262,7 @@
         <div style="height: 2vh;"></div>
       </div>
       <div id="love">
-        <div class="text-center" id="text_love">Made with <i class="fa fa-heart" id="text-red"></i>by Team MSC</div>
+        <div class="text-center" id="text_love">Made with <i class="fa fa-heart" id="text-red"></i>by Team MLSC</div>
       </div>
     </section>
   </section>
