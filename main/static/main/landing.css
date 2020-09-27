@@ -22,9 +22,6 @@ body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
-/* #logo {
-  height: 2.8rem;
-} */
 #nav-text {
   font-size: 1.2rem;
   margin-left: 1rem !important;
@@ -201,9 +198,7 @@ a {
   text-transform: uppercase;
   text-align: center;
 }
-/* .block {
-  margin-left: 3rem;
-} */
+
 #msft {
   font-size: 5.5rem;
   font-weight: bold;
