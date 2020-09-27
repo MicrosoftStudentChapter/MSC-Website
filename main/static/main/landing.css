@@ -194,14 +194,10 @@ a {
 }
 .content {
   height: 82vh;
-  /* padding-left: 4rem; */
-  padding-top: 7rem;
+  padding-top: 10rem;
 }
 
 .content h1 {
-  /* border-left: 0.6rem solid black;
-  padding-left: 0.75rem;
-  border-radius: 5px; */
   text-transform: uppercase;
   text-align: center;
 }
@@ -532,6 +528,7 @@ i {
 @media only screen and (min-width: 605px) and (max-width: 700px) {
   .content {
     /* padding-left: 2rem; */
+    padding-top: 12rem;
   }
   #msft {
     font-size: 5rem;
@@ -543,7 +540,7 @@ i {
 
 @media only screen and (min-width: 500px) and (max-width: 605px) {
   .content {
-    /* padding-left: 1.8rem; */
+    padding-top: 12rem;
   }
   #msft {
     font-size: 4.3rem;
@@ -551,26 +548,20 @@ i {
   #std_ch {
     font-size: 2.7rem;
   }
-  .content h1 {
-    /* padding-left: 0.1rem; */
-  }
 }
 
 @media only screen and (min-width: 420px) and (max-width: 499px) {
   .content {
-    /* padding-left: 1.5rem; */
+    padding-top: 10rem;
   }
   #std_ch {
     font-size: 2.2rem;
-  }
-  .content h1 {
-    /* padding-left: 0; */
   }
 }
 
 @media only screen and (min-width: 347px) and (max-width: 419px) {
   .content {
-    /* padding-left: 0.6rem; */
+    padding-top: 10rem;
   }
   #msft {
     font-size: 3rem;
@@ -585,7 +576,7 @@ i {
 
 @media only screen and (min-width: 331px) and (max-width: 346px) {
   .content {
-    /* padding-left: 0.5rem; */
+    padding-top: 10rem;
   }
   #msft {
     font-size: 2.6rem;
