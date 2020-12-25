@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,9 +13,9 @@
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Poppins:wght@700&display=swap"
         rel="stylesheet">
     <!-- External CSS -->
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="{% static 'main/style.css' %}">
     <title>Microsoft Learn Student Chapter</title>
-    <link rel="icon" href="./assets/msc_shield.png" type="image/x-icon">
+    <link rel="icon" href="{% static 'main/pics/msc_shield.png' %}" type="image/x-icon">
     <!-- Font Awesome -->
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -32,7 +33,7 @@
         <!-- Navbar -->
         <section>
             <nav class="top-navbar">
-                <a href="#" class="nav-brand non_active">
+                <a href="{% url 'home' %}" class="nav-brand non_active">
                     <!-- <img src="{% static 'main/pics/MLSC_shield.png' %}" alt="Logo" id="logo"/> -->
                     <span id="nav-text">
                         <span id="ML">Microsoft Learn</span> <span id="SC">Student Chapter</span>
@@ -41,11 +42,11 @@
                 <button onclick="openMenu();" aria-label="open Menu"><i class="fa fa-bars text-white"
                         aria-hidden="true"></i></button>
                 <div class="nav-items">
-                    <a href="#" class="non_active"><span>Home</span></a>
-                    <a href="#" class="non_active"><span>About us</span></a>
-                    <a href="#" class="non_active"><span>Events</span></a>
-                    <a href="#" class="non_active"><span>Gallery</span></a>
-                    <a href="#" id="is_active"><span>Why Sponsor Us?</span></a>
+                    <a href="{% url 'home' %}" class="non_active"><span>Home</span></a>
+                    <a href="{% url 'about' %}" class="non_active"><span>About us</span></a>
+                    <a href="{% url 'events' %}" class="non_active"><span>Events</span></a>
+                    <a href="{% url 'gallery' %}" class="non_active"><span>Gallery</span></a>
+                    <a href="{% url 'sponsor' %}" id="is_active"><span>Why Sponsor Us?</span></a>
                 </div>
             </nav>
         </section>
@@ -91,7 +92,7 @@
             <div class="container">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./assets/Sponsors/logo_balsamiq.png" alt="Balsamiq">
+                        <img src="{% static 'main/pics/Sponsors2/logo_balsamiq.png' %}" alt="Balsamiq">
                     </div>
                     <div class="content">
                         <h2>Balsamiq</h2>
@@ -108,7 +109,7 @@
                 </div>
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./assets/Sponsors/logo_CodingBlocks.png" alt="Coding Blocks">
+                        <img src="{% static 'main/pics/Sponsors2/logo_CodingBlocks.png' %}" alt="Coding Blocks">
                     </div>
                     <div class="content">
                         <h2>Coding Blocks</h2>
@@ -125,7 +126,7 @@
                 </div>
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./assets/Sponsors/logo_tim.png" alt="Creative Tim">
+                        <img src="{% static 'main/pics/Sponsors2/logo_tim.png' %}" alt="Creative Tim">
                     </div>
                     <div class="content">
                         <h2>Creative Tim</h2>
@@ -145,7 +146,7 @@
             <div class="container">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./assets/Sponsors/logo_digitalOcean.png" alt="Digital Ocean">
+                        <img src="{% static 'main/pics/Sponsors2/logo_digitalOcean.png' %}" alt="Digital Ocean">
                     </div>
                     <div class="content">
                         <h2>Digital Ocean</h2>
@@ -158,7 +159,7 @@
                 </div>
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./assets/Sponsors/logo_fab.png" alt="Fab Hotels">
+                        <img src="{% static 'main/pics/Sponsors2/logo_fab.png' %}" alt="Fab Hotels">
                     </div>
                     <div class="content">
                         <h2>Fab Hotels</h2>
@@ -171,7 +172,7 @@
                 </div>
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./assets/Sponsors/logo_GfG.png" alt="Geeks For Geeks">
+                        <img src="{% static 'main/pics/Sponsors2/logo_GfG.png' %}" alt="Geeks For Geeks">
                     </div>
                     <div class="content">
                         <h2>Geeks For Geeks</h2>
@@ -191,7 +192,7 @@
             <div class="container">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./assets/Sponsors/logo_GG.png" alt="Guerilla Gaming">
+                        <img src="{% static 'main/pics/Sponsors2/logo_GG.png' %}" alt="Guerilla Gaming">
                     </div>
                     <div class="content">
                         <h2>Guerilla Gaming</h2>
@@ -204,7 +205,7 @@
                 </div>
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./assets/Sponsors/logo_github.png" alt="Github">
+                        <img src="{% static 'main/pics/Sponsors2/logo_github.png' %}" alt="Github">
                     </div>
                     <div class="content">
                         <h2>Github</h2>
@@ -217,7 +218,7 @@
                 </div>
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./assets/Sponsors/logo_LCO.png" alt="Learn Code Online">
+                        <img src="{% static 'main/pics/Sponsors2/logo_LCO.png' %}" alt="Learn Code Online">
                     </div>
                     <div class="content">
                         <h2>Learn Code Online</h2>
@@ -241,7 +242,7 @@
             <div class="container">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./assets/Sponsors/logo_paytm.png" alt="Paytm Build for India">
+                        <img src="{% static 'main/pics/Sponsors2/logo_paytm.png' %}" alt="Paytm Build for India">
                     </div>
                     <div class="content">
                         <h2>Paytm Build for India</h2>
@@ -258,7 +259,7 @@
                 </div>
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./assets/Sponsors/logo_vanfly.png" alt="Vanfly">
+                        <img src="{% static 'main/pics/Sponsors2/logo_vanfly.png' %}" alt="Vanfly">
                     </div>
                     <div class="content">
                         <h2>Vanfly</h2>
@@ -275,7 +276,7 @@
                 </div>
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./assets/Sponsors/logo_wolf.png" alt="Wolfram Language">
+                        <img src="{% static 'main/pics/Sponsors2/logo_wolf.png' %}" alt="Wolfram Language">
                     </div>
                     <div class="content">
                         <h2>Wolfram Language</h2>
@@ -295,7 +296,7 @@
             <div class="container">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./assets/Sponsors/logo_inkmonk.png" alt="Inkmonk">
+                        <img src="{% static 'main/pics/Sponsors2/logo_inkmonk.png' %}" alt="Inkmonk">
                     </div>
                     <div class="content">
                         <h2>Inkmonk</h2>
@@ -308,7 +309,7 @@
                 </div>
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./assets/Sponsors/logo_TGgears.png" alt="TGGears">
+                        <img src="{% static 'main/pics/Sponsors2/logo_TGgears.png' %}" alt="TGGears">
                     </div>
                     <div class="content">
                         <h2>TGGears</h2>
@@ -321,7 +322,7 @@
                 </div>
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./assets/Sponsors/logo_CN.png" alt="Coding Ninjas">
+                        <img src="{% static 'main/pics/Sponsors2/logo_CN.png' %}" alt="Coding Ninjas">
                     </div>
                     <div class="content">
                         <h2>Coding Ninjas</h2>
@@ -345,7 +346,7 @@
             <div class="container">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./assets/Sponsors/logo_hackSociety.png" alt="Hack Society">
+                        <img src="{% static 'main/pics/Sponsors2/logo_hackSociety.png' %}" alt="Hack Society">
                     </div>
                     <div class="content">
                         <h2>Hack Society</h2>
@@ -358,7 +359,7 @@
                 </div>
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./assets/Sponsors/logo_souled store.png" alt="The Souled Store">
+                        <img src="{% static 'main/pics/Sponsors2/logo_souled store.png' %}" alt="The Souled Store">
                     </div>
                     <div class="content">
                         <h2>The Souled Store</h2>
@@ -371,7 +372,7 @@
                 </div>
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./assets/Sponsors/logo_hasura.png" alt="Hasura">
+                        <img src="{% static 'main/pics/Sponsors2/logo_hasura.png' %}" alt="Hasura">
                     </div>
                     <div class="content">
                         <h2>Hasura</h2>
@@ -391,7 +392,7 @@
             <div class="container">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./assets/Sponsors/logo_fusion.png" alt="Fusion Software Solution">
+                        <img src="{% static 'main/pics/Sponsors2/logo_fusion.png' %}" alt="Fusion Software Solution">
                     </div>
                     <div class="content"> 
                         <h2>Fusion Software Solution</h2>
@@ -404,7 +405,7 @@
                 </div>
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./assets/Sponsors/logo_sticker.png" alt="Stickermule">
+                        <img src="{% static 'main/pics/Sponsors2/logo_sticker.png' %}" alt="Stickermule">
                     </div>
                     <div class="content">
                         <h2>Stickermule</h2>
@@ -418,7 +419,7 @@
                 <!--  -->
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./assets/Sponsors/logo_skillenza.png" alt="Skillenza">
+                        <img src="{% static 'main/pics/Sponsors2/logo_skillenza.png' %}" alt="Skillenza">
                     </div>
                     <div class="content">
                         <h2>Skillenza</h2>
@@ -452,14 +453,14 @@
                     <div class="col-sm-4 col-md-3">
                         <!-- Location -->
                         <div class="text-center pic_contact">
-                            <img src="./assets/ContactUs/location.png" alt="Locate Us"><br>
+                            <img src="{% static 'main/pics/ContactUs/location.png' %}" alt="Locate Us"><br>
                             <button class="button_contact">TIET, Patiala - 147004</button>
                         </div>
                     </div>
                     <div class="col-sm-2"></div>
                     <div class="col-sm-4 col-md-3">
                         <div class="text-center pic_contact">
-                            <img src="./assets/ContactUs/phone.png" alt="Contact Us"><br>
+                            <img src="{% static 'main/pics/ContactUs/phone.png' %}" alt="Contact Us"><br>
                             <button class="button_contact">Aryan : +91 99976 30003 </button>
                         </div>
                     </div>
@@ -467,12 +468,12 @@
                 </div>
                 <div style="height: 1vh;"></div>
                 <div class="text-center">
-                    <a href="https://www.facebook.com/mlsctiet/" target="_blank"><img src="./assets/ContactUs/fb.png"
+                    <a href="https://www.facebook.com/mlsctiet/" target="_blank"><img src="{% static 'main/pics/ContactUs/fb.png' %}"
                             alt="Facebook" class="contact_link"></a>
                     <a href="https://github.com/MicrosoftStudentChapter" target="_blank"><img
-                            src="./assets/ContactUs/github-04.png" alt="Twitter" class="contact_link"></a>
+                            src="{% static 'main/pics/ContactUs/github-04.png' %}" alt="Twitter" class="contact_link"></a>
                     <a href="https://instagram.com/mlsc_tiet?igshid=bbv9mjjkx4h" target="_blank"><img
-                            src="./assets/ContactUs/insta.png" alt="Instagram" class="contact_link"></a>
+                            src="{% static 'main/pics/ContactUs/insta.png' %}" alt="Instagram" class="contact_link"></a>
                 </div>
                 <div style="height: 2vh;"></div>
             </div>

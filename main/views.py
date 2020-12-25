@@ -5,5 +5,5 @@ def home(request):
     return render(request, "main/home.html")
 
 
-def sponser(request):
-    return render(request, "main/sponsers.html")
+def sponsor(request):
+    return render(request, "main/sponsors.html")

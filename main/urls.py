@@ -1,8 +1,8 @@
 from django.urls import path
-from main.views import home
+from main.views import home, sponsor
 
 
 urlpatterns = [
     path("", home, name="home"),
-    # path("why-sponser-us/", sponser, name="sponsers"),
+    path("why-sponsor-us/", sponsor, name="sponsor"),
 ]
