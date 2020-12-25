@@ -4,7 +4,7 @@ function openMenu() {
 }
 
 function checkMenu() {
-  if (document.querySelector(".top-navbar").offsetWidth > 700) {
+  if (document.querySelector(".top-navbar").offsetWidth > 750) {
       document.querySelector(".nav-items").classList.remove("open-menu");
   }
 }

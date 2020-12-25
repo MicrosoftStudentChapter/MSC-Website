@@ -128,7 +128,7 @@ a:active {
   outline: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .top-navbar button {
       display: inline-block;
   }
@@ -143,7 +143,7 @@ a:active {
   font-size: 1.2rem;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .top-navbar .nav-items {
       display: none;
   }
