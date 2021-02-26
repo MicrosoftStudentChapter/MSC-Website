@@ -12,6 +12,7 @@ DEBUG = os.environ.get("DJANGO_DEBUG", "") != "False"
 ALLOWED_HOSTS = [
     "msctiet.herokuapp.com",
     "mlsctiet.co.in",
+    "www.mlsctiet.co.in",
 ]  # test deployment url and website URL
 
 
