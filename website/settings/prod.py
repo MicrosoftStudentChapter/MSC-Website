@@ -15,6 +15,7 @@ ALLOWED_HOSTS = [
     "www.mlsctiet.co.in",
 ]  # test deployment url and website URL
 
+STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 
 # Postgres Database configuration
 
