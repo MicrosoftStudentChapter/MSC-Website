@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 a:link {
   text-decoration: none;
   color: white;
@@ -192,6 +193,7 @@ a {
 .content {
   height: 82vh;
   padding-top: 10rem;
+  
 }
 
 .content h1 {
@@ -206,9 +208,11 @@ a {
 }
 
 #std_ch {
+  font-family: 'Libre Baskerville', serif;
   font-size: 3.47rem;
   letter-spacing: -0.01em;
   font-weight: 700;
+  color:#ffffff
 }
 
 @media only screen and (min-width: 420px) and (max-width: 590px) {
