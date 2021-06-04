@@ -197,218 +197,92 @@
                 <!-- <div class="row content-section" id="core_div"> -->
                 <div class="row mt-5">
                   <div class="col-md-4"></div>
-                  <div class="col-md-2 col-sm-6">
-                    <div class="our_team">
-                      <img
-                        src="{% static 'members/Secretaries/Pranjal.jpg' %}"
-                        alt=""
-                      />
-                      <ul class="social">
-                        <li>
-                          <a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://www.linkedin.com/in/pranjalgupta29"
-                            ><i class="fa fa-linkedin"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="https://www.instagram.com/_pranj.al/"
-                            ><i class="fa fa-instagram"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="https://github.com/pranjalgupta29"
-                            ><i class="fa fa-github"></i
-                          ></a>
-                        </li>
-                      </ul>
-                      <div class="team-content">
-                        <h3 class="title">Pranjal</h3>
-                        <span class="post"> General Secretary </span>
-                      </div>
-                    </div>
-                  </div>
 
-                  <div class="col-md-2 col-sm-6">
-                    <div class="our_team">
-                      <img
-                        src="{% static 'members/Secretaries/Arpit.jpg' %}"
-                        alt=""
-                      />
-                      <ul class="social">
-                        <li>
-                          <a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://www.linkedin.com/in/arpit-arora-2b7847192/"
-                            ><i class="fa fa-linkedin"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://www.instagram.com/arpit.arora18/"
-                            ><i class="fa fa-instagram"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="https://github.com/arpit1709"
-                            ><i class="fa fa-github"></i
-                          ></a>
-                        </li>
-                      </ul>
-                      <div class="team-content">
-                        <h3 class="title">Arpit</h3>
-                        <span class="post"> Finance Secretary </span>
+                  {% for sec in secretaries %}
+
+                    <div class="col-md-2 col-sm-6">
+                      <div class="our_team">
+                        <img
+                          src="{{sec.img}}"
+                          alt=""
+                        />
+                        <ul class="social">
+                          <li>
+                            <a href="{{sec.fb}}"><i class="fa fa-facebook"></i></a>
+                          </li>
+                          <li>
+                            <a
+                              href="{{sec.linkedin}}"
+                              ><i class="fa fa-linkedin"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="{{sec.insta}}"
+                              ><i class="fa fa-instagram"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="{{sec.github}}"
+                              ><i class="fa fa-github"></i
+                            ></a>
+                          </li>
+                        </ul>
+                        <div class="team-content">
+                          <h3 class="title">{{sec.name}}</h3>
+                          <span class="post"> {{sec.position}} </span>
+                        </div>
                       </div>
                     </div>
-                  </div>
+
+                  {% endfor %}
+                  
+
+                  
                   <div class="col-md-4"></div>
                 </div>
                 <div class="row mt-3">
                   <div class="col-md-2"></div>
-                  <div class="col-md-2 col-sm-6">
-                    <div class="our_team">
-                      <img
-                        src="{% static 'members/Secretaries/Paras.jpg' %}"
-                        alt=""
-                      />
-                      <ul class="social">
-                        <li>
-                          <a href="#"
-                            ><i class="fa fa-facebook"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://www.linkedin.com/in/paras-dhanwal/"
-                            ><i class="fa fa-linkedin"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="#"
-                            ><i class="fa fa-instagram"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="#"
-                            ><i class="fa fa-github"></i
-                          ></a>
-                        </li>
-                      </ul>
-                      <div class="team-content">
-                        <h3 class="title">Paras</h3>
-                        <span class="post"> Joint Secretary </span>
-                      </div>
-                    </div>
-                  </div>
+
+                  {% for jsec in jointsec %}
 
                   <div class="col-md-2 col-sm-6">
                     <div class="our_team">
                       <img
-                        src="{% static 'members/Secretaries/Paritosh.jpg' %}"
+                        src="{{jsec.img}}"
                         alt=""
                       />
                       <ul class="social">
                         <li>
-                          <a href="https://www.facebook.com/paritosh.arora.507"
+                          <a href="{{jsec.fb}}"
                             ><i class="fa fa-facebook"></i
                           ></a>
                         </li>
                         <li>
                           <a
-                            href="https://www.linkedin.com/in/arora-paritosh"
+                            href="{{jsec.linkedin}}"
                             ><i class="fa fa-linkedin"></i
                           ></a>
                         </li>
                         <li>
-                          <a href="https://www.instagram.com/paritosh.exe/"
+                          <a href="{{jsec.insta}}"
                             ><i class="fa fa-instagram"></i
                           ></a>
                         </li>
                         <li>
-                          <a href="https://github.com/CLASHERBROs"><i class="fa fa-github"></i></a>
+                          <a href="{{jsec.github}}"
+                            ><i class="fa fa-github"></i
+                          ></a>
                         </li>
                       </ul>
                       <div class="team-content">
-                        <h3 class="title">Paritosh</h3>
-                        <span class="post"> Joint Secretary </span>
+                        <h3 class="title">{{jsec.name}}</h3>
+                        <span class="post"> {{jsec.position}} </span>
                       </div>
                     </div>
                   </div>
 
-                  <div class="col-md-2 col-sm-6">
-                    <div class="our_team">
-                      <img
-                        src="{% static 'members/Secretaries/Anushri.jpeg' %}"
-                        alt="" style=""
-                      />
-                      <ul class="social">
-                        <li>
-                          <a href="#"
-                            ><i class="fa fa-facebook"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://www.linkedin.com/in/anushri-jain23/"
-                            ><i class="fa fa-linkedin"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="https://www.instagram.com/anushri._.jain/"
-                            ><i class="fa fa-instagram"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="https://github.com/anushri2325"
-                            ><i class="fa fa-github"></i
-                          ></a>
-                        </li>
-                      </ul>
-                      <div class="team-content">
-                        <h3 class="title">Anushri</h3>
-                        <span class="post"> Joint Secretary </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-2 col-sm-6">
-                    <div class="our_team">
-                      <img
-                        src="{% static 'members/Secretaries/Saurav.jpeg' %}"
-                        alt=""
-                      />
-                      <ul class="social">
-                        <li>
-                          <a href="https://www.facebook.com/saurav.srivastav.391"
-                            ><i class="fa fa-facebook"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://www.linkedin.com/in/saurav-shrivastav-635996184"
-                            ><i class="fa fa-linkedin"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="https://www.instagram.com/_saurav_shrivastav_/"
-                            ><i class="fa fa-instagram"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="https://github.com/Saurav-Shrivastav"
-                            ><i class="fa fa-github"></i
-                          ></a>
-                        </li>
-                      </ul>
-                      <div class="team-content">
-                        <h3 class="title">Saurav</h3>
-                        <span class="post"> Joint Secretary </span>
-                      </div>
-                    </div>
-                  </div>
+                  {% endfor %}
+                  
                   <div class="col-md-3"></div>
                 </div>
                 <!-- </div> -->
