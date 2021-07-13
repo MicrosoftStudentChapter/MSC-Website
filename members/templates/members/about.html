@@ -296,151 +296,45 @@
                     <!-- <div class="container"> -->
                     <div class="col-md-2"></div>
 
-                    <div class="col-md-2 col-sm-6">
-                      <div class="our_team">
-                        <img
-                          src="{% static 'members/Heads/Ritik1.jpg' %}"
-                          alt=""
-                        />
-                        <ul class="social">
-                          <li>
-                            <a href="https://www.facebook.com/ritik.rajdev"><i class="fa fa-facebook"></i></a>
-                          </li>
-                          <li>
-                            <a
-                              href="https://www.linkedin.com/in/ritikrajdev/"
-                              ><i class="fa fa-linkedin"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a
-                              href="https://www.instagram.com/ritik_rajdev/"
-                              ><i class="fa fa-instagram"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a href="https://github.com/ritikrajdev"
-                              ><i class="fa fa-github"></i
-                            ></a>
-                          </li>
-                        </ul>
-                        <div class="team-content">
-                          <h3 class="title">Ritik</h3>
-                          <span class="post"> Technical Head </span>
-                        </div>
-                      </div>
-                    </div>
+                    {% for head in heads %}
 
                     <div class="col-md-2 col-sm-6">
                       <div class="our_team">
                         <img
-                          src="{% static 'members/Heads/Shouraya.jpg' %}"
+                          src="{{head.img}}"
                           alt=""
                         />
                         <ul class="social">
                           <li>
-                            <a
-                              href="#"
-                              ><i class="fa fa-facebook"></i
-                            ></a>
+                            <a href="{{head.fb}}"><i class="fa fa-facebook"></i></a>
                           </li>
                           <li>
                             <a
-                              href="https://www.linkedin.com/in/shouraya-goyal-aa471b1a2"
+                              href="{{head.linkedin}}"
                               ><i class="fa fa-linkedin"></i
                             ></a>
                           </li>
                           <li>
-                            <a href="https://www.instagram.com/shouraya.7/"
+                            <a
+                              href="{{head.insta}}"
                               ><i class="fa fa-instagram"></i
                             ></a>
                           </li>
                           <li>
-                            <a href="https://github.com/Shouraya/"
+                            <a href="{{head.github}}"
                               ><i class="fa fa-github"></i
                             ></a>
                           </li>
                         </ul>
                         <div class="team-content">
-                          <h3 class="title">Shouraya</h3>
-                          <span class="post"> Marketing Head </span>
+                          <h3 class="title">{{head.name}}</h3>
+                          <span class="post"> {{head.position}} </span>
                         </div>
                       </div>
                     </div>
 
-                    <div class="col-md-2 col-sm-6">
-                      <div class="our_team">
-                        <img
-                          src="{% static 'members/Heads/Divyanshu.jpg' %}"
-                          alt=""
-                        />
-                        <ul class="social">
-                          <li>
-                            <a
-                              href="https://www.facebook.com/divyanshu.jindal.359"
-                              ><i class="fa fa-facebook"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a
-                              href="https://www.linkedin.com/in/divyanshu-jindal-5b675b197/"
-                              ><i class="fa fa-linkedin"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a href="https://www.instagram.com/jindal_dv/?r=nametag"
-                              ><i class="fa fa-instagram"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a href="https://github.com/Dv2204"
-                              ><i class="fa fa-github"></i
-                            ></a>
-                          </li>
-                        </ul>
-                        <div class="team-content">
-                          <h3 class="title">Divyanshu</h3>
-                          <span class="post"> Finance Head </span>
-                        </div>
-                      </div>
-                    </div>
+                    {% endfor %}
 
-                    <div class="col-md-2 col-sm-6">
-                      <div class="our_team">
-                        <img
-                          src="{% static 'members/Heads/Akshat.jpg' %}"
-                          alt=""
-                        />
-                        <ul class="social">
-                          <li>
-                            <a href="#"
-                              ><i class="fa fa-facebook"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a
-                              href="https://www.linkedin.com/in/akshat-sharma-8a412a193/"
-                              ><i class="fa fa-linkedin"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a
-                              href="https://www.instagram.com/akshat_sharma_2001/"
-                              ><i class="fa fa-instagram"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a href="https://github.com/SharmaAkshat007"
-                              ><i class="fa fa-github"></i
-                            ></a>
-                          </li>
-                        </ul>
-                        <div class="team-content">
-                          <h3 class="title">Akshat</h3>
-                          <span class="post"> Event Management </span>
-                        </div>
-                      </div>
-                    </div>
                     <div class="col-md-2"></div>
 
                     <!-- </div> -->

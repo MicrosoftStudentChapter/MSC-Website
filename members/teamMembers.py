@@ -9,6 +9,8 @@ class Member:
         self.insta = minsta
         self.github = mgit
 
+# secNames = ['Pranjal', 'Arpit']
+
 
 def Secretaries():
     Pranjal = Member("Pranjal", "General Secretary", "../../static/members/Secretaries/Pranjal.jpg", "#", "https://www.linkedin.com/in/pranjalgupta29",
@@ -30,3 +32,16 @@ def JointSecretaries():
                     "https://www.linkedin.com/in/saurav-shrivastav-635996184", "https://www.instagram.com/_saurav_shrivastav_/", "https://github.com/Saurav-Shrivastav")
 
     return Paras, Paritosh, Anushri, Saurav
+
+
+def Heads():
+    Ritik = Member("Ritik", "Technical Head", "../../static/members/Heads/Ritik1.jpg", "https://www.facebook.com/ritik.rajdev",
+                   "https://www.linkedin.com/in/ritikrajdev/", "https://www.instagram.com/ritik_rajdev/", "https://github.com/ritikrajdev")
+    Shourya = Member("Shouraya", "Marketing Head", "../../static/members/Heads/Shouraya.jpg", "#",
+                     "https://www.linkedin.com/in/shouraya-goyal-aa471b1a2", "https://www.instagram.com/shouraya.7/", "https://github.com/Shouraya/")
+    Divyanshu = Member("Divyanshu", "Finance Head", "../../static/members/Heads/Divyanshu.jpg", "https://www.facebook.com/divyanshu.jindal.359",
+                       "https://www.linkedin.com/in/divyanshu-jindal-5b675b197/", "https://www.instagram.com/jindal_dv/?r=nametag", "https://github.com/Dv2204")
+    Akshat = Member("Akshat", "Event Management", "../../static/members/Heads/Akshat.jpg", "#", "https://www.linkedin.com/in/akshat-sharma-8a412a193/",
+                    "https://www.instagram.com/akshat_sharma_2001/", "https://github.com/SharmaAkshat007")
+
+    return Ritik, Shourya, Divyanshu, Akshat

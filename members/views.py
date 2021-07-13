@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .teamMembers import Secretaries, JointSecretaries
+from .teamMembers import Secretaries, JointSecretaries, Heads
 
 
 def alumni(request):
@@ -7,20 +7,9 @@ def alumni(request):
 
 
 def team(request):
-    # secretaries = {"Pranjal": Pranjal,
-    #                "Arpit": Arpit}
 
-    #details = secretaries.values()
     sec = Secretaries()
     jsec = JointSecretaries()
+    heads = Heads()
 
-    return render(request, "members/about.html", context={'secretaries': sec, 'jointsec': jsec})
-
-# ONLY FOR TESTING PURPOSE
-
-# secretaries = {"Pranjal": {"name": "Pranjal", "post": "gen sec"},
-#                "Arpit": {"name": "Arpit", "post": "Fin sec"}}
-
-# for detail in secretaries.values():
-#     print(detail["name"])
-#     print(detail["post"])
+    return render(request, "members/about.html", context={'secretaries': sec, 'jointsec': jsec, 'heads': heads})
