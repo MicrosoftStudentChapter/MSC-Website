@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from .teamMembers import Secretaries, JointSecretaries, Heads
+# from .teamMembers import Secretaries, JointSecretaries, Heads
+from .teamMembers import members
 
 
 def alumni(request):
@@ -8,8 +9,18 @@ def alumni(request):
 
 def team(request):
 
-    sec = Secretaries()
-    jsec = JointSecretaries()
-    heads = Heads()
+    # sec = Secretaries()
+    # jsec = JointSecretaries()
+    # heads = Heads()
 
-    return render(request, "members/about.html", context={'secretaries': sec, 'jointsec': jsec, 'heads': heads})
+    secretaries = filter(
+        lambda member: 'General Secretary' in member.position or 'Finance Secretary' in member.position, members)
+    joint_secretaries = filter(
+        lambda member: 'Joint Secretary' in member.position, members)
+    heads = filter(
+        lambda member: 'Head' in member.position, members)
+
+    family = {"secretaries": secretaries,
+              "joint_secretaries": joint_secretaries, "heads": heads}
+
+    return render(request, "members/about.html", context={'members': family})

@@ -12,6 +12,24 @@ class Member:
 # secNames = ['Pranjal', 'Arpit']
 
 
+members = [
+    Member("Pranjal", "General Secretary", "../../static/members/Secretaries/Pranjal.jpg", "#",
+           "https://www.linkedin.com/in/pranjalgupta29", "https://www.instagram.com/_pranj.al/", "https://github.com/pranjalgupta29"),
+    Member("Arpit", "Finance Secretary", "../../static/members/Secretaries/Arpit.jpg", "#", "https://www.linkedin.com/in/arpit-arora-2b7847192/",
+           "https://www.instagram.com/arpit.arora18/", "https://github.com/arpit1709"),
+
+    Member("Paras", "Joint Secretary", "../../static/members/Secretaries/Paras.jpg",
+           "#", "https://www.linkedin.com/in/paras-dhanwal/", "#", "#"),
+    Member("Paritosh", "Joint Secretary", "../../static/members/Secretaries/Paritosh.jpg", "https://www.facebook.com/paritosh.arora.507",
+           "https://www.linkedin.com/in/arora-paritosh", "https://www.instagram.com/paritosh.exe/", "https://github.com/CLASHERBROs"),
+
+    Member("Akshat", "Event Management Head", "../../static/members/Heads/Akshat.jpg", "#", "https://www.linkedin.com/in/akshat-sharma-8a412a193/",
+           "https://www.instagram.com/akshat_sharma_2001/", "https://github.com/SharmaAkshat007"),
+    Member("Divyanshu", "Finance Head", "../../static/members/Heads/Divyanshu.jpg", "https://www.facebook.com/divyanshu.jindal.359",
+           "https://www.linkedin.com/in/divyanshu-jindal-5b675b197/", "https://www.instagram.com/jindal_dv/?r=nametag", "https://github.com/Dv2204"),
+]
+
+'''
 def Secretaries():
     Pranjal = Member("Pranjal", "General Secretary", "../../static/members/Secretaries/Pranjal.jpg", "#", "https://www.linkedin.com/in/pranjalgupta29",
                      "https://www.instagram.com/_pranj.al/", "https://github.com/pranjalgupta29")
@@ -41,7 +59,8 @@ def Heads():
                      "https://www.linkedin.com/in/shouraya-goyal-aa471b1a2", "https://www.instagram.com/shouraya.7/", "https://github.com/Shouraya/")
     Divyanshu = Member("Divyanshu", "Finance Head", "../../static/members/Heads/Divyanshu.jpg", "https://www.facebook.com/divyanshu.jindal.359",
                        "https://www.linkedin.com/in/divyanshu-jindal-5b675b197/", "https://www.instagram.com/jindal_dv/?r=nametag", "https://github.com/Dv2204")
-    Akshat = Member("Akshat", "Event Management", "../../static/members/Heads/Akshat.jpg", "#", "https://www.linkedin.com/in/akshat-sharma-8a412a193/",
+    Akshat = Member("Akshat", "Event Management Head", "../../static/members/Heads/Akshat.jpg", "#", "https://www.linkedin.com/in/akshat-sharma-8a412a193/",
                     "https://www.instagram.com/akshat_sharma_2001/", "https://github.com/SharmaAkshat007")
 
     return Ritik, Shourya, Divyanshu, Akshat
+'''
