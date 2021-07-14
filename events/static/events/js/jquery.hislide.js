@@ -23,8 +23,13 @@
             { $zIndex: 3, width: 130, height: 170, top: 59, left: 620, $opacity: 0.4 },
             { $zIndex: 2, width: 120, height: 150, top: 69, left: 500, $opacity: 0.2 },
             { $zIndex: 1, width: 100, height: 120, top: 79, left: 154, $opacity: 0.1 },
+            { $zIndex: 1, width: 100, height: 120, top: 79, left: 154, $opacity: 0.1 },
+            { $zIndex: 1, width: 100, height: 120, top: 79, left: 154, $opacity: 0.1 },
+            { $zIndex: 1, width: 100, height: 120, top: 79, left: 154, $opacity: 0.1 },
+            { $zIndex: 1, width: 100, height: 120, top: 79, left: 154, $opacity: 0.1 },
+            { $zIndex: 1, width: 100, height: 120, top: 79, left: 154, $opacity: 0.1 },
+            { $zIndex: 1, width: 100, height: 120, top: 79, left: 154, $opacity: 0.1 },
             { $zIndex: 1, width: 100, height: 120, top: 79, left: 154, $opacity: 0.1 }
-            
         ];
 
         var $lis = $ele.find('li');
@@ -56,7 +61,6 @@
             });
         }
 
-      
         function next() {
            
             states.unshift(states.pop());
