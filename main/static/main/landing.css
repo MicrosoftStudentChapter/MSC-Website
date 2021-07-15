@@ -63,6 +63,7 @@ a {
   position: relative;
   padding-bottom: 0.33rem;
   font-size: 1rem;
+  display: contents;
 }
 
 .top-navbar a span::before {
@@ -640,3 +641,17 @@ i {
 /* ::-moz-scrollbar-thumb:window-inactive {
   background: rgba(0, 0, 0, 1);
 } */
+@media screen and (max-width:335px) {
+  .top-navbar .open-menu{
+    z-index: 10;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    right: 0px;
+    top:5.1rem;
+    background-color: #020202;
+    box-sizing: border-box;
+  }
+  
+}
