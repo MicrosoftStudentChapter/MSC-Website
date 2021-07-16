@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 a:link {
   text-decoration: none;
   color: white;
@@ -207,9 +208,7 @@ a {
 }
 
 #std_ch {
-  font-size: 3.47rem;
   letter-spacing: -0.01em;
-  font-weight: 700;
 }
 
 @media only screen and (min-width: 420px) and (max-width: 590px) {
