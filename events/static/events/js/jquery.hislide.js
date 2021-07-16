@@ -35,14 +35,35 @@
             next();
         });
         $ele.find('.hi-prev').on('click', function() {
-            states.push(states.shift());
-            move();
+            prev();
         });
         $ele.on('mouseenter', function() {
             clearInterval(timer);
             timer = null;
         }).on('mouseleave', function() {
             autoPlay();
+        });
+
+        $lis.on('click', function(){
+            console.log(this.style.left);
+            if(this.style.left < "110px")
+            {
+                prev();
+                prev();
+            }
+            else if(this.style.left < "230px")
+            {
+                prev();
+            }
+            else if(this.style.left ==="470px")
+            {
+                next();
+            }
+            else if(this.style.left === "620px")
+            {
+                next();
+                next();
+            }
         });
 
         move();
@@ -60,6 +81,12 @@
         function next() {
            
             states.unshift(states.pop());
+            move();
+        }
+
+        function prev()
+        {
+            states.push(states.shift());
             move();
         }
 
