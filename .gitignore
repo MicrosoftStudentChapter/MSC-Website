@@ -5,3 +5,4 @@ env/
 *.sqlite3
 venv/
 Env6/
+.DS_Store
