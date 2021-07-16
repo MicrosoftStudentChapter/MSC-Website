@@ -201,29 +201,22 @@ a {
   text-align: center;
 }
 
-#msft {
-  font-size: 5.5rem;
-  font-weight: bold;
-  letter-spacing: 0.02em;
-}
-
 #std_ch {
+  font-family: 'Poppins', sans-serif;
+  color:black;
+  font-weight: 600;
+  font-size: 4.8rem;
+  text-align: center;
   letter-spacing: -0.01em;
 }
 
 @media only screen and (min-width: 420px) and (max-width: 590px) {
-  #msft {
-    font-size: 3.5rem;
-  }
   #std_ch {
     font-size: 1.9rem;
   }
 }
 
 @media only screen and (max-width: 419px) {
-  #msft {
-    font-size: 2.7rem;
-  }
   #std_ch {
     font-size: 1.7rem;
   }
@@ -525,9 +518,6 @@ i {
     /* padding-left: 2rem; */
     padding-top: 12rem;
   }
-  #msft {
-    font-size: 5rem;
-  }
   #std_ch {
     font-size: 3.16rem;
   }
@@ -536,9 +526,6 @@ i {
 @media only screen and (min-width: 500px) and (max-width: 605px) {
   .content {
     padding-top: 12rem;
-  }
-  #msft {
-    font-size: 4.3rem;
   }
   #std_ch {
     font-size: 2.7rem;
@@ -558,9 +545,6 @@ i {
   .content {
     padding-top: 10rem;
   }
-  #msft {
-    font-size: 3rem;
-  }
   #std_ch {
     font-size: 1.9rem;
   }
@@ -572,9 +556,6 @@ i {
 @media only screen and (min-width: 331px) and (max-width: 346px) {
   .content {
     padding-top: 10rem;
-  }
-  #msft {
-    font-size: 2.6rem;
   }
   #std_ch {
     font-size: 1.64rem;
