@@ -1,11 +1,65 @@
-name,position,img,fb,linkedin,insta,github
-Pranjal,General Secretary,../../static/members/Secretaries/Pranjal.jpg,#,https://www.linkedin.com/in/pranjalgupta29,https://www.instagram.com/_pranj.al/,https://github.com/pranjalgupta2
-Arpit,Finance Secretary,../../static/members/Secretaries/Arpit.jpg,#,https://www.linkedin.com/in/arpit-arora-2b7847192/,https://www.instagram.com/arpit.arora18/,https://github.com/arpit170
-Paras,Joint Secretary,../../static/members/Secretaries/Paras.jpg,#,https://www.linkedin.com/in/paras-dhanwal/,#,#
-Paritosh,Joint Secretary,../../static/members/Secretaries/Paritosh.jpg,https://www.facebook.com/paritosh.arora.507,https://www.linkedin.com/in/arora-paritosh,https://www.instagram.com/paritosh.exe/,https://github.com/CLASHERBRO
-Anushri,Joint Secretary,../../static/members/Secretaries/Anushri.jpeg,#,https://www.linkedin.com/in/anushri-jain23/,https://www.instagram.com/anushri._.jain/,https://github.com/anushri232
-Saurav,Joint Secretary,../../static/members/Secretaries/Saurav.jpeg,https://www.facebook.com/saurav.srivastav.391,https://www.linkedin.com/in/saurav-shrivastav-635996184,https://www.instagram.com/_saurav_shrivastav_/,https://github.com/Saurav-Shrivasta
-Ritik,Technical Head,../../static/members/Heads/Ritik1.jpg,https://www.facebook.com/ritik.rajdev,https://www.linkedin.com/in/ritikrajdev/,https://www.instagram.com/ritik_rajdev/,https://github.com/ritikrajde
-Shouraya,Marketing Head,../../static/members/Heads/Shouraya.jpg,#,https://www.linkedin.com/in/shouraya-goyal-aa471b1a2,https://www.instagram.com/shouraya.7/,https://github.com/Shouraya
-Divyanshu,Finance Head,../../static/members/Heads/Divyanshu.jpg,https://www.facebook.com/divyanshu.jindal.359,https://www.linkedin.com/in/divyanshu-jindal-5b675b197/,https://www.instagram.com/jindal_dv/?r=nametag,https://github.com/Dv220
-Akshat,Event Management Head,../../static/members/Heads/Akshat.jpg,#,https://www.linkedin.com/in/akshat-sharma-8a412a193/,https://www.instagram.com/akshat_sharma_2001/,https://github.com/SharmaAkshat00
+id,name,position,img,fb,linkedin,insta,github
+69,Pranjal,General Secretary,../../static/members/Secretaries/Pranjal.jpg,#,https://www.linkedin.com/in/pranjalgupta29,https://www.instagram.com/_pranj.al/,https://github.com/pranjalgupta2
+69,Arpit,Finance Secretary,../../static/members/Secretaries/Arpit.jpg,#,https://www.linkedin.com/in/arpit-arora-2b7847192/,https://www.instagram.com/arpit.arora18/,https://github.com/arpit170
+69,Paras,Joint Secretary,../../static/members/Secretaries/Paras.jpg,#,https://www.linkedin.com/in/paras-dhanwal/,#,#
+69,Paritosh,Joint Secretary,../../static/members/Secretaries/Paritosh.jpg,https://www.facebook.com/paritosh.arora.507,https://www.linkedin.com/in/arora-paritosh,https://www.instagram.com/paritosh.exe/,https://github.com/CLASHERBRO
+69,Anushri,Joint Secretary,../../static/members/Secretaries/Anushri.jpeg,#,https://www.linkedin.com/in/anushri-jain23/,https://www.instagram.com/anushri._.jain/,https://github.com/anushri232
+69,Saurav,Joint Secretary,../../static/members/Secretaries/Saurav.jpeg,https://www.facebook.com/saurav.srivastav.391,https://www.linkedin.com/in/saurav-shrivastav-635996184,https://www.instagram.com/_saurav_shrivastav_/,https://github.com/Saurav-Shrivasta
+69,Ritik,Technical Head,../../static/members/Heads/Ritik1.jpg,https://www.facebook.com/ritik.rajdev,https://www.linkedin.com/in/ritikrajdev/,https://www.instagram.com/ritik_rajdev/,https://github.com/ritikrajde
+69,Shouraya,Marketing Head,../../static/members/Heads/Shouraya.jpg,#,https://www.linkedin.com/in/shouraya-goyal-aa471b1a2,https://www.instagram.com/shouraya.7/,https://github.com/Shouraya
+69,Divyanshu,Finance Head,../../static/members/Heads/Divyanshu.jpg,https://www.facebook.com/divyanshu.jindal.359,https://www.linkedin.com/in/divyanshu-jindal-5b675b197/,https://www.instagram.com/jindal_dv/?r=nametag,https://github.com/Dv220
+69,Akshat,Event Management Head,../../static/members/Heads/Akshat.jpg,#,https://www.linkedin.com/in/akshat-sharma-8a412a193/,https://www.instagram.com/akshat_sharma_2001/,https://github.com/SharmaAkshat00
+1,Prajit,CORE MEMBER,../../static/members/Core/Prajit.jpeg,https://www.facebook.com/profile.php?id=100005165117832,https://www.linkedin.com/in/prajitsengupta/,https://www.instagram.com/lightning_bolt2806/,https://github.com/Prajit-Sengupta
+2,Anannya,CORE MEMBER,../../static/members/Core/Anannya.jpeg,#,https://www.linkedin.com/mwlite/in/anannya-singh-715b521b8,https://www.instagram.com/_.anannyasingh._/,https://github.com/anannyasingh610
+3,Shivansh,CORE MEMBER,../../static/members/Core/Shivansh.jpg,#,https://www.linkedin.com/in/shivansh-kapoor-2135231b9/,https://www.instagram.com/_kapoor__29/,https://github.com/kapoor2902
+4,Rupanshi,CORE MEMBER,../../static/members/Core/Rupanshi.jpg,#,https://www.linkedin.com/in/rupanshijain/,https://www.instagram.com/rupanshijain_/,https://github.com/rdotjain
+5,Aarushi,CORE MEMBER,../../static/members/Core/Aarushi.jpg,#,https://www.linkedin.com/in/aarushiabrol/,https://www.instagram.com/_aarushi.abrol/,https://github.com/aarushi353
+6,Neha,CORE MEMBER,../../static/members/Core/Neha.jpg,#,https://www.linkedin.com/in/neha-agarwal-7807581b9/,https://www.instagram.com/the_amusing_girl/,https://github.com/NEHA15012002
+7,Abhinav,CORE MEMBER,../../static/members/Core/Abhinav.jpg,#,https://www.linkedin.com/in/abhinav-verma-b0b6401b2,https://www.instagram.com/abhiinxvv/,https://github.com/averma251
+8,Daksh,CORE MEMBER,../../static/members/Core/Daksh.jpeg,#,https://www.linkedin.com/in/daksh-azad-85bbb31bb/,https://www.instagram.com/dakshazad05/,https://github.com/DakshAzad05
+9,Adamay,CORE MEMBER,../../static/members/Core/Adamay.jpg,https://www.facebook.com/adamay.mann/,https://www.linkedin.com/in/adamaymann7/,https://www.instagram.com/ad_mann12/,https://github.com/mannadamay12
+10,Yashika,CORE MEMBER,../../static/members/Core/Yashika.jpg,https://www.facebook.com/yashika.aggarwal.505,https://www.linkedin.com/in/yashika-aggarwal-489aa5201,https://www.instagram.com/yashika1110/,https://github.com/yashikaagg1110
+11,Yashonidhi,CORE MEMBER,../../static/members/Core/Yashonidhi.jpeg,https://www.facebook.com/yashonidhi.srivastava,http://linkedin.com/in/yashonidhi-srivastava-a08004160,https://www.instagram.com/yashonidhi_srivastava/,#
+12,Nitansh,CORE MEMBER,../../static/members/Core/Nitansh.jpeg,https://www.facebook.com/nitansh.jain.5/,https://www.linkedin.com/in/nitansh-jain-5ab1701b8/,https://www.instagram.com/nitanshjain_3004/,https://github.com/nitanshjain
+13,Ishaan,CORE MEMBER,../../static/members/Core/Ishaan.jpg,#,https://www.linkedin.com/in/ishaan-bhola/,https://www.instagram.com/ishaan.10_/,https://github.com/Ishaan-10
+14,Khushi,CORE MEMBER,../../static/members/Core/Khushi.jpeg,#,https://www.linkedin.com/in/khushi-prasad-aa78531bb/,https://www.instagram.com/khushiprasad01/,https://github.com/khushipr
+15,Kunal,CORE MEMBER,../../static/members/Core/Kunal.jpg,https://www.facebook.com/kunal.demla/,https://www.linkedin.com/in/kunal-demla-a85116b1/,https://www.instagram.com/kunaldemla/,https://github.com/KunalDemla
+16,Prateek,CORE MEMBER,../../static/members/Core/Prateek.jpg,#,https://www.linkedin.com/in/prateek-rustagi-37a3a616b/,https://www.instagram.com/protick_exe/,https://github.com/prateekrusta
+17,Kriti,CORE MEMBER,../../static/members/Core/Kriti.jpg,https://www.facebook.com/kriti.singhal.7334/,https://www.linkedin.com/in/kriti-711/,https://www.instagram.com/kriti_007/,https://github.com/Kriti-bit
+18,Shreya,CORE MEMBER,../../static/members/Core/Shreya.jpg,https://www.facebook.com/shreya.chopra.33671/,https://www.linkedin.com/in/shreya-chopra-43a112200/,https://www.instagram.com/shreya.exists/,https://github.com/ShreyaChopra13
+19,Sudiksha,CORE MEMBER,../../static/members/Core/Sudiksha.jpg,www.facebook.com/sudiksharaheja7,www.instagram.com/sudiksha7,www.linkedin.com/in/sudiksha-raheja-bb4b451bb,www.github.com/sudiksha7
+20,Suprit,CORE MEMBER,../../static/members/Core/Suprit.jpg,#,https://www.linkedin.com/in/suprit-behera-4004a71ba/,https://www.instagram.com/supritbehera/,https://github.com/SupritBehera
+21,Mitesh,CORE MEMBER,../../static/members/Core/Mitesh.jpeg,https://www.facebook.com/mitesh.jindal,https://www.linkedin.com/in/miteshjindal/,https://www.instagram.com/mitesh_mj/,https://github.com/MJ-06
+22,Rudransh,CORE MEMBER,../../static/members/Core/Rudransh.jpg,#,https://www.linkedin.com/in/rudransh-arora/,#,https://github.com/Red-0111
+1,Harshita,EXECUTIVE MEMBER,../../static/members/Members/Harshita.jpeg,#,https://www.linkedin.com/mwlite/in/harshita-pandey-9291b648,https://www.instagram.com/harshitapandey_/,https://github.com/harshita34
+2,Aditya,EXECUTIVE MEMBER,../../static/members/Members/Aditya.jpg,#,https://www.linkedin.com/in/aditya-bansal-8203aa1bb/,https://www.instagram.com/adityabansal__/,https://github.com/InfiAB
+3,Mhuskan,EXECUTIVE MEMBER,../../static/members/Members/Mhuskan.jpeg,#,#,#,#
+4,Meharamt,EXECUTIVE MEMBER,../../static/members/Members/Meharamt.jpg,https://www.facebook.com/meharamt.singh/,https://www.linkedin.com/in/meharamt-singh-07a885193/,https://www.instagram.com/meharamt_singh/,https://github.com/Meharamt
+5,Taranpreet,EXECUTIVE MEMBER,../../static/members/Members/Taranpreet.jpg,https://www.facebook.com/taranpreet.kaur.1865904/,https://www.linkedin.com/in/taranpreet-kaur-dhiman-64baab1b6/,https://www.instagram.com/thetarandhiman/,https://github.com/thetarandhiman
+6,Kamalpreet,EXECUTIVE MEMBER,../../static/members/Members/Kamal.png,https://www.facebook.com/profile.php?id=100014358135907,https://www.linkedin.com/in/kamalpreet-singh-8360171099/,https://www.instagram.com/itzkamalhere/,https://github.com/Kamalpreet-3223
+7,Naman,EXECUTIVE MEMBER,../../static/members/Members/Naman.jpg,#,#,#,#
+8,Vanshika,EXECUTIVE MEMBER,../../static/members/Members/Vanshika.jpg,#,https://www.linkedin.com/in/vanshikaa-sharma/,https://www.instagram.com/vanshika_81/,https://github.com/Vanshika2411s
+9,Sukhrajbir,EXECUTIVE MEMBER,../../static/members/Members/Sukhraj.jpeg,#,#,#,#
+10,Mudit,EXECUTIVE MEMBER,../../static/members/Members/Mudit.jpg,#,#,#,#
+11,Twesha,EXECUTIVE MEMBER,../../static/members/Members/Twesha.jpeg,#,www.linkedin.com/in/twesha-arvind,https://www.instagram.com/tweshaarvind/,https://github.com/Twesha
+12,Vanshaj,EXECUTIVE MEMBER,../../static/members/Members/Vanshaj.png,https://www.facebook.com/vanshaj.duggal/,www.linkedin.com/in/vanshaj-duggal-191171191,https://www.instagram.com/inevitable_vd/,https://github.com/VDliveson
+13,Aayush,EXECUTIVE MEMBER,../../static/members/Members/Aayush.jpg,https://www.facebook.com/aayush.arora.9066/,https://www.linkedin.com/in/aayush-arora-623b10212/,https://www.instagram.com/notrlyaayush/,https://github.com/aayusharora29
+14,Rishabh,EXECUTIVE MEMBER,../../static/members/Members/Rishabh.jpg,https://www.facebook.com/rishabh.d.rocking,https://www.linkedin.com/in/rgpro,https://instagram.com/techie_rishabh,https://github.com/RGTechPro
+15,Shreyas,EXECUTIVE MEMBER,../../static/members/Members/Shreyas.jpg,#,https://www.linkedin.com/in/shreyas-rana-1807/,https://www.instagram.com/shrawns_1807/?hl=en,https://github.com/Shreyasrana18
+16,Pranav,EXECUTIVE MEMBER,../../static/members/Members/Pranav.jpeg,https://www.facebook.com/PranavAKAmrwhosetheboss,https://www.linkedin.com/in/pranav-p-032790114/,https://www.instagram.com/praxnax/,https://github.com/praxnax
+17,Guneev,EXECUTIVE MEMBER,../../static/members/Members/Guneev.jpg,#,#,#,#
+18,Radhika,EXECUTIVE MEMBER,../../static/members/Members/Radhika.jpg,#,#,#,#
+19,Anureet,EXECUTIVE MEMBER,../../static/members/Members/Anureet.jpeg,#,www.linkedin.com/in/anureet-kaur-0931b31bb,https://www.instagram.com/anureet2053?r=nametag,https://github.com/Anureet123
+20,Darshan,EXECUTIVE MEMBER,../../static/members/Members/Darshan.jpg,https://www.facebook.com/bubblymess/,https://www.linkedin.com/in/-darshanpatel/,https://www.instagram.com/darshan_xoxo_/,https://github.com/darshpat01
+21,Girik,EXECUTIVE MEMBER,../../static/members/Members/Girik.jpeg,https://www.facebook.com/girik.garg.16/,https://www.linkedin.com/in/girik-garg/,https://www.instagram.com/girikgargtiet/,https://github.com/girikgarg8
+22,Riya,EXECUTIVE MEMBER,../../static/members/Members/Riya.jpg,#,#,#,#
+23,Kartik,EXECUTIVE MEMBER,../../static/members/Members/Kartik.jpg,#,#,#,#
+24,Arshiya,EXECUTIVE MEMBER,../../static/members/Members/Arshiya.jpg,#,#,#,#
+25,Pranjali,EXECUTIVE MEMBER,../../static/members/Members/Pranjali.jpg,#,https://www.linkedin.com/in/pranjali-singhal-26a759208/,https://www.instagram.com/pranjali.singhal/,https://github.com/Pranjali012
+26,Aadarsh,EXECUTIVE MEMBER,../../static/members/Members/Aadarsh.jpg,#,https://www.linkedin.com/in/kumar-aadarsh-00178a1bb/,https://www.instagram.com/kumaraadarsh17/,https://github.com/kumaraadarsh17
+27,Niyati,EXECUTIVE MEMBER,../../static/members/Members/Niyati.jpg,#,#,#,#
+28,Sanya,EXECUTIVE MEMBER,../../static/members/Members/Sanya.jpeg,https://www.facebook.com/sanya.sachdeva.9809,https://www.linkedin.com/in/sanya-sachdeva-55803a1b7,https://www.instagram.com/sa.nya_15/,https://github.com/sanya1501
+29,Pranjal,EXECUTIVE MEMBER,../../static/members/Members/Pranjal A.jpg,https://www.facebook.com/pranjal.arora.341/,https://www.linkedin.com/in/pranjal-arora-80635a20a/,https://www.instagram.com/pranjal.arora.341/,https://github.com/pranjal-arora
+30,Riya,EXECUTIVE MEMBER,../../static/members/Members/Riya G.jpg,https://www.facebook.com/riya.gupta.3785,https://www.linkedin.com/in/riya-gupta-13593a1b7/,https://www.instagram.com/riyaaguptaa_/,https://github.com/RiyaaGuptaa
+31,Yamini,EXECUTIVE MEMBER,../../static/members/Members/Yamini.jpg,https://www.facebook.com/yamini.bansal.758,www.linkedin.com/in/yamini-bansal-4037301bb,https://www.instagram.com/yamini_2362/,https://github.com/yamini236
+32,Shiti,EXECUTIVE MEMBER,../../static/members/Members/Shiti.jpeg,https://m.facebook.com/shiti.garg.12,https://www.linkedin.com/in/shiti-garg-5b6287201/,https://www.instagram.com/shiti_garg/,https://github.com/Shitigarg
