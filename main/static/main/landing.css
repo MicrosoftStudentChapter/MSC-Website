@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 a:link {
   text-decoration: none;
   color: white;
@@ -63,6 +64,7 @@ a {
   position: relative;
   padding-bottom: 0.33rem;
   font-size: 1rem;
+  display: contents;
 }
 
 .top-navbar a span::before {
@@ -199,31 +201,22 @@ a {
   text-align: center;
 }
 
-#msft {
-  font-size: 5.5rem;
-  font-weight: bold;
-  letter-spacing: 0.02em;
-}
-
 #std_ch {
-  font-size: 3.47rem;
+  font-family: 'Poppins', sans-serif;
+  color:black;
+  font-weight: 600;
+  font-size: 4.8rem;
+  text-align: center;
   letter-spacing: -0.01em;
-  font-weight: 700;
 }
 
 @media only screen and (min-width: 420px) and (max-width: 590px) {
-  #msft {
-    font-size: 3.5rem;
-  }
   #std_ch {
     font-size: 1.9rem;
   }
 }
 
 @media only screen and (max-width: 419px) {
-  #msft {
-    font-size: 2.7rem;
-  }
   #std_ch {
     font-size: 1.7rem;
   }
@@ -525,9 +518,6 @@ i {
     /* padding-left: 2rem; */
     padding-top: 12rem;
   }
-  #msft {
-    font-size: 5rem;
-  }
   #std_ch {
     font-size: 3.16rem;
   }
@@ -536,9 +526,6 @@ i {
 @media only screen and (min-width: 500px) and (max-width: 605px) {
   .content {
     padding-top: 12rem;
-  }
-  #msft {
-    font-size: 4.3rem;
   }
   #std_ch {
     font-size: 2.7rem;
@@ -558,9 +545,6 @@ i {
   .content {
     padding-top: 10rem;
   }
-  #msft {
-    font-size: 3rem;
-  }
   #std_ch {
     font-size: 1.9rem;
   }
@@ -572,9 +556,6 @@ i {
 @media only screen and (min-width: 331px) and (max-width: 346px) {
   .content {
     padding-top: 10rem;
-  }
-  #msft {
-    font-size: 2.6rem;
   }
   #std_ch {
     font-size: 1.64rem;
@@ -640,3 +621,17 @@ i {
 /* ::-moz-scrollbar-thumb:window-inactive {
   background: rgba(0, 0, 0, 1);
 } */
+@media screen and (max-width:335px) {
+  .top-navbar .open-menu{
+    z-index: 10;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    right: 0px;
+    top:5.1rem;
+    background-color: #020202;
+    box-sizing: border-box;
+  }
+  
+}
