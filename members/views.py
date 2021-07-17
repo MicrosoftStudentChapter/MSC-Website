@@ -14,8 +14,12 @@ def team(request):
         lambda member: 'Joint Secretary' in member.position, members)
     heads = filter(
         lambda member: 'Head' in member.position, members)
+    core = filter(
+        lambda member: 'CORE' in member.position, members)
+    executive = filter(
+        lambda member: 'EXECUTIVE' in member.position, members)
 
     family = {"secretaries": secretaries,
-              "joint_secretaries": joint_secretaries, "heads": heads}
+              "joint_secretaries": joint_secretaries, "heads": heads, "core": core, "executive": executive}
 
     return render(request, "members/about.html", context={'members': family})
