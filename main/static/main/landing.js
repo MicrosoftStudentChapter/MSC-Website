@@ -8,21 +8,6 @@ function checkMenu() {
       document.querySelector(".nav-items").classList.remove("open-menu");
   }
 }
-$(document).ready(function () {
-  setTimeout(function () {
-    test();
-  });
-});
-$(window).on("resize", function () {
-  setTimeout(function () {
-    test();
-  }, 500);
-});
-$(".navbar-toggler").click(function () {
-  setTimeout(function () {
-    test();
-  });
-});
 
 // Carousel Sponsor
 $(document).ready(function () {
