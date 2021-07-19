@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 a:link {
   text-decoration: none;
   color: white;
@@ -171,7 +170,6 @@ a {
 }
 
 #is_active {
-  margin-top: 0.5rem;
   padding-bottom: 0.17rem;
   font-size: 1.1rem;
   border-bottom: 2px solid white;
