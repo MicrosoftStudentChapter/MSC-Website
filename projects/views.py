@@ -1,4 +1,5 @@
-import json, requests
+import json
+import requests
 from django.shortcuts import render
 
 
