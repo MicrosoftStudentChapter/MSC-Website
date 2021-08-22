@@ -62,8 +62,8 @@
       </h1>
     </div>
 
-    <!-- <div class="row">
-      <div class="col-lg-6 col-md-7" style= "margin:auto;" >
+    <div class="row">
+      {% comment %} <div class="col-lg-6 col-md-7" style= "margin:auto;" >
         <div class="carder card1" style="background-image: url({% static 'projects/images/discord-bots.png'%});">
           <div class="content">
              <h2 class="title">OverFlow-DiscordBOT</h2>
@@ -74,11 +74,11 @@
             <a class="btn" href="https://github.com/MicrosoftStudentChapter/OverFlow-DiscordBOT"><i class="fab fa-github"></i> View Repository</a>
           </div>
         </div>
-      </div> -->
+      </div> {% endcomment %}
       
       {%for project in projects %}
       <div class="col-lg-6 col-md-7 align-self-center">
-        <div class="carder card1" style="background-image: url({{project.image}})">
+        <div class="carder card2" style="background-image: url({{project.image}})">
           <div class="content">
             <h2 class="title">{{project.name}}</h2>
             <p class="copy">
