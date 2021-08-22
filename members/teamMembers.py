@@ -15,9 +15,19 @@ class Member:
 
 members = []
 
-with open("members/members.csv", 'r') as csv_file:
+with open("members/members.csv", "r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
 
     for member in csv_reader:
-        members.append(Member(int(member['id']), member['name'], member['position'], member['img'],
-                              member['fb'], member['linkedin'], member['insta'], member['github']))
+        members.append(
+            Member(
+                int(member["id"]),
+                member["name"],
+                member["position"],
+                member["img"],
+                member["fb"],
+                member["linkedin"],
+                member["insta"],
+                member["github"],
+            )
+        )
