@@ -1,0 +1,296 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous"
+        />
+        <!-- Additional CSS -->
+        <link rel="stylesheet" href="{% static 'opensource/opensource.css' %}" />
+        <link rel="stylesheet" href="{% static 'opensource/cards.css' %}" />
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <!-- Google Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Poppins:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Microsoft Learn Student Chapter</title>
+        <link
+            rel="icon"
+            href="{% static 'opensource/general/mlsc_shield_new.png' %}"
+            type="image/x-icon"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3"
+            async
+            defer
+        >
+            new Crate({
+              server: '720322067261554728', // MLSC Open Source Community
+              channel: '756424683301371905' // #about
+            })
+        </script>
+    </head>
+    <body onresize="checkMenu();">
+        <section class="content-section">
+            <!-- Navbar -->
+            <section>
+                <nav class="top-navbar">
+                    <a href="{% url 'home' %}" class="nav-brand non_active">
+                        <span id="nav-text">
+                            <span id="ML">Microsoft Learn</span>
+                            <span id="SC">Student Chapter</span>
+                        </span>
+                    </a>
+                    <button onclick="openMenu();" aria-label="open Menu">
+                        <i class="fa fa-bars text-white" aria-hidden="true"></i>
+                    </button>
+                    <div class="nav-items">
+                        <a href="{% url 'home' %}" class="non_active"
+                            ><span>Home</span></a
+                        >
+                        <a href="{% url 'about' %}" class="non_active"><span>About us</span></a>
+                        <a href="{% url 'events' %}" class="non_active"
+                            ><span>Events</span></a
+                        >
+                        <a href="{% url 'gallery' %}" class="non_active"
+                            ><span>Gallery</span></a
+                        >
+                        <a href="{% url 'opensource' %}" id="is_active"
+                            ><span>Open Source Community</span></a
+                        >
+                        <a href="{% url 'sponsor' %}" class="non_active"
+                            ><span>Projects</span>
+                        </a>
+                        <a href="{% url 'sponsor' %}" class="non_active"
+                            ><span>Sponsor Us</span></a
+                        >
+                    </div>
+                </nav>
+            </section>
+            <section>
+      <div id="about">
+        <div class="row" style="padding: 10vh 0vh 0vh 0vh">
+          <div class="col-md-1"></div>
+          <div class="col-md-6">
+            <div id="about-head-content">
+              OPEN SOURCE
+            </div>
+            <div>
+              <center>
+                <img
+                id="about_img"
+                class="img-fluid"
+                src="{% static 'opensource/general/team.jpeg' %}"
+                alt="Mentor pic"
+              />
+              </center>
+            </div>
+          </div>
+          <div class="col-md-5 order-2 order-md-1" id="about-div">
+            <div class="row" id="about-content">
+                We are a group of highly motivated learners and seekers who wish to create something extraordinary. We believe that youth encompassed with appropriate technology holds the potential to revolutionize the world we perceive today. 
+                With our Open-Source community, we aim to bring together the aspiring minds and create a space where they can learn, grow and develop together. To foster this process, we conduct various seminars, group discussions and talks on our channel. It also serves as a platform for the multitude hackathons, coding events we conduct throughout the year and the projects we develop.
+                <ul>
+                <li> Get to meet an array of people who have the same hunger as yourself for "Growing Always." </li>
+                <li> Learn about new technologies and clarify your doubts regarding them.</li>
+                <li> Make super cool projects and add contributions to your resume.</li>
+                <li> Become an integral part of building this community.</li>
+                </ul>
+                And many other perks that come along. &nbsp; <br> 
+                <br> <br>
+                 <a href="https://discord.gg/CpAPtDC"> <u>
+                    Click here to join.</u></a>
+            </div>
+
+            <div id="community"> COMMUNITY </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+            <section id="workshops">
+                <center>
+            <div id="mentor-heads" style="padding: 10vh 0vh 10vh 0vh" > WORKSHOPS</div>
+    </center>
+    </section>
+
+    <section id="mentors">
+      <div class="row" style="display: flex; flex-direction: row-reverse;">
+      <div class="col-sm-6">
+        <center>
+        <img
+        id="devs"
+        src="{% static 'opensource/general/machinelearning.png' %}"
+        alt="Mentor pic"
+      /></center>
+    </div>
+        
+        <div class="col-sm-6">
+            <div class="rows" id="mentor-head">MACHINE LEARNING</div>
+            <div class="rowl" id="mentor-content">
+              With increasing data utilization needs among all companies today, Machine Learning has indeed become the talk of the town.
+The Air around this startling field turned damp with heavy droplets of doubts and confusion when MLSC organized 2-day comprehensive workshop on Deep Learning and its application in Natural Language Processing (NLP) with Live project discussion. A few goodies, swags were given to some of the active enthusiasts in the workshop.</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+          <center>
+          <img
+            id="dev"
+            src="{% static 'opensource/general/appdev.png' %}"
+            alt="Mentor pic"
+          /></center>
+        </div>
+ 
+    
+          <div class="col-sm-6">
+            <div class="rowsr" id="mentor-head">APP DEVELOPMENT</div>
+            
+            <div class="rowr" id="mentor-content">
+               
+              We at MLSC, are dedicated to helping our community learn indispensable new skills and improve existing ones. In congruency with this belief, we organized a workshop on the basics of App Development for IOS and Android. This workshop introduced the attendees to Flutter which is Google's UI toolkit for building beautiful applications and its programming language Dart. We built a demo app to explain the workings of Flutter, this helped the attendees to pragmatically understand the toolkit. Useful resources were also shared to further elevate the understanding of the attendees.
+            </div>
+          </div>
+        </div>
+        <div class="row" style="display: flex; flex-direction: row-reverse;">
+          <div class="col-sm-6">
+            <center>
+          <img
+          id="devs"
+          src="{% static 'opensource/general/hacking.png' %}"
+          alt="Mentor pic"
+        /></center>
+      </div>
+    
+                <div class="col-sm-6">
+            <div class="rows" id="mentor-head">ETHICAL HACKING</div>
+            <div class="rowl" id="mentor-content">
+                
+              MLSC TIET has always believed in working towards innovation and development. By helping others, we all rise. This has been our motto since the inception. To achieve this and strive to become the best, we have been conducting various workshops. One of the major workshop was for Ethical Hacking. This particular workshop helped students to know about Ethical Hacking and Information Security thereby giving them knowledge about reading the Hacker’s mind and understanding the hacking psychology and methodology. It is a well known fact that you learn by doing. That's why a hands-on activity was conducted to gain access of a remote android device using the Metasploit framework. In addition to this, participants were provided with adequate resource sheets to start their learning as an Ethical Hacker.
+            </div>
+          </div>
+        </div>
+        <div class="row" >
+          <div class="col-sm-6">
+          <center>
+          <img
+          id="dev"
+          class="devimg"
+          src="{% static 'opensource/general/webdev.png' %}"
+         
+        /></center>
+          </div>
+
+        
+          <div class="col-sm-6">
+            <div class="rowsr" id="mentor-head">WEB DEVELOPMENT</div>
+          
+            <div class="rowr" id="mentor-content">
+              We at MLSC, firmly believe that the youth must know enough to prudent by performing the impossible and thereby achieving the desired success generation after generation. In aim to the belief,we organised a workshop explaining the basics and market requirements of Web Development.We too built a sample website describing the structure and working of normal website that included the basics of HTML, CSS and JS and their importance to make a website more presentable.We discussed about technologies to learn after them basically including React, Angular and Vue. Besides all of these, the light over different Backend technologies, Cloud Computing and various Full Stack platforms was also thrown. Appropriate resources were even shared with attendees to make their path easier and much more interesting in achieving their goal.
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="workshops">
+            <section>
+                <div id="contact">
+                    <span id="ContactUs">CONTACT US</span>
+                    <div style="height: 2rem"></div>
+                    <div class="row">
+                        <div class="col-sm-1 col-md-2"></div>
+                        <div class="col-sm-4 col-md-3">
+                            <!-- Location -->
+                            <div class="text-center pic_contact">
+                                <img
+                                    src="{% static 'opensource/general/location.png' %}"
+                                    alt="Locate Us"
+                                /><br />
+                                <button class="button_contact">
+                                    TIET, Patiala - 147004
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-4 col-md-3">
+                            <div class="text-center pic_contact">
+                                <img
+                                    src="{% static 'opensource/general/phone.png' %}"
+                                    alt="Contact Us"
+                                /><br />
+                                <button class="button_contact">
+                                    Pranjal : +91 90344 40819
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-1 col-md-2"></div>
+                    </div>
+                    <div style="height: 1vh"></div>
+                    <div class="text-center">
+                        <a
+                            href=" https://www.facebook.com/mlsctiet/"
+                            target="_blank"
+                            ><img
+                                src="{% static 'opensource/general/fb.png' %}"
+                                alt="Facebook"
+                                class="contact_link"
+                        /></a>
+                        <a
+                            href="https://github.com/MicrosoftStudentChapter"
+                            target="_blank"
+                            ><img
+                                src="{% static 'opensource/general/github-04.png' %}"
+                                alt="Twitter"
+                                class="contact_link"
+                        /></a>
+                        <a
+                            href="https://instagram.com/mlsc_tiet?igshid=bbv9mjjkx4h"
+                            target="_blank"
+                            ><img
+                                src="{% static 'opensource/general/insta.png' %}"
+                                alt="Instagram"
+                                class="contact_link"
+                        /></a>
+                    </div>
+                    <div style="height: 2vh"></div>
+                </div>
+                <div id="love">
+                    <div class="text-center" id="text_love">
+                        Made with <i class="fa fa-heart" id="text-red"></i>by
+                        Team MLSC
+                    </div>
+                </div>
+            </section>
+        </section>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Adding external JS -->
+        <script src="{% static 'opensource/opensource.js' %}"></script>
+    </body>
+</html>
