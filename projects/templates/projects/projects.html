@@ -1,0 +1,132 @@
+{%load static%}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <script src="https://kit.fontawesome.com/7679299f30.js" crossorigin="anonymous"></script>
+     <!--If possible change font-awesome kit-->
+
+     <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <!--bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <!--Custom css-->
+    <link rel="stylesheet" href="{% static 'projects/css/star.css'%}"/> 
+    <link rel="stylesheet" href="{%static 'projects/css/stylesheet.css'%}" />
+    
+</head>
+<body onresize="checkMenu();">
+
+  <!-- Navbar Section Start -->
+  <section>
+    <nav class="top-navbar">
+      <a href="{% url 'home' %}" class="nav-brand non_active">
+        <!-- <img src="{% static 'gallery/pics/general/msc_logo.png' %}" alt="Logo" id="logo"/> -->
+        <span id="nav-text">
+          <span id="ML">Microsoft Learn</span> <span id="SC">Student Chapter</span>
+        </span>
+      </a>
+      <button onclick="openMenu();" aria-label="open Menu"><i class="fa fa-bars text-white"
+          aria-hidden="true"></i></button>
+      <div class="nav-items">
+        <a href="{% url 'home' %}" class="non_active"><span>Home</span></a>
+        <a href="{% url 'about' %}" class="non_active">About us</a>
+        <a href="{% url 'events' %}" class="non_active"><span>Events</span></a>
+        <a href="{% url 'gallery' %}" id="non_active"><span>Gallery</span></a>
+        <a href="{% url 'projects'%}" id="is_active"><span>Projects</span></a>
+        <a href="{% url 'sponsor' %}" class="non_active"><span>Why Sponsor Us?</span></a>
+      </div>
+    </nav>
+
+  </section>
+
+  <!--End of nav section-->
+
+
+    <canvas></canvas>
+
+    <div class="projects">
+      <h1 class="page-title">
+        <img
+          src="{% static 'projects/images/icon1.png' %}"
+          alt="Project Diagram icon"
+          style="width: 14% ;"
+        />PROJECTS
+      </h1>
+    </div>
+
+    <div class="row">
+      {% comment %} <div class="col-lg-6 col-md-7" style= "margin:auto;" >
+        <div class="carder card1" style="background-image: url({% static 'projects/images/discord-bots.png'%});">
+          <div class="content">
+             <h2 class="title">OverFlow-DiscordBOT</h2>
+            <p class="copy">
+              MLSC's very own discord bot 
+              made in Python
+            </p>
+            <a class="btn" href="https://github.com/MicrosoftStudentChapter/OverFlow-DiscordBOT"><i class="fab fa-github"></i> View Repository</a>
+          </div>
+        </div>
+      </div> {% endcomment %}
+      
+      {%for project in projects %}
+      <div class="col-lg-6 col-md-7 align-self-center">
+        <div class="carder card2" style="background-image: url({{project.image}})">
+          <div class="content">
+            <h2 class="title">{{project.name}}</h2>
+            <p class="copy">
+            {{project.description}}
+            </p>
+           <a class="btn" href="{{project.url}}"><i class="fab fa-github"></i> View Repository</a>
+          </div>
+        </div>
+      </div>
+    {%endfor%}
+
+<!--Bootstrap js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+      crossorigin="anonymous"
+    ></script>
+<!--Star-design js-->
+<script src="{%static 'projects/js/index.js'%}"></script>
+<!--Jquery-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script>
+      function openMenu() {
+        document.querySelector(".nav-items").classList.toggle("open-menu");
+      }
+
+      function checkMenu() {
+        if (document.querySelector(".top-navbar").offsetWidth > 750) {
+          document.querySelector(".nav-items").classList.remove("open-menu");
+        }
+      }
+      $(document).ready(function () {
+        setTimeout(function () {
+          test();
+        });
+      });
+      $(window).on("resize", function () {
+        setTimeout(function () {
+          test();
+        }, 500);
+      });
+      $(".navbar-toggler").click(function () {
+        setTimeout(function () {
+          test();
+        });
+      });
+</script>
+
+</body>
+</html>
