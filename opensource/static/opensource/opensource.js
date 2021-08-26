@@ -5,15 +5,21 @@ function openMenu() {
 
 function checkMenu() {
   if (document.querySelector(".top-navbar").offsetWidth > 750) {
-      document.querySelector(".nav-items").classList.remove("open-menu");
+    document.querySelector(".nav-items").classList.remove("open-menu");
   }
 }
-$(document).ready(function(){
-  setTimeout(function(){ test(); });
+$(document).ready(function () {
+  setTimeout(function () {
+    test();
+  });
 });
-$(window).on('resize', function(){
-  setTimeout(function(){ test(); }, 500);
+$(window).on("resize", function () {
+  setTimeout(function () {
+    test();
+  }, 500);
 });
-$(".navbar-toggler").click(function(){
-  setTimeout(function(){ test(); });
+$(".navbar-toggler").click(function () {
+  setTimeout(function () {
+    test();
+  });
 });
