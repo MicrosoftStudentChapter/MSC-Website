@@ -1,65 +1,34 @@
+{% extends "main/base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <!-- Additional CSS -->
-    <link rel="stylesheet" href="{% static 'main/landing.css' %}" />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Slick CSS -->
-    <link rel="stylesheet" href="{% static 'main/infinite-slider.css' %}" />
-    <title>Microsoft Learn Student Chapter</title>
-    <link rel = "icon" href =  "{% static 'main/pics/mlsc_shield_new.png' %}" type = "image/x-icon">
-    <style>
-      a { color: white; } /* CSS link color */
-    </style>
-    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-      new Crate({
-        server: '720322067261554728', // MLSC Open Source Community
-        channel: '756424683301371905' // #about
-      })
-    </script>
-  </head>
-  <body onresize="checkMenu();">
-    <section class="content-section">
-    <!-- Navbar -->
-    <section>
-      <nav class="top-navbar">
-        <a href="{% url 'home' %}" class="nav-brand non_active">
-          <!-- <img src="{% static 'main/pics/MLSC_shield.png' %}" alt="Logo" id="logo"/> -->
-          <span id="nav-text">
-            <span id="ML">Microsoft Learn</span> <span id="SC">Student Chapter</span>
-          </span>
-        </a>
-        <button onclick="openMenu();" aria-label="open Menu"><i class="fa fa-bars text-white" aria-hidden="true"></i></button>
-        <div class="nav-items">
-            <a href="{% url 'home' %}" id="is_active">Home</a>
-            <a href="{% url 'about' %}" class="non_active"><span>About us</span></a>
-            <a href="{% url 'events' %}" class="non_active"><span>Events</span></a>
-            <a href="{% url 'gallery' %}" class="non_active"><span>Gallery</span></a>
-            <a href="{% url 'sponsor' %}" class="non_active"><span>Why Sponsor Us?</span></a>
-        </div>
-		<script>
-			document.querySelector('.nav-items').style.top = document.querySelector('.top-navbar').clientHeight + "px";
-		</script>
-      </nav>
-    </section>
+
+{% block head %}
+   <!-- Bootstrap CSS -->
+   <link
+   rel="stylesheet"
+   href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+   integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+   crossorigin="anonymous"
+ />
+ <!-- Additional CSS -->
+ <link rel="stylesheet" href="{% static 'main/landing.css' %}" />
+ <!-- Font Awesome -->
+ <link
+   rel="stylesheet"
+   href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+ />
+ <!-- Google Font -->
+ <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Poppins:wght@700&display=swap" rel="stylesheet">
+ <!-- AOS CSS -->
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ <!-- Slick CSS -->
+ <link rel="stylesheet" href="{% static 'main/infinite-slider.css' %}" />
+ <title>Microsoft Learn Student Chapter</title>
+ <link rel = "icon" href =  "{% static 'main/pics/mlsc_shield_new.png' %}" type = "image/x-icon">
+ <style>
+   a { color: white; } /* CSS link color */
+ </style>
+{% endblock %}
+ {% block content %}
     <!-- VIDEO -->
     <section>
       <div class="background-wrap">
@@ -223,66 +192,6 @@
         </div>
       </div>
     </section>
-   <!-- Contact Us section -->
-    <section>
-      <div id="contact">
-        <span id="ContactUs">CONTACT US</span>
-        <div style="height: 2rem;"></div>
-        <div class="row">
-          <div class="col-sm-1 col-md-2"></div>
-          <div class="col-sm-4 col-md-3">
-            <!-- Location -->
-            <div class="text-center pic_contact">
-              <img src="{% static 'main/pics/ContactUs/location.png' %}" alt="Locate Us"><br>
-              <button class="button_contact">TIET, Patiala - 147004</button>
-            </div>
-          </div>
-          <div class="col-sm-2"></div>
-          <div class="col-sm-4 col-md-3">
-            <div class="text-center pic_contact">
-              <img src="{% static 'main/pics/ContactUs/phone.png' %}" alt="Contact Us"><br>
-              <button class="button_contact">Pranjal : +91 90344 40819 </button>
-            </div>
-          </div>
-          <div class="col-sm-1 col-md-2"></div>
-        </div>
-        <div style="height: 1vh;"></div>
-        <div class="text-center">
-          <a href=" https://www.facebook.com/mlsctiet/" target="_blank"><img src="{% static 'main/pics/ContactUs/fb.png' %}" alt="Facebook" class="contact_link"></a> 
-          <a href="https://github.com/MicrosoftStudentChapter" target="_blank"><img src="{% static 'main/pics/ContactUs/github-04.png' %}" alt="Twitter" class="contact_link"></a>
-          <a href="https://instagram.com/mlsc_tiet?igshid=bbv9mjjkx4h" target="_blank"><img src="{% static 'main/pics/ContactUs/insta.png' %}" alt="Instagram" class="contact_link"></a>
-        </div>
-        <div style="height: 2vh;"></div>
-      </div>
-      <div id="love">
-        <div class="text-center" id="text_love">Made with <i class="fa fa-heart" id="text-red"></i>by Team MLSC</div>
-      </div>
-    </section>
-  </section>
-    <!-- Adding JS and jQuery File -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Slick Carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
-    <!-- Adding external JS -->
-    <script src="{% static 'main/landing.js' %}"></script>
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
-</html>
+
+    {% endblock content %}
+   

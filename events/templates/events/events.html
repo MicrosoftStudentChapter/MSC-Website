@@ -1,70 +1,37 @@
+{% extends "main/base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Microsoft Learn Student Chapter</title>
-    <link rel = "icon" href =  "{% static 'events/Events/mlsc_shield_new.png' %}" type = "image/x-icon">
 
-    <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous"
-    >
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"                                                            
-    >
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
-      rel="stylesheet"
-    >
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'events/css/Event.css' %}">
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-      ></script>
-      <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-        new Crate({
-          server: '720322067261554728', // MLSC Open Source Community
-          channel: '756424683301371905' // #about
-        })
-      </script>
-  </head>
-  <body onresize="checkMenu();">
-    <section class="content-section">
-    <section>
-      
-      <nav class="top-navbar">
-        <a href="{% url 'home' %}" class="nav-brand non_active">
-          <!-- <img src="{% static 'events/Events/msc_logo.png' %}" alt="Logo" id="logo"/> -->
-          <span id="nav-text">
-            <span id="ML">Microsoft Learn</span> <span id="SC">Student Chapter</span>
-          </span>
-        </a>
-        <button onclick="openMenu();" aria-label="open Menu"><i class="fa fa-bars text-white" aria-hidden="true"></i></button>
-        <div class="nav-items">
-            <a href="{% url 'home' %}" class="non_active"><span>Home</span></a>
-            <a href="{% url 'about' %}" class="non_active"><span>About us</span></a>
-            <a href="{% url 'events' %}" id="is_active">Events</a>
-            <a href="{% url 'gallery' %}" class="non_active"><span>Gallery</span></a>
-            <a href="{% url 'sponsor' %}" class="non_active"><span>Why Sponsor Us?</span></a>
-        </div>
-      </nav>
-    </section>
+{% block head %} 
+<link rel = "icon" href =  "{% static 'events/Events/mlsc_shield_new.png' %}" type = "image/x-icon">
+
+<link
+rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+crossorigin="anonymous"
+>
+<!-- Font Awesome -->
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"                                                            
+>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Poppins:wght@700&display=swap" rel="stylesheet">
+<!-- Google Font -->
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+  rel="stylesheet"
+>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300&display=swap" rel="stylesheet">
+<!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'events/css/Event.css' %}">
+{% endblock %}
+
+ {% block content %}
 
     <!-- Event Head Section -->
     <section>
-        <div id="events" style="background-image: url({% static 'events/Events/events_bg.png' %});">
+        <div id="events" style="background-image: url('{% static 'events/Events/events_bg.png' %}')">
             <div class="row">
                 <div class="col-md-7" id="heading">
                     <span>EVENTS</span>
@@ -556,55 +523,7 @@
 
 
     <!-- CARD END -->
-        <!-- contact us -->
-        <section>
-          <div id="contact">
-            <span id="ContactUs">CONTACT US</span>
-            <div style="height: 2rem;"></div>
-            <div class="row">
-              <div class="col-sm-1 col-md-2"></div>
-              <div class="col-sm-4 col-md-3">
-                <!-- Location -->
-                <div class="text-center pic_contact">
-                  <img src="{% static 'events/Events/location.png' %}" alt="Locate Us"><br>
-                  <button class="button_contact">TIET, Patiala - 147004</button>
-                </div>
-              </div>
-              <div class="col-sm-2"></div>
-              <div class="col-sm-4 col-md-3">
-                <div class="text-center pic_contact">
-                  <img src="{% static 'events/Events/phone.png' %}" alt="Contact Us"><br>
-                  <button class="button_contact">Pranjal : +91 90344 40819 </button>
-                </div>
-              </div>
-              <div class="col-sm-1 col-md-2"></div>
-            </div>
-            <div style="height: 1vh;"></div>
-            <div class="text-center">
-              <a href=" https://www.facebook.com/mlsctiet/" target="_blank"><img src="{% static 'events/Events/fb.png' %}" alt="Facebook" class="contact_link"></a> 
-              <a href="https://github.com/MicrosoftStudentChapter" target="_blank"><img src="{% static 'events/Events/github-04.png' %}" alt="Twitter" class="contact_link"></a>
-              <a href="https://instagram.com/mlsc_tiet?igshid=bbv9mjjkx4h" target="_blank"><img src="{% static 'events/Events/insta.png' %}" alt="Instagram" class="contact_link"></a>
-            </div>
-            <div style="height: 2vh;"></div>
-          </div>
-          <div id="love">
-            <div class="text-center" id="text_love">Made with <i class="fa fa-heart" id="text-red"></i> by Team MLSC</div>
-          </div>
-        </section>
-      </section>
-        <!-- Adding JS and jQuery File -->
-        
-        <script
-          src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-          integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-          crossorigin="anonymous"
-        ></script>
-        <script
-          src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-          integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-          crossorigin="anonymous"
-        ></script>
-
+    
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <!-- <script type="text/javascript" src="./js/jquery.hislide.js" ></script> -->
     <script type="text/javascript" src="{% static 'events/js/jquery.hislide.js' %}" ></script>
@@ -1199,5 +1118,4 @@
     </script>
         
         <script src="{% static 'events/js/Event.js' %}"></script>
-  </body>
-</html>
+        {% endblock content %}
