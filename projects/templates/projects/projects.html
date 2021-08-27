@@ -1,54 +1,28 @@
-{%load static%}
-<!DOCTYPE html>
+{% extends "main/base.html" %}
 
-<html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
-    <script src="https://kit.fontawesome.com/7679299f30.js" crossorigin="anonymous"></script>
-     <!--If possible change font-awesome kit-->
+{% load static %}
 
-     <!--Google fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
-    <!--bootstrap-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
-    <!--Custom css-->
-    <link rel="stylesheet" href="{% static 'projects/css/star.css'%}"/> 
-    <link rel="stylesheet" href="{%static 'projects/css/stylesheet.css'%}" />
-    
-</head>
-<body onresize="checkMenu();">
+{% block head %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+<script src="https://kit.fontawesome.com/7679299f30.js" crossorigin="anonymous"></script>
+ <!--If possible change font-awesome kit-->
 
-  <!-- Navbar Section Start -->
-  <section>
-    <nav class="top-navbar">
-      <a href="{% url 'home' %}" class="nav-brand non_active">
-        <!-- <img src="{% static 'gallery/pics/general/msc_logo.png' %}" alt="Logo" id="logo"/> -->
-        <span id="nav-text">
-          <span id="ML">Microsoft Learn</span> <span id="SC">Student Chapter</span>
-        </span>
-      </a>
-      <button onclick="openMenu();" aria-label="open Menu"><i class="fa fa-bars text-white"
-          aria-hidden="true"></i></button>
-      <div class="nav-items">
-        <a href="{% url 'home' %}" class="non_active"><span>Home</span></a>
-        <a href="{% url 'about' %}" class="non_active">About us</a>
-        <a href="{% url 'events' %}" class="non_active"><span>Events</span></a>
-        <a href="{% url 'gallery' %}" id="non_active"><span>Gallery</span></a>
-        <a href="{% url 'projects'%}" id="is_active"><span>Projects</span></a>
-        <a href="{% url 'sponsor' %}" class="non_active"><span>Why Sponsor Us?</span></a>
-      </div>
-    </nav>
+ <!--Google fonts-->
+<link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+<!--bootstrap-->
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+  crossorigin="anonymous"
+/>
+<!--Custom css-->
+<link rel="stylesheet" href="{% static 'projects/css/star.css'%}"/> 
+<link rel="stylesheet" href="{%static 'projects/css/stylesheet.css'%}" />
 
-  </section>
-
-  <!--End of nav section-->
-
+{% endblock %}
+{% block content %}
 
     <canvas></canvas>
 
@@ -128,5 +102,8 @@
       });
 </script>
 
-</body>
-</html>
+{% block footer %}
+
+{% endblock footer %}
+
+{% endblock content %}

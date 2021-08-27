@@ -39,10 +39,12 @@
         <button onclick="openMenu();" aria-label="open Menu"><i class="fa fa-bars text-white" aria-hidden="true"></i></button>
         <div class="nav-items">
             <a href="{% url 'home' %}" id="is_active">Home</a>
-            <a href="{% url 'about' %}" class="non_active"><span>About us</span></a>
+            <a href="{% url 'about' %}" class="non_active"><span>About</span></a>
             <a href="{% url 'events' %}" class="non_active"><span>Events</span></a>
             <a href="{% url 'gallery' %}" class="non_active"><span>Gallery</span></a>
-            <a href="{% url 'sponsor' %}" class="non_active"><span>Why Sponsor Us?</span></a>
+            <a href="{% url '' %}" class="non_active"><span>Projects</span></a>
+            <a href="{% url '' %}" class="non_active"><span>Community</span></a>
+            <a href="{% url 'sponsor' %}" class="non_active"><span>Sponsor Us</span></a>
         </div>
 		<script>
 			document.querySelector('.nav-items').style.top = document.querySelector('.top-navbar').clientHeight + "px";
@@ -50,6 +52,8 @@
       </nav>
     </section>
     {% block content %} {% endblock %}
+
+    {% block footer %}
     <!-- Contact Us section -->
     <section>
       <div id="contact">
@@ -86,6 +90,7 @@
       </div>
     </section>
   </section>
+  {% endblock %}
   
     <!-- Adding JS and jQuery File -->
     <script
