@@ -26,6 +26,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 
 INSTALLED_APPS = [
     "opensource",
+    "sponsor_us",
     "main.apps.MainConfig",
     "events.apps.EventsConfig",
     "gallery.apps.GalleryConfig",
