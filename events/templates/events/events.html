@@ -27,6 +27,33 @@ crossorigin="anonymous"
 <link rel="stylesheet" href="{% static 'events/css/Event.css' %}">
 {% endblock %}
 
+<!-- Navbar -->
+{% block navbar %}
+    <section>
+      <nav class="top-navbar">
+        <a href="{% url 'home' %}" class="nav-brand non_active">
+          <!-- <img src="{% static 'main/pics/MLSC_shield.png' %}" alt="Logo" id="logo"/> -->
+          <span id="nav-text">
+            <span id="ML">Microsoft Learn</span> <span id="SC">Student Chapter</span>
+          </span>
+        </a>
+        <button onclick="openMenu();" aria-label="open Menu"><i class="fa fa-bars text-white" aria-hidden="true"></i></button>
+        <div class="nav-items">
+            <a href="{% url 'home' %}" class="non_active">Home</a>
+            <a href="{% url 'about' %}" class="non_active"><span>About</span></a>
+            <a href="{% url 'events' %}" id="is_active"><span>Events</span></a>
+            <a href="{% url 'gallery' %}" class="non_active"><span>Gallery</span></a>
+            <a href="{% url 'projects' %}" class="non_active"><span>Projects</span></a>
+            <a href="{% url 'opensource' %}" class="non_active"><span>Community</span></a>
+            <a href="{% url 'sponsor' %}" class="non_active"><span>Sponsor Us</span></a>
+        </div>
+		<script>
+			document.querySelector('.nav-items').style.top = document.querySelector('.top-navbar').clientHeight + "px";
+		</script>
+      </nav>
+    </section>
+{% endblock %}
+
  {% block content %}
 
     <!-- Event Head Section -->
