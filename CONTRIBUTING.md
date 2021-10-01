@@ -29,6 +29,7 @@ It's a good idea to gauge interest in your intended work by finding the current 
 
 ```
 pip install -r requirements.txt
+pre-commit install
 ```
 
 - This will setup the project requirements. You can run the following commands and start the server
