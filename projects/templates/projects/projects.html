@@ -22,6 +22,9 @@
 <link rel="stylesheet" href="{%static 'projects/css/stylesheet.css'%}" />
 
 {% endblock %}
+
+{% block projects %}<a href="{% url 'projects' %}" id="is_active"><span>Projects</span></a>{% endblock projects %}
+
 {% block content %}
 
     <canvas></canvas>
