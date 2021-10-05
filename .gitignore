@@ -1,5 +1,5 @@
 .vscode
-env1/
+.env1/
 .env
 **/__pycache__
 *.sqlite3
