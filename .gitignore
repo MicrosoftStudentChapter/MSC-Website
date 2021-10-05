@@ -6,3 +6,4 @@ env1/
 venv/
 Env6/
 .DS_Store
+staticfiles/
