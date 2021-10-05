@@ -9,6 +9,10 @@ body {
   background-size: cover;
 }
 
+p{
+  text-align: justify;
+}
+
 #nav-text {
   font-size: 1.2rem;
   margin-left: 1rem !important;

@@ -1,4 +1,4 @@
 from django.urls import path
-from sponsor_us.views import sponsorus
+from sponsor_us.views import sponsor_us
 
-urlpatterns = [path("", sponsorus, name="sponsor_us")]
+urlpatterns = [path("", sponsor_us, name="sponsor_us")]
