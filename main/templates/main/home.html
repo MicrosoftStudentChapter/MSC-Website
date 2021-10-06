@@ -28,6 +28,11 @@
    a { color: white; } /* CSS link color */
  </style>
 {% endblock %}
+
+
+{% block home %}<a href="{% url 'home' %}" id="is_active">Home</a>{% endblock home %}
+
+
  {% block content %}
     <!-- VIDEO -->
     <section>

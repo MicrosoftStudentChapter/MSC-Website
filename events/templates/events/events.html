@@ -27,8 +27,9 @@ crossorigin="anonymous"
 <link rel="stylesheet" href="{% static 'events/css/Event.css' %}">
 {% endblock %}
 
- {% block content %}
+{% block events %}<a href="{% url 'events' %}" id="is_active">Events</a>{% endblock events %}
 
+{% block content %}
     <!-- Event Head Section -->
     <section>
         <div id="events" style="background-image: url('{% static 'events/Events/events_bg.png' %}')">
