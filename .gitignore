@@ -1,8 +1,9 @@
 .vscode
-env/
+env1/
 .env
 **/__pycache__
 *.sqlite3
 venv/
 Env6/
 .DS_Store
+staticfiles/
