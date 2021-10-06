@@ -9,4 +9,5 @@ urlpatterns = [
     path("members/", include("members.urls")),
     path("projects/", include("projects.urls")),
     path("opensource/", include("opensource.urls")),
+    path("why-sponser-us/", include("sponsor_us.urls")),
 ]
