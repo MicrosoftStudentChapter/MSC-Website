@@ -38,7 +38,6 @@
         </a>
         <button onclick="openMenu();" aria-label="open Menu"><i class="fa fa-bars text-white" aria-hidden="true"></i></button>
         <div class="nav-items">
-<<<<<<< HEAD
             <a href="{% url 'home' %}" id="is_active">Home</a>
             <a href="{% url 'about' %}" class="non_active"><span>About</span></a>
             <a href="{% url 'events' %}" class="non_active"><span>Events</span></a>
@@ -46,15 +45,6 @@
             <a href="{% url 'projects' %}" class="non_active"><span>Projects</span></a>
             <a href="{% url 'opensource' %}" class="non_active"><span>Community</span></a>
             <a href="{% url 'sponsor_us' %}" class="non_active"><span>Sponsor Us</span></a>
-=======
-			{% block home %}<a href="{% url 'home' %}" class="non_active"><span>Home</span></a>{% endblock home %}
-			{% block about %}<a href="{% url 'about' %}" class="non_active"><span>About</span></a>{% endblock about %}
-			{% block events %}<a href="{% url 'events' %}" class="non_active"><span>Events</span></a>{% endblock events %}
-			{% block gallery %}<a href="{% url 'gallery' %}" class="non_active"><span>Gallery</span></a>{% endblock gallery %}
-			{% block projects %}<a href="{% url 'projects' %}" class="non_active"><span>Projects</span></a>{% endblock projects %}
-			{% block opensource %}<a href="{% url 'opensource' %}" class="non_active"><span>Community</span></a>{% endblock opensource %}
-			{% block sponsor %}<a href="{% url 'sponsor' %}" class="non_active"><span>Sponsor Us</span></a>{% endblock sponsor %}
->>>>>>> upstream/master
         </div>
 		<script>
 			document.querySelector('.nav-items').style.top = document.querySelector('.top-navbar').clientHeight + "px";
