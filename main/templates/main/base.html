@@ -11,11 +11,11 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-     {% block head %} {% endblock %}
+    {% block head %} {% endblock %}
 
-     <title>Microsoft Learn Student Chapter</title>
+    <title>Microsoft Learn Student Chapter</title>
     <link rel = "icon" href =  "{% static 'events/Events/mlsc_shield_new.png' %}" type = "image/x-icon">
- 
+
     
     <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
       new Crate({
@@ -38,17 +38,17 @@
         </a>
         <button onclick="openMenu();" aria-label="open Menu"><i class="fa fa-bars text-white" aria-hidden="true"></i></button>
         <div class="nav-items">
-            <a href="{% url 'home' %}" id="is_active">Home</a>
-            <a href="{% url 'about' %}" class="non_active"><span>About</span></a>
-            <a href="{% url 'events' %}" class="non_active"><span>Events</span></a>
-            <a href="{% url 'gallery' %}" class="non_active"><span>Gallery</span></a>
-            <a href="{% url 'projects' %}" class="non_active"><span>Projects</span></a>
-            <a href="{% url 'opensource' %}" class="non_active"><span>Community</span></a>
-            <a href="{% url 'sponsor_us' %}" class="non_active"><span>Sponsor Us</span></a>
-        </div>
-		<script>
-			document.querySelector('.nav-items').style.top = document.querySelector('.top-navbar').clientHeight + "px";
-		</script>
+          {% block home %}<a href="{% url 'home' %}" class="non_active"><span>Home</span></a>{% endblock home %}
+          {% block about %}<a href="{% url 'about' %}" class="non_active"><span>About</span></a>{% endblock about %}
+          {% block events %}<a href="{% url 'events' %}" class="non_active"><span>Events</span></a>{% endblock events %}
+          {% block gallery %}<a href="{% url 'gallery' %}" class="non_active"><span>Gallery</span></a>{% endblock gallery %}
+          {% block projects %}<a href="{% url 'projects' %}" class="non_active"><span>Projects</span></a>{% endblock projects %}
+          {% block opensource %}<a href="{% url 'opensource' %}" class="non_active"><span>Community</span></a>{% endblock opensource %}
+          {% block sponsor %}<a href="{% url 'sponsor_us' %}" class="non_active"><span>Sponsor Us</span></a>{% endblock sponsor %}
+            </div>
+              <script>
+                      document.querySelector('.nav-items').style.top = document.querySelector('.top-navbar').clientHeight + "px";
+              </script>
       </nav>
     </section>
     {% block content %} {% endblock %}
